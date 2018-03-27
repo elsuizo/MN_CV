@@ -1,0 +1,10 @@
+* Roadmap o TODO
+ - [ ] suma de imagenes
+ - [ ] multiplicacion por un escalar
+ - [ ] coordenadas cromaticas
+ - [ ] white-patch
+ - [ ] otsu
+ - [ ] generar imagen binaria(desde una terna (r, g, b))
+ - [ ] roi
+ - [ ] generar rectangulos en imagen
+ - [ ] Componentes conexas, etiquetas a las regiones
