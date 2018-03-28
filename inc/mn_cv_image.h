@@ -56,7 +56,7 @@ mn_cv_make_image(int width, int height, int channels);
 struct Image
 mn_cv_make_empty_image(int width, int height, int channels);
 
-void mn_cv_free_image(struct Image m);
+void mn_cv_free_image(struct Image* m);
 
 void mn_cv_save_image_png(struct Image im, const char* name);
 

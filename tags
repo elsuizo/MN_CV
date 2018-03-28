@@ -1,0 +1,2132 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BINDIR	Makefile	/^BINDIR   = bin$/;"	m
+Bool	inc/stb.h	/^   typedef int Bool;$/;"	t
+CC	Makefile	/^CC       = clang$/;"	m
+CFLAGS	Makefile	/^CFLAGS   = -std=c99 -Wall -I.$/;"	m
+EncodeArray	inc/stb.h	7596;"	d
+EncodeArray	inc/stb.h	8118;"	d
+EncodeBucket	inc/stb.h	7561;"	d
+EncodeBucket	inc/stb.h	8117;"	d
+EncodeHash	inc/stb.h	7611;"	d
+EncodeHash	inc/stb.h	8119;"	d
+FALSE	inc/stb.h	291;"	d
+FAST_BITS	inc/stb_image.h	1639;"	d
+FILE	inc/stb.h	10073;"	d
+FLOW_break	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
+FLOW_continue	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
+FLOW_error	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
+FLOW_normal	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
+FLOW_return	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
+False	inc/stb.h	239;"	d
+GetArray	inc/stb.h	7595;"	d
+GetArray	inc/stb.h	8114;"	d
+GetBucket	inc/stb.h	7560;"	d
+GetBucket	inc/stb.h	8113;"	d
+GetHash	inc/stb.h	7610;"	d
+GetHash	inc/stb.h	8115;"	d
+HKEY	inc/stb.h	6498;"	d
+INCDIR	Makefile	/^INCDIR   = inc$/;"	m
+INCLUDES	Makefile	/^INCLUDES      := $(wildcard $(INCDIR)\/*.h)$/;"	m
+INCLUDES_TEST	Makefile	/^INCLUDES_TEST := $(wildcard $(TESTDIR)\/*.h)$/;"	m
+INCLUDE_STB_IMAGE_WRITE_H	inc/stb_image_write.h	116;"	d
+INTROSPECT	inc/stb.h	10072;"	d
+Image	inc/mn_cv_image.h	/^struct Image {$/;"	s
+KD	inc/stb.h	12734;"	d
+KF	inc/stb.h	12733;"	d
+KI	inc/stb.h	12731;"	d
+KS	inc/stb.h	12735;"	d
+KU	inc/stb.h	12732;"	d
+LFLAGS	Makefile	/^LFLAGS   = -Wall -I. -lm$/;"	m
+LINKER	Makefile	/^LINKER   = gcc -o$/;"	m
+MN_CV_IMAGE_H	inc/mn_cv_image.h	26;"	d
+M_PI	inc/stb.h	286;"	d
+OBJDIR	Makefile	/^OBJDIR   = obj$/;"	m
+OBJECTS	Makefile	/^OBJECTS       := $(SOURCES:$(SRCDIR)\/%.c=$(OBJDIR)\/%.o)$/;"	m
+POW2_LIMIT	inc/stb.h	11216;"	d
+SOURCES	Makefile	/^SOURCES       := $(wildcard $(SRCDIR)\/*.c)$/;"	m
+SOURCES_TESTS	Makefile	/^SOURCES_TESTS := $(wildcard $(TESTDIR)\/*.c)$/;"	m
+SRCDIR	Makefile	/^SRCDIR   = src$/;"	m
+STBIDEF	inc/stb_image.h	329;"	d
+STBIDEF	inc/stb_image.h	331;"	d
+STBIWDEF	inc/stb_image_write.h	123;"	d
+STBIWDEF	inc/stb_image_write.h	125;"	d
+STBIW_ASSERT	inc/stb_image_write.h	195;"	d
+STBIW_FREE	inc/stb_image_write.h	180;"	d
+STBIW_MALLOC	inc/stb_image_write.h	178;"	d
+STBIW_MEMMOVE	inc/stb_image_write.h	189;"	d
+STBIW_REALLOC	inc/stb_image_write.h	179;"	d
+STBIW_REALLOC_SIZED	inc/stb_image_write.h	184;"	d
+STBIW_UCHAR	inc/stb_image_write.h	198;"	d
+STBI_ASSERT	inc/stb_image.h	515;"	d
+STBI_FREE	inc/stb_image.h	573;"	d
+STBI_HAS_LROTL	inc/stb_image.h	553;"	d
+STBI_INCLUDE_STB_IMAGE_H	inc/stb_image.h	105;"	d
+STBI_MALLOC	inc/stb_image.h	571;"	d
+STBI_NEON	inc/stb_image.h	662;"	d
+STBI_NOTUSED	inc/stb_image.h	547;"	d
+STBI_NOTUSED	inc/stb_image.h	549;"	d
+STBI_NO_BMP	inc/stb_image.h	472;"	d
+STBI_NO_GIF	inc/stb_image.h	481;"	d
+STBI_NO_HDR	inc/stb_image.h	484;"	d
+STBI_NO_JPEG	inc/stb_image.h	466;"	d
+STBI_NO_PIC	inc/stb_image.h	487;"	d
+STBI_NO_PNG	inc/stb_image.h	469;"	d
+STBI_NO_PNM	inc/stb_image.h	490;"	d
+STBI_NO_PSD	inc/stb_image.h	475;"	d
+STBI_NO_SIMD	inc/stb_image.h	595;"	d
+STBI_NO_SIMD	inc/stb_image.h	610;"	d
+STBI_NO_TGA	inc/stb_image.h	478;"	d
+STBI_NO_ZLIB	inc/stb_image.h	495;"	d
+STBI_ORDER_BGR	inc/stb_image.h	/^   STBI_ORDER_BGR$/;"	e	enum:__anon54
+STBI_ORDER_RGB	inc/stb_image.h	/^   STBI_ORDER_RGB,$/;"	e	enum:__anon54
+STBI_REALLOC	inc/stb_image.h	572;"	d
+STBI_REALLOC_SIZED	inc/stb_image.h	577;"	d
+STBI_SIMD_ALIGN	inc/stb_image.h	640;"	d
+STBI_SIMD_ALIGN	inc/stb_image.h	648;"	d
+STBI_SIMD_ALIGN	inc/stb_image.h	668;"	d
+STBI_SIMD_ALIGN	inc/stb_image.h	672;"	d
+STBI_SSE2	inc/stb_image.h	614;"	d
+STBI_VERSION	inc/stb_image.h	309;"	d
+STBI__BYTECAST	inc/stb_image.h	1452;"	d
+STBI__CASE	inc/stb_image.h	1490;"	d
+STBI__CASE	inc/stb_image.h	1508;"	d
+STBI__CASE	inc/stb_image.h	1539;"	d
+STBI__CASE	inc/stb_image.h	1557;"	d
+STBI__CASE	inc/stb_image.h	4361;"	d
+STBI__CASE	inc/stb_image.h	4374;"	d
+STBI__CASE	inc/stb_image.h	4378;"	d
+STBI__CASE	inc/stb_image.h	4391;"	d
+STBI__COMBO	inc/stb_image.h	1489;"	d
+STBI__COMBO	inc/stb_image.h	1538;"	d
+STBI__F_avg	inc/stb_image.h	/^   STBI__F_avg=3,$/;"	e	enum:__anon65
+STBI__F_avg_first	inc/stb_image.h	/^   STBI__F_avg_first,$/;"	e	enum:__anon65
+STBI__F_none	inc/stb_image.h	/^   STBI__F_none=0,$/;"	e	enum:__anon65
+STBI__F_paeth	inc/stb_image.h	/^   STBI__F_paeth=4,$/;"	e	enum:__anon65
+STBI__F_paeth_first	inc/stb_image.h	/^   STBI__F_paeth_first$/;"	e	enum:__anon65
+STBI__F_sub	inc/stb_image.h	/^   STBI__F_sub=1,$/;"	e	enum:__anon65
+STBI__F_up	inc/stb_image.h	/^   STBI__F_up=2,$/;"	e	enum:__anon65
+STBI__HDR_BUFLEN	inc/stb_image.h	6423;"	d
+STBI__IDCT_1D	inc/stb_image.h	2118;"	d
+STBI__MARKER_none	inc/stb_image.h	2603;"	d
+STBI__PNG_TYPE	inc/stb_image.h	4678;"	d
+STBI__RESTART	inc/stb_image.h	2620;"	d
+STBI__SCAN_header	inc/stb_image.h	/^   STBI__SCAN_header$/;"	e	enum:__anon56
+STBI__SCAN_load	inc/stb_image.h	/^   STBI__SCAN_load=0,$/;"	e	enum:__anon56
+STBI__SCAN_type	inc/stb_image.h	/^   STBI__SCAN_type,$/;"	e	enum:__anon56
+STBI__X64_TARGET	inc/stb_image.h	582;"	d
+STBI__X86_TARGET	inc/stb_image.h	584;"	d
+STBI__ZFAST_BITS	inc/stb_image.h	3740;"	d
+STBI__ZFAST_MASK	inc/stb_image.h	3741;"	d
+STBI_default	inc/stb_image.h	/^   STBI_default = 0, \/\/ only used for req_comp$/;"	e	enum:__anon51
+STBI_grey	inc/stb_image.h	/^   STBI_grey       = 1,$/;"	e	enum:__anon51
+STBI_grey_alpha	inc/stb_image.h	/^   STBI_grey_alpha = 2,$/;"	e	enum:__anon51
+STBI_rgb	inc/stb_image.h	/^   STBI_rgb        = 3,$/;"	e	enum:__anon51
+STBI_rgb_alpha	inc/stb_image.h	/^   STBI_rgb_alpha  = 4$/;"	e	enum:__anon51
+STB_	inc/stb.h	3793;"	d
+STB_ADLER32_SEED	inc/stb.h	6204;"	d
+STB_BGIO_READ_ALL	inc/stb.h	12114;"	d
+STB_BUCKET_SIZE	inc/stb.h	7554;"	d
+STB_CRC32_SEED	inc/stb.h	6205;"	d
+STB_D	inc/stb.h	12767;"	d
+STB_D	inc/stb.h	12771;"	d
+STB_DEBUG	inc/stb.h	403;"	d
+STB_DEFINE	inc/stb.h	202;"	d
+STB_DEFINE	inc/stb.h	207;"	d
+STB_DEL	inc/stb.h	4250;"	d
+STB_EDEL	inc/stb.h	4109;"	d
+STB_EMPTY	inc/stb.h	4108;"	d
+STB_EXT	inc/stb.h	/^   STB_EXT  = 4,$/;"	e	enum:stb_splitpath_flag
+STB_EXTERN	inc/stb.h	14281;"	d
+STB_EXTERN	inc/stb.h	395;"	d
+STB_EXTERN	inc/stb.h	397;"	d
+STB_EXT_NO_PERIOD	inc/stb.h	/^   STB_EXT_NO_PERIOD = 8,$/;"	e	enum:stb_splitpath_flag
+STB_F	inc/stb.h	12763;"	d
+STB_FALSE	inc/stb.h	332;"	d
+STB_FASTMALLOC	inc/stb.h	250;"	d
+STB_FASTMALLOC	inc/stb.h	256;"	d
+STB_FILE	inc/stb.h	/^   STB_FILE = 2,$/;"	e	enum:stb_splitpath_flag
+STB_FILE_EXT	inc/stb.h	/^   STB_FILE_EXT  = STB_FILE + STB_EXT,$/;"	e	enum:stb_splitpath_flag
+STB_HAS_REGISTRY	inc/stb.h	6494;"	d
+STB_I	inc/stb.h	12768;"	d
+STB_I	inc/stb.h	12772;"	d
+STB_IDEL	inc/stb.h	4137;"	d
+STB_IEMPTY	inc/stb.h	4136;"	d
+STB_IMAGE_IMPLEMENTATION	src/mn_cv_image.c	25;"	d	file:
+STB_IMAGE_WRITE_IMPLEMENTATION	src/mn_cv_image.c	27;"	d	file:
+STB_IMM_INT64	inc/stb.h	357;"	d
+STB_IMM_INT64	inc/stb.h	363;"	d
+STB_IMM_UINT64	inc/stb.h	356;"	d
+STB_IMM_UINT64	inc/stb.h	362;"	d
+STB_MALLOC_HISTORY_COUNT	inc/stb.h	7252;"	d
+STB_MALLOC_WRAPPER	inc/stb.h	247;"	d
+STB_MALLOC_WRAPPER	inc/stb.h	251;"	d
+STB_MALLOC_WRAPPER_DEBUG	inc/stb.h	244;"	d
+STB_MUTEX_NATIVE	inc/stb.h	11547;"	d
+STB_MUTEX_NULL	inc/stb.h	11329;"	d
+STB_PATH	inc/stb.h	/^   STB_PATH = 1,$/;"	e	enum:stb_splitpath_flag
+STB_PATH_FILE	inc/stb.h	/^   STB_PATH_FILE = STB_PATH + STB_FILE,$/;"	e	enum:stb_splitpath_flag
+STB_PTR64	inc/stb.h	370;"	d
+STB_S	inc/stb.h	12769;"	d
+STB_S	inc/stb.h	12773;"	d
+STB_SDEL	inc/stb.h	4251;"	d
+STB_SEMAPHORE_NULL	inc/stb.h	11327;"	d
+STB_SYNC_NULL	inc/stb.h	11330;"	d
+STB_THREADQUEUE_DYNAMIC	inc/stb.h	11920;"	d
+STB_THREADQ_DYNAMIC	inc/stb.h	11389;"	d
+STB_THREADS	inc/stb.h	210;"	d
+STB_THREAD_NULL	inc/stb.h	11328;"	d
+STB_TRUE	inc/stb.h	331;"	d
+STB_UI	inc/stb.h	12764;"	d
+STB_VERSION	inc/stb.h	199;"	d
+STB__	inc/stb.h	3794;"	d
+STB__ARGS	inc/stb.h	3015;"	d
+STB__ARGS	inc/stb.h	3018;"	d
+STB__BIAS	inc/stb.h	483;"	d
+STB__CHUNKS	inc/stb.h	2492;"	d
+STB__CTYPE_double	inc/stb.h	/^   STB__CTYPE_double,$/;"	e	enum:__anon40
+STB__CTYPE_float	inc/stb.h	/^   STB__CTYPE_float,$/;"	e	enum:__anon40
+STB__CTYPE_int	inc/stb.h	/^   STB__CTYPE_int,$/;"	e	enum:__anon40
+STB__CTYPE_string	inc/stb.h	/^   STB__CTYPE_string,$/;"	e	enum:__anon40
+STB__CTYPE_uint	inc/stb.h	/^   STB__CTYPE_uint,$/;"	e	enum:__anon40
+STB__DEBUG	inc/stb.h	1220;"	d
+STB__DEBUG	inc/stb.h	1222;"	d
+STB__DECODE	inc/stb.h	2504;"	d
+STB__DFA_END	inc/stb.h	9072;"	d
+STB__DFA_GOAL	inc/stb.h	9071;"	d
+STB__DFA_MGOAL	inc/stb.h	9073;"	d
+STB__DFA_UNDEF	inc/stb.h	9070;"	d
+STB__DFA_VALID	inc/stb.h	9074;"	d
+STB__DW	inc/stb.h	11446;"	d
+STB__DW	inc/stb.h	12329;"	d
+STB__ENCODE	inc/stb.h	2505;"	d
+STB__FIXSIZE	inc/stb.h	485;"	d
+STB__FIXSIZE	inc/stb.h	489;"	d
+STB__IMPORT	inc/stb.h	11445;"	d
+STB__IMPORT	inc/stb.h	12328;"	d
+STB__INCLUDE_STB_H	inc/stb.h	197;"	d
+STB__LOWER_MASK	inc/stb.h	8223;"	d
+STB__MAGIC	inc/stb.h	8226;"	d
+STB__MATRIX_A	inc/stb.h	8224;"	d
+STB__MAX_DISK_COMMAND	inc/stb.h	12160;"	d
+STB__MAX_SIZE_CLASSES	inc/stb.h	12517;"	d
+STB__MAX_SMALL_SIZE	inc/stb.h	12516;"	d
+STB__MT_IA	inc/stb.h	8220;"	d
+STB__MT_IB	inc/stb.h	8221;"	d
+STB__MT_LEN	inc/stb.h	8205;"	d
+STB__NFA_STOP_GOAL	inc/stb.h	9076;"	d
+STB__NPTR_NODE_LOG2	inc/stb.h	4628;"	d
+STB__NPTR_NODE_MASK	inc/stb.h	4630;"	d
+STB__NPTR_NODE_NUM	inc/stb.h	4629;"	d
+STB__NPTR_NODE_OFFSET	inc/stb.h	4632;"	d
+STB__NPTR_NODE_SHIFT	inc/stb.h	4631;"	d
+STB__NPTR_ROOT_LOG2	inc/stb.h	4624;"	d
+STB__NPTR_ROOT_NUM	inc/stb.h	4625;"	d
+STB__NPTR_ROOT_SHIFT	inc/stb.h	4626;"	d
+STB__PAD	inc/stb.h	482;"	d
+STB__PARAMS	inc/stb.h	3014;"	d
+STB__PARAMS	inc/stb.h	3017;"	d
+STB__PARENT	inc/stb.h	2491;"	d
+STB__RECORD_FILE	inc/stb.h	1214;"	d
+STB__REG_BINARY	inc/stb.h	6546;"	d
+STB__REG_DWORD	inc/stb.h	6547;"	d
+STB__REG_KEY_ALL_ACCESS	inc/stb.h	6515;"	d
+STB__REG_KEY_READ	inc/stb.h	6516;"	d
+STB__REG_OPTION_NON_VOLATILE	inc/stb.h	6514;"	d
+STB__REG_SZ	inc/stb.h	6545;"	d
+STB__SCRAMBLE	inc/stb.h	10432;"	d
+STB__SHA1	inc/stb.h	6293;"	d
+STB__SHA1	inc/stb.h	6309;"	d
+STB__SIG	inc/stb.h	484;"	d
+STB__TRY	inc/stb.h	10450;"	d
+STB__TWIST	inc/stb.h	8225;"	d
+STB__UPPER_MASK	inc/stb.h	8222;"	d
+STB__WINDOWS_PAGE	inc/stb.h	542;"	d
+STB__alloc	inc/stb.h	/^   STB__alloc      = STB__CHUNKS,$/;"	e	enum:__anon10
+STB__chunk_raw	inc/stb.h	/^   STB__chunk_raw  = 4,$/;"	e	enum:__anon10
+STB__chunked	inc/stb.h	/^   STB__chunked    = STB__PARENT,$/;"	e	enum:__anon10
+STB__equal_ptrpair	inc/stb.h	4189;"	d
+STB__level	inc/stb.h	4333;"	d
+STB__nochildren	inc/stb.h	/^   STB__nochildren = 0,$/;"	e	enum:__anon10
+STB__nogcc	inc/stb.h	3822;"	d
+STB__nogcc	inc/stb.h	3824;"	d
+STB__ptr	inc/stb.h	486;"	d
+STB__ptr	inc/stb.h	488;"	d
+STB__skip	inc/stb.h	3796;"	d
+STB__use	inc/stb.h	3795;"	d
+STB_equal	inc/stb.h	4075;"	d
+STB_nocopy	inc/stb.h	3812;"	d
+STB_nodelete	inc/stb.h	3813;"	d
+STB_nofields	inc/stb.h	3814;"	d
+STB_nonullvalue	inc/stb.h	3815;"	d
+STB_noprefix	inc/stb.h	3819;"	d
+STB_nosafe	inc/stb.h	3818;"	d
+STB_nullvalue	inc/stb.h	3816;"	d
+STB_probe_binary_largest	inc/stb.h	/^   STB_probe_binary_largest,$/;"	e	enum:__anon6
+STB_probe_binary_smallest	inc/stb.h	/^   STB_probe_binary_smallest,$/;"	e	enum:__anon6
+STB_probe_open_largest	inc/stb.h	/^   STB_probe_open_largest,$/;"	e	enum:__anon6
+STB_probe_open_smallest	inc/stb.h	/^   STB_probe_open_smallest,$/;"	e	enum:__anon6
+STB_ps_array	inc/stb.h	/^   STB_ps_array  = 2,$/;"	e	enum:__anon24
+STB_ps_bucket	inc/stb.h	/^   STB_ps_bucket = 1,$/;"	e	enum:__anon24
+STB_ps_direct	inc/stb.h	/^   STB_ps_direct = 0,$/;"	e	enum:__anon24
+STB_ps_hash	inc/stb.h	/^   STB_ps_hash   = 3,$/;"	e	enum:__anon24
+STB_safecompare	inc/stb.h	3817;"	d
+STUA_NO_VALUE	inc/stb.h	12989;"	d
+STUA_op_ge	inc/stb.h	/^   STUA_op_shl,   STUA_op_ge,$/;"	e	enum:__anon44
+STUA_op_last	inc/stb.h	/^   STUA_op_last$/;"	e	enum:__anon44
+STUA_op_le	inc/stb.h	/^   STUA_op_shr,   STUA_op_le,$/;"	e	enum:__anon44
+STUA_op_negate	inc/stb.h	/^   STUA_op_negate=129,$/;"	e	enum:__anon44
+STUA_op_shl	inc/stb.h	/^   STUA_op_shl,   STUA_op_ge,$/;"	e	enum:__anon44
+STUA_op_shr	inc/stb.h	/^   STUA_op_shr,   STUA_op_le,$/;"	e	enum:__anon44
+STUA_op_shru	inc/stb.h	/^   STUA_op_shru,$/;"	e	enum:__anon44
+STU__BOX	inc/stb.h	/^   STU__BOX;$/;"	m	struct:__anon46
+STU__BOX	inc/stb.h	/^   STU__BOX;$/;"	m	struct:stu__func
+STU__BOX	inc/stb.h	/^typedef struct stu__box { STU__BOX; } stu__box;$/;"	m	struct:stu__box
+STU__BOX	inc/stb.h	13082;"	d
+STU__C	inc/stb.h	13405;"	d
+STU__CE	inc/stb.h	13411;"	d
+STU__EVAL2	inc/stb.h	13381;"	d
+STU__F	inc/stb.h	13393;"	d
+STU__FB	inc/stb.h	13385;"	d
+STU__HANDLE_BREAK	inc/stb.h	13453;"	d
+STU__I	inc/stb.h	13399;"	d
+STU___boolean	inc/stb.h	/^   STU___boolean  = 7,   STU___error    = 8,$/;"	e	enum:__anon45
+STU___dict	inc/stb.h	/^   STU___function = 5,   STU___dict     = 6,$/;"	e	enum:__anon45
+STU___error	inc/stb.h	/^   STU___boolean  = 7,   STU___error    = 8,$/;"	e	enum:__anon45
+STU___float	inc/stb.h	/^   STU___float    = 1,   STU___int      = 2,$/;"	e	enum:__anon45
+STU___function	inc/stb.h	/^   STU___function = 5,   STU___dict     = 6,$/;"	e	enum:__anon45
+STU___int	inc/stb.h	/^   STU___float    = 1,   STU___int      = 2,$/;"	e	enum:__anon45
+STU___number	inc/stb.h	/^   STU___number   = 3,   STU___string   = 4,$/;"	e	enum:__anon45
+STU___string	inc/stb.h	/^   STU___number   = 3,   STU___string   = 4,$/;"	e	enum:__anon45
+STU__defaultparm	inc/stb.h	/^   STU__defaultparm, STU__seq,$/;"	e	enum:token_names
+STU__negate	inc/stb.h	/^   ST_shru = STUA_op_shru,  STU__negate = STUA_op_negate,$/;"	e	enum:token_names
+STU__seq	inc/stb.h	/^   STU__defaultparm, STU__seq,$/;"	e	enum:token_names
+ST__frame	inc/stb.h	/^   ST_catch,   ST__frame,$/;"	e	enum:token_names
+ST__max_terminals	inc/stb.h	/^   ST__max_terminals,$/;"	e	enum:token_names
+ST__reset_numbering	inc/stb.h	/^   ST__reset_numbering = STUA_op_last,$/;"	e	enum:token_names
+ST_and	inc/stb.h	/^   ST_else,    ST_break,    ST_let,     ST_and, ST_false,$/;"	e	enum:token_names
+ST_as	inc/stb.h	/^   ST_end,     ST_as,       ST_return,  ST_var, ST_func,$/;"	e	enum:token_names
+ST_break	inc/stb.h	/^   ST_else,    ST_break,    ST_let,     ST_and, ST_false,$/;"	e	enum:token_names
+ST_catch	inc/stb.h	/^   ST_catch,   ST__frame,$/;"	e	enum:token_names
+ST_char	inc/stb.h	/^   ST_id, ST_float, ST_decimal, ST_hex, ST_char,ST_string, ST_number,$/;"	e	enum:token_names
+ST_continue	inc/stb.h	/^   ST_elseif,  ST_continue, ST_into,    ST_or,  ST_repeat,$/;"	e	enum:token_names
+ST_decimal	inc/stb.h	/^   ST_id, ST_float, ST_decimal, ST_hex, ST_char,ST_string, ST_number,$/;"	e	enum:token_names
+ST_do	inc/stb.h	/^   ST_then,    ST_do,       ST_in,      ST_ne,  ST_true,$/;"	e	enum:token_names
+ST_else	inc/stb.h	/^   ST_else,    ST_break,    ST_let,     ST_and, ST_false,$/;"	e	enum:token_names
+ST_elseif	inc/stb.h	/^   ST_elseif,  ST_continue, ST_into,    ST_or,  ST_repeat,$/;"	e	enum:token_names
+ST_end	inc/stb.h	/^   ST_end,     ST_as,       ST_return,  ST_var, ST_func,$/;"	e	enum:token_names
+ST_eq	inc/stb.h	/^   ST_if,      ST_while,    ST_for,     ST_eq,  ST_nil,$/;"	e	enum:token_names
+ST_false	inc/stb.h	/^   ST_else,    ST_break,    ST_let,     ST_and, ST_false,$/;"	e	enum:token_names
+ST_float	inc/stb.h	/^   ST_id, ST_float, ST_decimal, ST_hex, ST_char,ST_string, ST_number,$/;"	e	enum:token_names
+ST_for	inc/stb.h	/^   ST_if,      ST_while,    ST_for,     ST_eq,  ST_nil,$/;"	e	enum:token_names
+ST_func	inc/stb.h	/^   ST_end,     ST_as,       ST_return,  ST_var, ST_func,$/;"	e	enum:token_names
+ST_ge	inc/stb.h	/^   ST_shl = STUA_op_shl,    ST_ge  = STUA_op_ge,$/;"	e	enum:token_names
+ST_hex	inc/stb.h	/^   ST_id, ST_float, ST_decimal, ST_hex, ST_char,ST_string, ST_number,$/;"	e	enum:token_names
+ST_id	inc/stb.h	/^   ST_id, ST_float, ST_decimal, ST_hex, ST_char,ST_string, ST_number,$/;"	e	enum:token_names
+ST_if	inc/stb.h	/^   ST_if,      ST_while,    ST_for,     ST_eq,  ST_nil,$/;"	e	enum:token_names
+ST_in	inc/stb.h	/^   ST_then,    ST_do,       ST_in,      ST_ne,  ST_true,$/;"	e	enum:token_names
+ST_into	inc/stb.h	/^   ST_elseif,  ST_continue, ST_into,    ST_or,  ST_repeat,$/;"	e	enum:token_names
+ST_le	inc/stb.h	/^   ST_shr = STUA_op_shr,    ST_le = STUA_op_le,$/;"	e	enum:token_names
+ST_let	inc/stb.h	/^   ST_else,    ST_break,    ST_let,     ST_and, ST_false,$/;"	e	enum:token_names
+ST_ne	inc/stb.h	/^   ST_then,    ST_do,       ST_in,      ST_ne,  ST_true,$/;"	e	enum:token_names
+ST_nil	inc/stb.h	/^   ST_if,      ST_while,    ST_for,     ST_eq,  ST_nil,$/;"	e	enum:token_names
+ST_number	inc/stb.h	/^   ST_id, ST_float, ST_decimal, ST_hex, ST_char,ST_string, ST_number,$/;"	e	enum:token_names
+ST_or	inc/stb.h	/^   ST_elseif,  ST_continue, ST_into,    ST_or,  ST_repeat,$/;"	e	enum:token_names
+ST_repeat	inc/stb.h	/^   ST_elseif,  ST_continue, ST_into,    ST_or,  ST_repeat,$/;"	e	enum:token_names
+ST_return	inc/stb.h	/^   ST_end,     ST_as,       ST_return,  ST_var, ST_func,$/;"	e	enum:token_names
+ST_shl	inc/stb.h	/^   ST_shl = STUA_op_shl,    ST_ge  = STUA_op_ge,$/;"	e	enum:token_names
+ST_shr	inc/stb.h	/^   ST_shr = STUA_op_shr,    ST_le = STUA_op_le,$/;"	e	enum:token_names
+ST_shru	inc/stb.h	/^   ST_shru = STUA_op_shru,  STU__negate = STUA_op_negate,$/;"	e	enum:token_names
+ST_string	inc/stb.h	/^   ST_id, ST_float, ST_decimal, ST_hex, ST_char,ST_string, ST_number,$/;"	e	enum:token_names
+ST_then	inc/stb.h	/^   ST_then,    ST_do,       ST_in,      ST_ne,  ST_true,$/;"	e	enum:token_names
+ST_true	inc/stb.h	/^   ST_then,    ST_do,       ST_in,      ST_ne,  ST_true,$/;"	e	enum:token_names
+ST_var	inc/stb.h	/^   ST_end,     ST_as,       ST_return,  ST_var, ST_func,$/;"	e	enum:token_names
+ST_while	inc/stb.h	/^   ST_if,      ST_while,    ST_for,     ST_eq,  ST_nil,$/;"	e	enum:token_names
+ST_white	inc/stb.h	/^   ST_white,$/;"	e	enum:token_names
+TAILCALL	inc/stb.h	13432;"	d
+TARGET	Makefile	/^TARGET   = out$/;"	m
+TRUE	inc/stb.h	290;"	d
+T__none	inc/stb.h	/^   T__none=128,$/;"	e	enum:token_names
+True	inc/stb.h	240;"	d
+YCbCr_to_RGB_kernel	inc/stb_image.h	/^   void (*YCbCr_to_RGB_kernel)(stbi_uc *out, const stbi_uc *y, const stbi_uc *pcb, const stbi_uc *pcr, int count, int step);$/;"	m	struct:__anon58
+_CRT_NONSTDC_NO_DEPRECATE	inc/stb.h	219;"	d
+_CRT_NONSTDC_NO_DEPRECATE	inc/stb_image_write.h	156;"	d
+_CRT_NON_CONFORMING_SWPRINTFS	inc/stb.h	222;"	d
+_CRT_SECURE_NO_WARNINGS	inc/stb.h	216;"	d
+_CRT_SECURE_NO_WARNINGS	inc/stb_image_write.h	153;"	d
+a	inc/stb.h	/^   void *a;$/;"	m	struct:__anon14
+active	inc/stb.h	/^   stb_uint8 active; \/\/ is this in the active list$/;"	m	struct:__anon30
+add	inc/stb.h	/^   stb_mutex add, remove;$/;"	m	struct:stb__threadqueue
+addend	inc/stb.h	/^   stb_uint32  addend;$/;"	m	struct:__anon12
+all_a	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+alloc	inc/stb.h	/^   int                alloc;$/;"	m	struct:stb__chunk
+allocations	inc/stb.h	/^   short              allocations; \/\/ # outstanding allocations for sizeclass$/;"	m	struct:stb__span
+any_offset	inc/stb.h	/^   int any_offset;$/;"	m	struct:__anon27
+app14_color_transform	inc/stb_image.h	/^   int            app14_color_transform; \/\/ Adobe APP14 tag$/;"	m	struct:__anon58
+array_size	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
+b	inc/stb.h	/^   unsigned short b;$/;"	m	struct:__anon13
+b	inc/stb.h	/^   void *b;$/;"	m	struct:__anon14
+b_mask	inc/stb.h	/^   stb_uint    b_mask;$/;"	m	struct:__anon12
+backpatch	inc/stb.h	/^   void (*backpatch)(struct stbfile *, unsigned int tell, void *block, unsigned int len);$/;"	m	struct:stbfile
+bgindex	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
+bits_per_channel	inc/stb_image.h	/^   int bits_per_channel;$/;"	m	struct:__anon55
+bpp	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon66
+buffer	inc/stb.h	/^   stb_uchar *buffer;$/;"	m	struct:__anon31
+buffer	inc/stb.h	/^   unsigned char *buffer; \/\/ input\/output buffer$/;"	m	struct:stbfile
+buffer_start	inc/stb_image.h	/^   stbi_uc buffer_start[128];$/;"	m	struct:__anon53
+buffered_u8	inc/stb.h	/^   int buffered_u8;$/;"	m	struct:__anon33
+buflen	inc/stb_image.h	/^   int buflen;$/;"	m	struct:__anon53
+calloc	inc/stb.h	451;"	d
+calloc	inc/stb.h	704;"	d
+calloc	inc/stb.h	714;"	d
+channel	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon67
+channel_order	inc/stb_image.h	/^   int channel_order;$/;"	m	struct:__anon55
+channels	inc/mn_cv_image.h	/^   int     channels;$/;"	m	struct:Image
+charset	inc/stb.h	/^   stb_uint32 *charset;$/;"	m	struct:stb_matcher
+chash	inc/stb.h	/^   stb_uchar **chash;$/;"	m	struct:__anon31
+child	inc/stb.h	/^   void *  child;$/;"	m	struct:__anon8
+children	inc/stb.h	/^   stb__memory_leaf *children[STB__NPTR_NODE_NUM];$/;"	m	struct:__anon16
+chunks	inc/stb.h	/^   stb__chunk *chunks;$/;"	m	struct:__anon8
+close	inc/stb.h	/^   void (*close)(struct stbfile *);$/;"	m	struct:stbfile
+closure_data	inc/stb.h	/^      stua_obj closure_data; \/\/ partial-application data$/;"	m	union:stu__func::__anon47
+closure_source	inc/stb.h	/^   stua_obj closure_source;  \/\/ 0 - regular function; 4 - C function$/;"	m	struct:stu__func
+code	inc/stb.h	/^   short     *code;    \/\/ code being compiled$/;"	m	struct:__anon50
+code	inc/stb.h	/^   short *code;$/;"	m	struct:stu__func
+code	inc/stb.h	/^   unsigned int code, range; \/\/ decode$/;"	m	struct:__anon33
+code	inc/stb_image.h	/^   stbi__uint16 code[256];$/;"	m	struct:__anon57
+code_bits	inc/stb_image.h	/^   int            code_bits;   \/\/ number of valid bits$/;"	m	struct:__anon58
+code_buffer	inc/stb_image.h	/^   stbi__uint32   code_buffer; \/\/ jpeg entropy-coded buffer$/;"	m	struct:__anon58
+code_buffer	inc/stb_image.h	/^   stbi__uint32 code_buffer;$/;"	m	struct:__anon62
+codes	inc/stb_image.h	/^   stbi__gif_lzw codes[4096];$/;"	m	struct:__anon69
+coeff	inc/stb_image.h	/^      short   *coeff;   \/\/ progressive only$/;"	m	struct:__anon58::__anon59
+coeff_h	inc/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon58::__anon59
+coeff_w	inc/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon58::__anon59
+color_table	inc/stb_image.h	/^   stbi_uc *color_table;$/;"	m	struct:__anon69
+context	inc/stb_image_write.h	/^   void *context;$/;"	m	struct:__anon1
+count	inc/stb.h	/^   int count, count_deletes;$/;"	m	struct:__anon27
+count	inc/stb.h	/^   int count;$/;"	m	struct:__anon26
+count	inc/stb.h	/^   unsigned short count;$/;"	m	struct:__anon13
+count_deletes	inc/stb.h	/^   int count, count_deletes;$/;"	m	struct:__anon27
+countdown	inc/stb.h	/^   int countdown;$/;"	m	struct:__anon35
+cumfreq	inc/stb.h	/^   unsigned short cumfreq;$/;"	m	struct:__anon34
+cur_x	inc/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon69
+cur_y	inc/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon69
+d	inc/stb.h	/^   void *d;$/;"	m	struct:__anon36
+d	inc/stb.h	/^   void *d;$/;"	m	struct:__anon37
+d	inc/stb.h	/^typedef struct { char d[4]; } stb__4;$/;"	m	struct:__anon3
+d	inc/stb.h	/^typedef struct { char d[8]; } stb__8;$/;"	m	struct:__anon4
+data	inc/mn_cv_image.h	/^   float*  data;$/;"	m	struct:Image
+data	inc/stb.h	/^   char *data;$/;"	m	struct:stb__threadqueue
+data	inc/stb.h	/^   stb__cfg_item *data;$/;"	m	struct:stb_cfg_st
+data	inc/stb.h	/^   stb_arith_symstate_item data[1];$/;"	m	struct:__anon35
+data	inc/stb.h	/^   stua_obj  *data;    \/\/ constants being compiled$/;"	m	struct:__anon50
+data	inc/stb_image.h	/^      stbi_uc *data;$/;"	m	struct:__anon58::__anon59
+data_left	inc/stb.h	/^   int                data_left;$/;"	m	struct:stb__chunk
+dc_pred	inc/stb_image.h	/^      int dc_pred;$/;"	m	struct:__anon58::__anon59
+dct_bfly32o	inc/stb_image.h	2253;"	d
+dct_bfly32o	inc/stb_image.h	2387;"	d
+dct_bfly32o	inc/stb_image.h	2439;"	d
+dct_bfly32o	inc/stb_image.h	2597;"	d
+dct_const	inc/stb_image.h	2225;"	d
+dct_const	inc/stb_image.h	2382;"	d
+dct_interleave16	inc/stb_image.h	2270;"	d
+dct_interleave16	inc/stb_image.h	2389;"	d
+dct_interleave8	inc/stb_image.h	2264;"	d
+dct_interleave8	inc/stb_image.h	2388;"	d
+dct_long_mac	inc/stb_image.h	2420;"	d
+dct_long_mac	inc/stb_image.h	2593;"	d
+dct_long_mul	inc/stb_image.h	2416;"	d
+dct_long_mul	inc/stb_image.h	2592;"	d
+dct_pass	inc/stb_image.h	2275;"	d
+dct_pass	inc/stb_image.h	2390;"	d
+dct_pass	inc/stb_image.h	2447;"	d
+dct_pass	inc/stb_image.h	2598;"	d
+dct_rot	inc/stb_image.h	2229;"	d
+dct_rot	inc/stb_image.h	2383;"	d
+dct_trn16	inc/stb_image.h	2507;"	d
+dct_trn16	inc/stb_image.h	2529;"	d
+dct_trn32	inc/stb_image.h	2508;"	d
+dct_trn32	inc/stb_image.h	2530;"	d
+dct_trn64	inc/stb_image.h	2509;"	d
+dct_trn64	inc/stb_image.h	2531;"	d
+dct_trn8_16	inc/stb_image.h	2553;"	d
+dct_trn8_16	inc/stb_image.h	2588;"	d
+dct_trn8_32	inc/stb_image.h	2554;"	d
+dct_trn8_32	inc/stb_image.h	2589;"	d
+dct_trn8_8	inc/stb_image.h	2552;"	d
+dct_trn8_8	inc/stb_image.h	2587;"	d
+dct_wadd	inc/stb_image.h	2243;"	d
+dct_wadd	inc/stb_image.h	2385;"	d
+dct_wadd	inc/stb_image.h	2429;"	d
+dct_wadd	inc/stb_image.h	2595;"	d
+dct_widen	inc/stb_image.h	2238;"	d
+dct_widen	inc/stb_image.h	2384;"	d
+dct_widen	inc/stb_image.h	2424;"	d
+dct_widen	inc/stb_image.h	2594;"	d
+dct_wsub	inc/stb_image.h	2248;"	d
+dct_wsub	inc/stb_image.h	2386;"	d
+dct_wsub	inc/stb_image.h	2434;"	d
+dct_wsub	inc/stb_image.h	2596;"	d
+deg2rad	inc/stb.h	295;"	d
+delay	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
+delta	inc/stb_image.h	/^   int    delta[17];   \/\/ old 'firstsymbol' - old 'firstcode'$/;"	m	struct:__anon57
+depth	inc/stb_image.h	/^   int depth;$/;"	m	struct:__anon64
+dequant	inc/stb_image.h	/^   stbi__uint16 dequant[4][64];$/;"	m	struct:__anon58
+dfa	inc/stb.h	/^   stb_dfa    * dfa;$/;"	m	struct:stb_matcher
+dfa_mapping	inc/stb.h	/^   stb_uint32 * dfa_mapping;$/;"	m	struct:stb_matcher
+dfa_result	inc/stb.h	/^   stb_int16  * dfa_result;$/;"	m	struct:stb_matcher
+dfa_start	inc/stb.h	/^   stb_int16 dfa_start;$/;"	m	struct:stb_matcher
+dir	inc/stb.h	/^   int   dir;               \/\/ index into dirs[] array$/;"	m	struct:__anon21
+dirs	inc/stb.h	/^   stb_dirtree_dir  *dirs;$/;"	m	struct:__anon22
+does_lex	inc/stb.h	/^   int does_lex;$/;"	m	struct:stb_matcher
+dupes	inc/stb.h	/^   void ***dupes;$/;"	m	struct:stb_dupe
+dval	inc/stb.h	/^      double dval;$/;"	m	union:__anon41::__anon42
+eflags	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
+entries	inc/stb.h	/^   stb__Entry *entries;$/;"	m	struct:__anon43
+entries	inc/stb.h	/^   unsigned short *entries;$/;"	m	struct:__anon13
+eob_run	inc/stb_image.h	/^   int            eob_run;$/;"	m	struct:__anon58
+eof	inc/stb_image.h	/^   int      (*eof)   (void *user);                       \/\/ returns nonzero if we are at end of file\/data$/;"	m	struct:__anon52
+eps	inc/stb.h	/^   stb_uint16 *eps;  \/\/ list of epsilon closures$/;"	m	struct:__anon30
+eq	inc/stb.h	/^   stb_compare_func  eq;$/;"	m	struct:stb_dupe
+errors	inc/stb.h	/^   int   errors;$/;"	m	struct:__anon18
+expanded	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon64
+f	inc/stb.h	/^   FILE *f;  \/\/ file to fread\/fwrite$/;"	m	struct:stbfile
+f	inc/stb.h	/^   FILE *f; \/\/ write the data to this file on close$/;"	m	struct:stb_cfg_st
+f	inc/stb.h	/^   FILE *f;$/;"	m	struct:__anon39
+f	inc/stb.h	/^   stb_thread_func f;$/;"	m	struct:__anon36
+f	inc/stb.h	/^   stb_thread_func f;$/;"	m	struct:__anon37
+f	inc/stb.h	/^   } f;$/;"	m	struct:stu__func	typeref:union:stu__func::__anon47
+fast	inc/stb_image.h	/^   stbi__uint16 fast[1 << STBI__ZFAST_BITS];$/;"	m	struct:__anon61
+fast	inc/stb_image.h	/^   stbi_uc  fast[1 << FAST_BITS];$/;"	m	struct:__anon57
+fast_ac	inc/stb_image.h	/^   stbi__int16 fast_ac[4][1 << FAST_BITS];$/;"	m	struct:__anon58
+file	inc/stb.h	/^   char *file;$/;"	m	struct:__anon23
+file_data	inc/stb.h	/^   char **file_data;$/;"	m	struct:__anon43
+file_len	inc/stb.h	/^   int file_len;$/;"	m	struct:__anon43
+filename	inc/stb.h	/^   char *filename;$/;"	m	struct:__anon39
+filename	inc/stb.h	/^   char *filename;$/;"	m	struct:__anon43
+files	inc/stb.h	/^   char **files;$/;"	m	struct:stb_dirtree2
+files	inc/stb.h	/^   stb_dirtree_file *files;$/;"	m	struct:__anon22
+filesize	inc/stb.h	/^   stb_int64 filesize;$/;"	m	struct:__anon38
+filetime	inc/stb.h	/^   time_t filetime;$/;"	m	struct:__anon38
+first	inc/stb.h	/^   stb__nptr *first; \/\/ address of first nptr pointing to this$/;"	m	struct:stb__st_nptr_target
+first	inc/stb_image.h	/^   stbi_uc first;$/;"	m	struct:__anon68
+first_free	inc/stb.h	/^   void              *first_free;$/;"	m	struct:stb__span
+first_row_filter	inc/stb_image.h	/^static stbi_uc first_row_filter[5] =$/;"	v
+firstcode	inc/stb_image.h	/^   stbi__uint16 firstcode[16];$/;"	m	struct:__anon61
+firstsymbol	inc/stb_image.h	/^   stbi__uint16 firstsymbol[16];$/;"	m	struct:__anon61
+flag	inc/stb.h	/^   int      flag;$/;"	m	struct:__anon20
+flag	inc/stb.h	/^   int      flag;$/;"	m	struct:__anon21
+flag	inc/stb.h	/^   int *flag;$/;"	m	struct:__anon39
+flags	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
+free	inc/stb.h	448;"	d
+free	inc/stb.h	702;"	d
+free	inc/stb.h	715;"	d
+fsize	inc/stb.h	/^   int fsize;$/;"	m	struct:__anon31
+fullpath	inc/stb.h	/^   char *fullpath;$/;"	m	struct:stb_dirtree2
+func	inc/stb.h	/^      stua_obj (*func)(stua_dict *context);$/;"	m	union:stu__func::__anon47
+func	inc/stb_image_write.h	/^   stbi_write_func *func;$/;"	m	struct:__anon1
+func_stack	inc/stb.h	/^static stu__comp_func *func_stack = NULL;$/;"	v
+getbyte	inc/stb.h	/^   int (*getbyte)(struct stbfile *);  \/\/ -1 on EOF$/;"	m	struct:stbfile
+getdata	inc/stb.h	/^   unsigned int (*getdata)(struct stbfile *, void *block, unsigned int len);$/;"	m	struct:stbfile
+goal	inc/stb.h	/^   stb_int16 goal;   \/\/ does reaching this win the prize?$/;"	m	struct:__anon30
+grow_threshhold	inc/stb.h	/^   int grow_threshhold;$/;"	m	struct:__anon27
+growable	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
+guess	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon5
+h	inc/stb_image.h	/^      int h,v;$/;"	m	struct:__anon58::__anon59
+h	inc/stb_image.h	/^   int w,h;$/;"	m	struct:__anon69
+h2	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
+ha	inc/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon58::__anon59
+hash	inc/stb.h	/^   stb_hash_func     hash;$/;"	m	struct:stb_dupe
+hash_shift	inc/stb.h	/^   int hash_shift;$/;"	m	struct:stb_dupe
+hash_size	inc/stb.h	/^   int hash_size;$/;"	m	struct:stb_dupe
+hash_table	inc/stb.h	/^   void ***hash_table;$/;"	m	struct:stb_dupe
+hashmask	inc/stb.h	/^   stb_uint    hashmask;$/;"	m	struct:__anon31
+have_data	inc/stb.h	/^   int have_data;$/;"	m	struct:__anon38
+hd	inc/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon58::__anon59
+head	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
+head_blockers	inc/stb.h	/^   int head_blockers;  \/\/ number of threads blocking--used to know whether to release(avail)$/;"	m	struct:stb__threadqueue
+height	inc/mn_cv_image.h	/^   int     height;$/;"	m	struct:Image
+hs	inc/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon60
+hsz	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon66
+huff_ac	inc/stb_image.h	/^   stbi__huffman huff_ac[4];$/;"	m	struct:__anon58
+huff_dc	inc/stb_image.h	/^   stbi__huffman huff_dc[4];$/;"	m	struct:__anon58
+i	inc/stb.h	/^   unsigned int i;$/;"	m	union:__anon2
+id	inc/stb_image.h	/^      int id;$/;"	m	struct:__anon58::__anon59
+idata	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon64
+idct_block_kernel	inc/stb_image.h	/^   void (*idct_block_kernel)(stbi_uc *out, int out_stride, short data[64]);$/;"	m	struct:__anon58
+img_buffer	inc/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon53
+img_buffer_end	inc/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon53
+img_buffer_original	inc/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon53
+img_buffer_original_end	inc/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon53
+img_comp	inc/stb_image.h	/^   } img_comp[4];$/;"	m	struct:__anon58	typeref:struct:__anon58::__anon59
+img_h_max	inc/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon58
+img_mcu_h	inc/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon58
+img_mcu_w	inc/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon58
+img_mcu_x	inc/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon58
+img_mcu_y	inc/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon58
+img_n	inc/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon53
+img_out_n	inc/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon53
+img_v_max	inc/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon58
+img_x	inc/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon53
+img_y	inc/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon53
+indata	inc/stb.h	/^   unsigned char *indata, *inend; \/\/ input buffer$/;"	m	struct:stbfile
+inend	inc/stb.h	/^   unsigned char *indata, *inend; \/\/ input buffer$/;"	m	struct:stbfile
+ineq	inc/stb.h	/^   stb_compare_func  ineq;$/;"	m	struct:stb_dupe
+int16	inc/stb.h	/^   typedef   signed short  int16;$/;"	t
+int32	inc/stb.h	/^   typedef   signed int    int32;$/;"	t
+int32	inc/stb.h	/^   typedef   signed long   int32;$/;"	t
+int8	inc/stb.h	/^   typedef   signed char   int8 ;$/;"	t
+io	inc/stb_image.h	/^   stbi_io_callbacks io;$/;"	m	struct:__anon53
+io_user_data	inc/stb_image.h	/^   void *io_user_data;$/;"	m	struct:__anon53
+is_dir	inc/stb.h	/^   int is_dir;$/;"	m	struct:__anon38
+is_valid	inc/stb.h	/^   int is_valid;$/;"	m	struct:__anon38
+isdotdirname	inc/stb.h	/^static int isdotdirname(char *name)$/;"	f
+item_size	inc/stb.h	/^   int item_size;$/;"	m	struct:stb__threadqueue
+ival	inc/stb.h	/^      int ival;$/;"	m	union:__anon41::__anon42
+jfif	inc/stb_image.h	/^   int            jfif;$/;"	m	struct:__anon58
+key	inc/stb.h	/^   char *key;$/;"	m	struct:__anon19
+large_bmap	inc/stb.h	/^   stb_uint16  *large_bmap;$/;"	m	struct:__anon12
+last_modified	inc/stb.h	/^   time_t   last_modified;$/;"	m	struct:__anon20
+last_modified	inc/stb.h	/^   time_t   last_modified;$/;"	m	struct:__anon21
+len	inc/stb.h	/^   int                start, len;$/;"	m	struct:stb__span
+len	inc/stb.h	/^   int len, limit;$/;"	m	struct:__anon11
+len	inc/stb.h	/^   int len;$/;"	m	struct:__anon39
+len_output	inc/stb.h	/^   int *len_output;$/;"	m	struct:__anon39
+length	inc/stb_image.h	/^   stbi__uint32 length;$/;"	m	struct:__anon63
+length_id	inc/stb.h	/^   int length_id;$/;"	m	struct:__anon31
+lflags	inc/stb_image.h	/^   int lflags;$/;"	m	struct:__anon69
+limit	inc/stb.h	/^   int len, limit;$/;"	m	struct:__anon11
+line	inc/stb.h	/^   int  line;$/;"	m	struct:__anon23
+line	inc/stb.h	/^   int line;$/;"	m	struct:__anon41
+line0	inc/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon60
+line1	inc/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon60
+line_index	inc/stb.h	/^   unsigned short *line_index;$/;"	m	struct:__anon43
+line_size	inc/stb_image.h	/^   int line_size;$/;"	m	struct:__anon69
+linebuf	inc/stb_image.h	/^      stbi_uc *linebuf;$/;"	m	struct:__anon58::__anon59
+list	inc/stb.h	/^   unsigned short     list; \/\/ 1..256 free; 257..511 sizeclass; 0=large block$/;"	m	struct:stb__span
+load_jpeg_image	inc/stb_image.h	/^static stbi_uc *load_jpeg_image(stbi__jpeg *z, int *out_x, int *out_y, int *comp, int req_comp)$/;"	f
+loaded_file	inc/stb.h	/^   char *loaded_file;   \/\/ this needs to be freed$/;"	m	struct:stb_cfg_st
+locals	inc/stb.h	/^   stua_dict *locals;$/;"	m	struct:__anon50
+lpal	inc/stb_image.h	/^   stbi_uc lpal[256][4];$/;"	m	struct:__anon69
+ma	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+main	src/main.c	/^int main(void)$/;"	f
+make_string	inc/stb.h	/^static stua_obj make_string(char *z, int len)$/;"	f
+malloc	inc/stb.h	447;"	d
+malloc	inc/stb.h	700;"	d
+malloc	inc/stb.h	712;"	d
+malloc_base	inc/stb.h	/^static void * malloc_base(void *context, size_t size, stb__alloc_type t, int align)$/;"	f
+map	inc/stb.h	/^   unsigned short map;$/;"	m	struct:__anon13
+marker	inc/stb_image.h	/^   unsigned char  marker;      \/\/ marker seen while filling entropy buffer$/;"	m	struct:__anon58
+mask	inc/stb.h	/^   int size, mask;$/;"	m	struct:__anon27
+match	inc/stb.h	/^   stb_int16  match; \/\/ character\/set to match$/;"	m	struct:__anon29
+match_start	inc/stb.h	/^   int match_start;$/;"	m	struct:stb_matcher
+max	inc/stb.h	282;"	d
+max_x	inc/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon69
+max_y	inc/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon69
+maxcode	inc/stb_image.h	/^   int maxcode[17];$/;"	m	struct:__anon61
+maxcode	inc/stb_image.h	/^   unsigned int maxcode[18];$/;"	m	struct:__anon57
+maxval	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon5
+mb	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+mg	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+min	inc/stb.h	281;"	d
+minval	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon5
+mn_cv_add_pixel	src/mn_cv_image.c	/^static void mn_cv_add_pixel(struct Image img, int x, int y, int c, float value)$/;"	f	file:
+mn_cv_free_image	src/mn_cv_image.c	/^void mn_cv_free_image(struct Image m)$/;"	f
+mn_cv_get_pixel	src/mn_cv_image.c	/^static float mn_cv_get_pixel(struct Image m, int x, int y, int c)$/;"	f	file:
+mn_cv_get_pixel_extend	src/mn_cv_image.c	/^static float mn_cv_get_pixel_extend(struct Image m, int x, int y, int c)$/;"	f	file:
+mn_cv_load_image	src/mn_cv_image.c	/^mn_cv_load_image(char* filename, int width, int height, int c)$/;"	f
+mn_cv_load_image_color	src/mn_cv_image.c	/^mn_cv_load_image_color(char* filename, int w, int h)$/;"	f
+mn_cv_load_image_stb	src/mn_cv_image.c	/^mn_cv_load_image_stb(char* filename, int channels_in) {$/;"	f
+mn_cv_make_empty_image	src/mn_cv_image.c	/^mn_cv_make_empty_image(int width, int height, int channels)$/;"	f
+mn_cv_make_image	src/mn_cv_image.c	/^mn_cv_make_image(int width, int height, int channels)$/;"	f
+mn_cv_mul_pixel	src/mn_cv_image.c	/^static void mn_cv_mul_pixel(struct Image img, int x, int y, int c, float value)$/;"	f	file:
+mn_cv_save_image_png	src/mn_cv_image.c	/^void mn_cv_save_image_png(struct Image im, const char *name)$/;"	f
+mn_cv_set_pixel	src/mn_cv_image.c	/^static void mn_cv_set_pixel(struct Image* img, int x, int y, int c, float value)$/;"	f	file:
+mode	inc/stb.h	/^   int mode, step;$/;"	m	struct:__anon5
+mr	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+multiplicand	inc/stb.h	/^   stb_uint    multiplicand;$/;"	m	struct:__anon12
+mutex	inc/stb.h	/^   stb_mutex mutex;   \/\/ mutex while tweaking state$/;"	m	struct:stb__sync
+name	inc/stb.h	/^   char *name;              \/\/ name relative to path$/;"	m	struct:__anon21
+name	inc/stb.h	/^   char *name;$/;"	m	struct:__anon18
+next	inc/stb.h	/^   struct stb__chunk *next;$/;"	m	struct:stb__chunk	typeref:struct:stb__chunk::stb__chunk
+next	inc/stb.h	/^   struct stb__span  *next, *prev;$/;"	m	struct:stb__span	typeref:struct:stb__span::stb__span
+next	inc/stb.h	/^   struct stb__st_nptr *next;   \/\/ next pointer with same target$/;"	m	struct:stb__st_nptr	typeref:struct:stb__st_nptr::stb__st_nptr
+next	inc/stb.h	/^   void *  next;$/;"	m	struct:__anon7
+next	inc/stb.h	/^   void *  next;$/;"	m	struct:__anon8
+next_in_block	inc/stb.h	/^   struct stb__st_nptr *next_in_block;$/;"	m	struct:stb__st_nptr	typeref:struct:stb__st_nptr::stb__st_nptr
+next_in_block	inc/stb.h	/^   struct stb__st_nptr_target *next_in_block;$/;"	m	struct:stb__st_nptr_target	typeref:struct:stb__st_nptr_target::stb__st_nptr_target
+node	inc/stb.h	/^   stb_uint16 node;  \/\/ output node to go to$/;"	m	struct:__anon29
+nodes	inc/stb.h	/^   stb_nfa_node *nodes;$/;"	m	struct:stb_matcher
+nomore	inc/stb_image.h	/^   int            nomore;      \/\/ flag if we saw a marker so must stop$/;"	m	struct:__anon58
+non_local_refs	inc/stb.h	/^   short     *non_local_refs;$/;"	m	struct:__anon50
+nonempty	inc/stb.h	/^   stb_semaphore nonempty, nonfull;$/;"	m	struct:stb__threadqueue
+nonfull	inc/stb.h	/^   stb_semaphore nonempty, nonfull;$/;"	m	struct:stb__threadqueue
+num_bits	inc/stb_image.h	/^   int num_bits;$/;"	m	struct:__anon62
+num_channels	inc/stb_image.h	/^   int num_channels;$/;"	m	struct:__anon55
+num_charset	inc/stb.h	/^   int num_charset;$/;"	m	struct:stb_matcher
+num_files	inc/stb.h	/^   int      num_files;$/;"	m	struct:__anon20
+num_param	inc/stb.h	/^   int num_param;$/;"	m	struct:stu__func
+num_subdir	inc/stb.h	/^   int num_subdir;$/;"	m	struct:stb_dirtree2
+num_sym	inc/stb.h	/^   int num_sym;$/;"	m	struct:__anon35
+num_words_per_dfa	inc/stb.h	/^   int num_words_per_dfa;$/;"	m	struct:stb_matcher
+numthreads	inc/stb.h	/^   int numthreads;$/;"	m	struct:stb__workqueue
+offset	inc/stb.h	/^   int offset;$/;"	m	struct:__anon39
+offset	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon66
+old_out	inc/stb_image.h	/^   stbi_uc *out, *old_out;             \/\/ output buffer (always 4 components)$/;"	m	struct:__anon69
+order	inc/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon58
+out	inc/stb.h	/^   stb_nfa_edge *out;$/;"	m	struct:__anon30
+out	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon64
+out	inc/stb_image.h	/^   stbi_uc *out, *old_out;             \/\/ output buffer (always 4 components)$/;"	m	struct:__anon69
+outliterals	inc/stb.h	/^static void outliterals(stb_uchar *in, int numlit)$/;"	f
+output	inc/stb.h	/^   stb_uchar *output;$/;"	m	struct:__anon39
+output	inc/stb.h	/^   stbfile *output;$/;"	m	struct:__anon33
+p	inc/stb.h	/^   void * p;$/;"	m	union:__anon2
+p	inc/stb.h	/^   void *p;$/;"	m	struct:__anon23
+p	inc/stb.h	/^   void *p[1];$/;"	m	struct:__anon26
+p	inc/stb.h	/^   void *p[STB_BUCKET_SIZE];$/;"	m	struct:__anon25
+pal	inc/stb_image.h	/^   stbi_uc  pal[256][4];$/;"	m	struct:__anon69
+param	inc/stb.h	/^   stua_obj *param;  \/\/ list of parameter strings$/;"	m	struct:stu__func
+parent	inc/stb.h	/^   stb__alloc *parent;$/;"	m	struct:__anon9
+parse	inc/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon69
+path	inc/stb.h	/^   char   * path;           \/\/ full path from passed-in root$/;"	m	struct:__anon20
+pending_ffs	inc/stb.h	/^   int pending_ffs;$/;"	m	struct:__anon33
+pending_literals	inc/stb.h	/^   int pending_literals; \/\/ bytes not-quite output but counted in start$/;"	m	struct:__anon31
+pointers	inc/stb.h	/^   stb__nptr *pointers;$/;"	m	struct:__anon15
+population	inc/stb.h	/^   int population;$/;"	m	struct:stb_dupe
+pow2	inc/stb.h	/^   unsigned int pow2;$/;"	m	struct:__anon35
+prefix	inc/stb_image.h	/^   stbi__int16 prefix;$/;"	m	struct:__anon68
+prev	inc/stb.h	/^   struct stb__span  *next, *prev;$/;"	m	struct:stb__span	typeref:struct:stb__span::
+prev	inc/stb.h	/^   struct stb__st_nptr **prev;  \/\/ prev pointer with same target, address of 'next' field (or first)$/;"	m	struct:stb__st_nptr	typeref:struct:stb__st_nptr::stb__st_nptr
+prevn	inc/stb.h	/^   void ** prevn;$/;"	m	struct:__anon7
+prevn	inc/stb.h	/^   void ** prevn;$/;"	m	struct:__anon8
+progressive	inc/stb_image.h	/^   int            progressive;$/;"	m	struct:__anon58
+ptr	inc/stb.h	/^      void *ptr;$/;"	m	union:stbfile::__anon32
+ptr	inc/stb.h	/^   void *ptr;   \/\/ address of actual pointer$/;"	m	struct:stb__st_nptr
+ptr	inc/stb.h	/^   void *ptr;   \/\/ address of target$/;"	m	struct:stb__st_nptr_target
+ptr	inc/stb.h	/^   void *ptr;$/;"	m	struct:__anon46
+putbyte	inc/stb.h	/^   int (*putbyte)(struct stbfile *, int byte);$/;"	m	struct:stbfile
+putdata	inc/stb.h	/^   unsigned int (*putdata)(struct stbfile *, void *block, unsigned int len);$/;"	m	struct:stbfile
+rad2deg	inc/stb.h	298;"	d
+range	inc/stb.h	/^   unsigned int code, range; \/\/ decode$/;"	m	struct:__anon33
+range_high	inc/stb.h	/^   unsigned int range_high;$/;"	m	struct:__anon33
+range_low	inc/stb.h	/^   unsigned int range_low;$/;"	m	struct:__anon33
+ratio	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
+raw_coeff	inc/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon58::__anon59
+raw_data	inc/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon58::__anon59
+read	inc/stb_image.h	/^   int      (*read)  (void *user,char *data,int size);   \/\/ fill 'data' with 'size' bytes.  return number of bytes actually read$/;"	m	struct:__anon52
+read_from_callbacks	inc/stb_image.h	/^   int read_from_callbacks;$/;"	m	struct:__anon53
+readdir_raw	inc/stb.h	/^static char **readdir_raw(char *dir, int return_subdirs, char *mask)$/;"	f
+realloc	inc/stb.h	449;"	d
+realloc	inc/stb.h	701;"	d
+realloc	inc/stb.h	713;"	d
+regex	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	m	struct:__anon49
+rehash_threshhold	inc/stb.h	/^   int rehash_threshhold;$/;"	m	struct:__anon27
+release	inc/stb.h	/^   stb_semaphore release; \/\/ semaphore wake up waiting threads$/;"	m	struct:stb__sync
+relpath	inc/stb.h	/^   char *relpath;$/;"	m	struct:stb_dirtree2
+remove	inc/stb.h	/^   stb_mutex add, remove;$/;"	m	struct:stb__threadqueue
+resample	inc/stb_image.h	/^   resample_row_func resample;$/;"	m	struct:__anon60
+resample_row_1	inc/stb_image.h	/^static stbi_uc *resample_row_1(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
+resample_row_func	inc/stb_image.h	/^typedef stbi_uc *(*resample_row_func)(stbi_uc *out, stbi_uc *in0, stbi_uc *in1,$/;"	t
+resample_row_hv_2_kernel	inc/stb_image.h	/^   stbi_uc *(*resample_row_hv_2_kernel)(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs);$/;"	m	struct:__anon58
+resize_image	src/mn_cv_image.c	/^resize_image(struct Image im, int width, int height)$/;"	f
+restart_interval	inc/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon58
+result	inc/stb.h	/^   stb_uchar **result;$/;"	m	struct:__anon39
+return_val	inc/stb.h	/^   volatile void **return_val;$/;"	m	struct:__anon36
+retval	inc/stb.h	/^   volatile void **retval;$/;"	m	struct:__anon37
+rgb	inc/stb_image.h	/^   int            rgb;$/;"	m	struct:__anon58
+rm	Makefile	/^rm       = rm -f$/;"	m
+s	inc/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon58
+s	inc/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon64
+samples	inc/stb.h	/^   unsigned short samples;$/;"	m	struct:__anon34
+scan_n	inc/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon58
+sem	inc/stb.h	/^   stb_semaphore sem;$/;"	m	struct:__anon36
+shrink_threshhold	inc/stb.h	/^   int shrink_threshhold;$/;"	m	struct:__anon27
+signature	inc/stb.h	/^   unsigned int signature;$/;"	m	struct:__anon11
+size	inc/stb.h	/^   int  size;$/;"	m	struct:__anon23
+size	inc/stb.h	/^   int size, mask;$/;"	m	struct:__anon27
+size	inc/stb.h	/^   int size;           \/\/ physical size of buffer in bytes$/;"	m	struct:__anon31
+size	inc/stb.h	/^   stb_int64 size;      \/\/ size, max 4GB$/;"	m	struct:__anon21
+size	inc/stb.h	/^   unsigned int (*size)(struct stbfile *);$/;"	m	struct:stbfile
+size	inc/stb_image.h	/^   stbi_uc  size[257];$/;"	m	struct:__anon57
+size	inc/stb_image.h	/^   stbi_uc  size[288];$/;"	m	struct:__anon61
+size	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon67
+size_log2	inc/stb.h	/^   int size_log2;$/;"	m	struct:stb_dupe
+skip	inc/stb_image.h	/^   void     (*skip)  (void *user,int n);                 \/\/ skip the next 'n' bytes, or 'unget' the last -n bytes if negative$/;"	m	struct:__anon52
+small_bmap	inc/stb.h	/^   stb_uint8   small_bmap[16];$/;"	m	struct:__anon12
+sofar	inc/stb.h	/^   int sofar;   \/\/ total threads that hit it$/;"	m	struct:stb__sync
+spec_end	inc/stb_image.h	/^   int            spec_end;$/;"	m	struct:__anon58
+spec_start	inc/stb_image.h	/^   int            spec_start;$/;"	m	struct:__anon58
+start	inc/stb.h	/^   int                start, len;$/;"	m	struct:stb__span
+start	inc/stb.h	/^   int start;          \/\/ bytes of data already output$/;"	m	struct:__anon31
+start	inc/stb.h	/^   stb_mutex start;   \/\/ mutex to prevent starting again before finishing previous$/;"	m	struct:stb__sync
+start_node	inc/stb.h	/^   stb_uint16 start_node;$/;"	m	struct:stb_matcher
+start_x	inc/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon69
+start_y	inc/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon69
+stat_out	inc/stb.h	/^   stb_bgstat *stat_out;$/;"	m	struct:__anon39
+stb_	inc/stb.h	/^void stb_(char *s, ...)$/;"	f
+stb_	inc/stb.h	1216;"	d
+stb__4	inc/stb.h	/^typedef struct { char d[4]; } stb__4;$/;"	t	typeref:struct:__anon3
+stb__8	inc/stb.h	/^typedef struct { char d[8]; } stb__8;$/;"	t	typeref:struct:__anon4
+stb__Entry	inc/stb.h	/^} stb__Entry;$/;"	t	typeref:struct:__anon41
+stb__FileEntry	inc/stb.h	/^} stb__FileEntry;$/;"	t	typeref:struct:__anon43
+stb__abackpatch	inc/stb.h	/^static void stb__abackpatch(stbfile *f, unsigned int where, void *data, unsigned int len)$/;"	f
+stb__aclose	inc/stb.h	/^static void stb__aclose(stbfile *f)$/;"	f
+stb__add_alloc	inc/stb.h	/^static void stb__add_alloc(void *p, int sz, char *file, int line)$/;"	f
+stb__add_edge	inc/stb.h	/^static void stb__add_edge(stb_matcher *matcher, int from, int to, int type)$/;"	f
+stb__add_epsilon	inc/stb.h	/^static void stb__add_epsilon(stb_matcher *matcher, int from, int to)$/;"	f
+stb__add_if_inactive	inc/stb.h	/^static stb_uint16 * stb__add_if_inactive(stb_matcher *m, stb_uint16 *list, int n)$/;"	f
+stb__add_node	inc/stb.h	/^static int stb__add_node(stb_matcher *matcher)$/;"	f
+stb__add_section	inc/stb.h	/^void stb__add_section(char *buffer, char *data, int curlen, int newlen)$/;"	f
+stb__alloc	inc/stb.h	/^} stb__alloc;$/;"	t	typeref:struct:__anon8
+stb__alloc_chunk	inc/stb.h	/^static void * stb__alloc_chunk(stb__alloc *src, int size, int align, int pre_align)$/;"	f
+stb__alloc_count	inc/stb.h	/^int stb__alloc_count;$/;"	v
+stb__alloc_global	inc/stb.h	/^static stb__alloc stb__alloc_global =$/;"	v
+stb__alloc_history	inc/stb.h	/^stb_malloc_record stb__alloc_history[STB_MALLOC_HISTORY_COUNT];$/;"	v
+stb__alloc_limit	inc/stb.h	/^static int stb__alloc_size, stb__alloc_limit, stb__alloc_mask;$/;"	v
+stb__alloc_mask	inc/stb.h	/^static int stb__alloc_size, stb__alloc_limit, stb__alloc_mask;$/;"	v
+stb__alloc_matcher	inc/stb.h	/^static stb_matcher *stb__alloc_matcher(void)$/;"	f
+stb__alloc_pages	inc/stb.h	/^static stb__span *stb__alloc_pages(int num)$/;"	f
+stb__alloc_pages_raw	inc/stb.h	12334;"	d
+stb__alloc_size	inc/stb.h	/^static int stb__alloc_size, stb__alloc_limit, stb__alloc_mask;$/;"	v
+stb__alloc_span	inc/stb.h	/^static stb__span *stb__alloc_span(int pagecount)$/;"	f
+stb__alloc_type	inc/stb.h	/^} stb__alloc_type;$/;"	t	typeref:enum:__anon10
+stb__allocations	inc/stb.h	/^stb_malloc_record *stb__allocations;$/;"	v
+stb__aputbyte	inc/stb.h	/^static int stb__aputbyte(stbfile *f, int ch)$/;"	f
+stb__aputdata	inc/stb.h	/^static unsigned int stb__aputdata(stbfile *f, void *data, unsigned int len)$/;"	f
+stb__arith_carry	inc/stb.h	/^static void stb__arith_carry(stb_arith *a)$/;"	f
+stb__arith_flush	inc/stb.h	/^static void stb__arith_flush(stb_arith *a)$/;"	f
+stb__arith_putbyte	inc/stb.h	/^static void stb__arith_putbyte(stb_arith *a, int byte)$/;"	f
+stb__arr	inc/stb.h	/^} stb__arr;$/;"	t	typeref:struct:__anon11
+stb__arr_addlen	inc/stb.h	3154;"	d
+stb__arr_addlen	inc/stb.h	3158;"	d
+stb__arr_addlen_	inc/stb.h	/^void stb__arr_addlen_(void **p, int size, int addlen  STB__PARAMS)$/;"	f
+stb__arr_context	inc/stb.h	/^static void *stb__arr_context;$/;"	v
+stb__arr_copy	inc/stb.h	3149;"	d
+stb__arr_copy_	inc/stb.h	/^void * stb__arr_copy_(void *p, int elem_size)$/;"	f
+stb__arr_deleten	inc/stb.h	3155;"	d
+stb__arr_deleten	inc/stb.h	3161;"	d
+stb__arr_deleten_	inc/stb.h	/^void stb__arr_deleten_(void **pp, int size, int i, int n  STB__PARAMS)$/;"	f
+stb__arr_insertn	inc/stb.h	3156;"	d
+stb__arr_insertn	inc/stb.h	3162;"	d
+stb__arr_insertn_	inc/stb.h	/^void stb__arr_insertn_(void **pp, int size, int i, int n  STB__PARAMS)$/;"	f
+stb__arr_malloc	inc/stb.h	/^static void * stb__arr_malloc(int size)$/;"	f
+stb__arr_setlen	inc/stb.h	3153;"	d
+stb__arr_setlen	inc/stb.h	3159;"	d
+stb__arr_setlen_	inc/stb.h	/^void stb__arr_setlen_(void **pp, int size, int newlen  STB__PARAMS)$/;"	f
+stb__arr_setsize	inc/stb.h	3152;"	d
+stb__arr_setsize	inc/stb.h	3160;"	d
+stb__arr_setsize_	inc/stb.h	/^void stb__arr_setsize_(void **pp, int size, int limit  STB__PARAMS)$/;"	f
+stb__arrsize_	inc/stb.h	/^static void stb__arrsize_(void **pp, int size, int limit, int len  STB__PARAMS)$/;"	f
+stb__asize	inc/stb.h	/^static unsigned int stb__asize(stbfile *f) { return stb_arr_len(f->buffer); }$/;"	f
+stb__barrier	inc/stb.h	/^static unsigned char *stb__barrier;$/;"	v
+stb__barrier2	inc/stb.h	/^static unsigned char *stb__barrier2;$/;"	v
+stb__barrier3	inc/stb.h	/^static unsigned char *stb__barrier3;$/;"	v
+stb__barrier4	inc/stb.h	/^static unsigned char *stb__barrier4;$/;"	v
+stb__bclose	inc/stb.h	/^static void stb__bclose(stbfile *s)$/;"	f
+stb__bgetbyte	inc/stb.h	/^static int stb__bgetbyte(stbfile *s)$/;"	f
+stb__bgetdata	inc/stb.h	/^static unsigned int stb__bgetdata(stbfile *s, void *buffer, unsigned int len)$/;"	f
+stb__bsize	inc/stb.h	/^static unsigned int stb__bsize(stbfile *s) { return s->inend - s->buffer; }$/;"	f
+stb__bst_noparent	inc/stb.h	4323;"	d
+stb__bst_parent	inc/stb.h	4322;"	d
+stb__btell	inc/stb.h	/^static unsigned int stb__btell(stbfile *s) { return s->indata - s->buffer; }$/;"	f
+stb__calloc	inc/stb.h	/^   static void *stb__calloc(size_t n, size_t sz, char *file, int line)$/;"	f
+stb__cfg_dir	inc/stb.h	/^static char stb__cfg_dir[512];$/;"	v
+stb__cfg_item	inc/stb.h	/^} stb__cfg_item;$/;"	t	typeref:struct:__anon19
+stb__cfg_sig	inc/stb.h	/^static char *stb__cfg_sig = "sTbCoNfIg!\\0\\0";$/;"	v
+stb__charcmp	inc/stb.h	/^int stb__charcmp(const void *a, const void *b)$/;"	f
+stb__charcmpoffset	inc/stb.h	/^static int stb__intcmpoffset, stb__charcmpoffset, stb__strcmpoffset;$/;"	v
+stb__check	inc/stb.h	455;"	d
+stb__check	inc/stb.h	460;"	d
+stb__check2	inc/stb.h	/^   static void stb__check2(void *p, int sz, char *file, int line)$/;"	f
+stb__chunk	inc/stb.h	/^typedef struct stb__chunk$/;"	s
+stb__chunk	inc/stb.h	/^} stb__chunk;$/;"	t	typeref:struct:stb__chunk
+stb__chunked	inc/stb.h	/^} stb__chunked;$/;"	t	typeref:struct:__anon9
+stb__chunks	inc/stb.h	2508;"	d
+stb__class_base	inc/stb.h	/^static unsigned char stb__class_base[32];$/;"	v
+stb__class_shift	inc/stb.h	/^static unsigned char stb__class_shift[32];$/;"	v
+stb__clear	inc/stb.h	/^static void stb__clear(stb_matcher *m, stb_uint16 *list)$/;"	f
+stb__clear_goalcheck	inc/stb.h	/^static int stb__clear_goalcheck(stb_matcher *m, stb_uint16 *list)$/;"	f
+stb__coalesce	inc/stb.h	/^static stb__span *stb__coalesce(stb__span *a, stb__span *b)$/;"	f
+stb__compare	inc/stb.h	/^static stb_compare_func stb__compare;$/;"	v
+stb__constant_file_hash	inc/stb.h	/^static stb_sdict *stb__constant_file_hash;$/;"	v
+stb__constant_get_entry	inc/stb.h	/^stb__Entry *stb__constant_get_entry(char *filename, int line, int type)$/;"	f
+stb__constant_parse	inc/stb.h	/^static void stb__constant_parse(stb__FileEntry *f, int i)$/;"	f
+stb__dc_offset	inc/stb.h	/^static int stb__dc_offset;$/;"	v
+stb__dc_queue	inc/stb.h	/^static stb__disk_command stb__dc_queue[STB__MAX_DISK_COMMAND];$/;"	v
+stb__dealloc_pages_raw	inc/stb.h	12335;"	d
+stb__define_sort	inc/stb.h	8521;"	d
+stb__dircount	inc/stb.h	/^static int stb__dircount, stb__dircount_mask, stb__showfile;$/;"	v
+stb__dircount_mask	inc/stb.h	/^static int stb__dircount, stb__dircount_mask, stb__showfile;$/;"	v
+stb__dirtree_add_dir	inc/stb.h	/^static void stb__dirtree_add_dir(char *path, time_t last, stb_dirtree *active)$/;"	f
+stb__dirtree_add_file	inc/stb.h	/^static void stb__dirtree_add_file(char *name, int dir, stb_int64 size, time_t last, stb_dirtree *active)$/;"	f
+stb__dirtree_free_raw	inc/stb.h	/^static void stb__dirtree_free_raw(stb_dirtree *d)$/;"	f
+stb__dirtree_load_db	inc/stb.h	/^static void stb__dirtree_load_db(char *filename, stb_dirtree *data, char *dir)$/;"	f
+stb__dirtree_save_db	inc/stb.h	/^static void stb__dirtree_save_db(char *filename, stb_dirtree *data, char *root)$/;"	f
+stb__dirtree_scandir	inc/stb.h	/^static void stb__dirtree_scandir(char *path, time_t last_time, stb_dirtree *active)$/;"	f
+stb__dirtree_update_db	inc/stb.h	/^static int stb__dirtree_update_db(stb_dirtree *db, stb_dirtree *active)$/;"	f
+stb__disk_command	inc/stb.h	/^} stb__disk_command;$/;"	t	typeref:struct:__anon39
+stb__diskio	inc/stb.h	/^static stb_workqueue *stb__diskio;$/;"	v
+stb__diskio_mutex	inc/stb.h	/^static stb_mutex stb__diskio_mutex;$/;"	v
+stb__double_constant	inc/stb.h	/^double stb__double_constant(char *file, int line, double x)$/;"	f
+stb__doublecmp	inc/stb.h	/^int stb__doublecmp(const void *a, const void *b)$/;"	f
+stb__doublecmpoffset	inc/stb.h	/^static int stb__floatcmpoffset, stb__doublecmpoffset;$/;"	v
+stb__dout	inc/stb.h	/^static stb_uchar *stb__dout;$/;"	v
+stb__dupe_compare	inc/stb.h	/^static int stb__dupe_compare(const void *a, const void *b)$/;"	f
+stb__eps_closure	inc/stb.h	/^static stb_uint16 * stb__eps_closure(stb_matcher *m, stb_uint16 *list)$/;"	f
+stb__fbackpatch	inc/stb.h	/^static void stb__fbackpatch(stbfile *f, unsigned int where, void *buffer, unsigned int len)$/;"	f
+stb__fclose	inc/stb.h	/^static void         stb__fclose(stbfile *f) { fclose(f->f); }$/;"	f
+stb__fclose2	inc/stb.h	/^static void stb__fclose2(stbfile *f)$/;"	f
+stb__fgetbyte	inc/stb.h	/^static int stb__fgetbyte(stbfile *f) { return fgetc(f->f); }$/;"	f
+stb__fgetdata	inc/stb.h	/^static unsigned int stb__fgetdata(stbfile *f, void *buffer, unsigned int len) { return fread(buffer,1,len,f->f); }$/;"	f
+stb__file	inc/stb.h	/^static char *stb__file;$/;"	v
+stb__file_data	inc/stb.h	/^} stb__file_data;$/;"	t	typeref:struct:__anon18
+stb__files	inc/stb.h	/^static stb_ptrmap *stb__files;$/;"	v
+stb__find_qstring	inc/stb.h	/^static int stb__find_qstring(char *candidate, char *qstring, int qlen, int insensitive)$/;"	f
+stb__firstpage	inc/stb.h	/^static int stb__firstpage, stb__lastpage;$/;"	v
+stb__floatcmp	inc/stb.h	/^int stb__floatcmp(const void *a, const void *b)$/;"	f
+stb__floatcmpoffset	inc/stb.h	/^static int stb__floatcmpoffset, stb__doublecmpoffset;$/;"	v
+stb__fopen	inc/stb.h	914;"	d
+stb__fopen	inc/stb.h	917;"	d
+stb__fputbyte	inc/stb.h	/^static int stb__fputbyte(stbfile *f, int ch) { return fputc(ch, f->f)==0; }$/;"	f
+stb__fputdata	inc/stb.h	/^static unsigned int stb__fputdata(stbfile *f, void *buffer, unsigned int len) { return fwrite(buffer,1,len,f->f); }$/;"	f
+stb__free	inc/stb.h	/^   void stb__free(void *p, char *file, int line)$/;"	f
+stb__free_final	inc/stb.h	/^   static void stb__free_final(void *p)$/;"	f
+stb__free_span	inc/stb.h	/^static void stb__free_span(stb__span *s)$/;"	f
+stb__from_utf8	inc/stb.h	/^stb__wchar *stb__from_utf8(char *str)$/;"	f
+stb__from_utf8_alt	inc/stb.h	/^stb__wchar *stb__from_utf8_alt(char *str)$/;"	f
+stb__fsize	inc/stb.h	/^static unsigned int stb__fsize(stbfile *f) { return stb_filelen(f->f); }$/;"	f
+stb__ftell	inc/stb.h	/^static unsigned int stb__ftell(stbfile *f) { return ftell(f->f); }$/;"	f
+stb__get16	inc/stb.h	3397;"	d
+stb__get16	inc/stb.h	3399;"	d
+stb__get16_slow	inc/stb.h	3395;"	d
+stb__get_context	inc/stb.h	/^static stb__alloc * stb__get_context(void *context)$/;"	f
+stb__get_dfa_node	inc/stb.h	/^stb_int16 stb__get_dfa_node(stb_matcher *m, stb_uint16 *list)$/;"	f
+stb__get_nonempty_sizeclass	inc/stb.h	/^stb__span *stb__get_nonempty_sizeclass(int c)$/;"	f
+stb__get_sourcefile_path	inc/stb.h	/^char *stb__get_sourcefile_path(char *file)$/;"	f
+stb__grow_alloc	inc/stb.h	/^static void stb__grow_alloc(void)$/;"	f
+stb__hashfind	inc/stb.h	/^static int stb__hashfind(void *p)$/;"	f
+stb__hashsize	inc/stb.h	/^static  stb_uint stb__hashsize = 32768;$/;"	v
+stb__hc	inc/stb.h	10413;"	d
+stb__hc2	inc/stb.h	10414;"	d
+stb__hc3	inc/stb.h	10415;"	d
+stb__history_pos	inc/stb.h	/^int stb__history_pos;$/;"	v
+stb__historyfind	inc/stb.h	/^static int stb__historyfind(void *p)$/;"	f
+stb__identify	inc/stb.h	/^static stb__alloc_type stb__identify(void *p)$/;"	f
+stb__in2	inc/stb.h	10190;"	d
+stb__in3	inc/stb.h	10191;"	d
+stb__in4	inc/stb.h	10192;"	d
+stb__init_sizeclass	inc/stb.h	/^static void stb__init_sizeclass(void)$/;"	f
+stb__insert_alloc	inc/stb.h	/^static void stb__insert_alloc(stb__alloc *src, stb__alloc *s)$/;"	f
+stb__insert_nochild	inc/stb.h	/^static void stb__insert_nochild(stb__alloc *src, stb__nochildren *s)$/;"	f
+stb__int_constant	inc/stb.h	/^int    stb__int_constant(char *file, int line, int x)$/;"	f
+stb__intcmp	inc/stb.h	/^int stb__intcmp(const void *a, const void *b)$/;"	f
+stb__intcmpoffset	inc/stb.h	/^static int stb__intcmpoffset, stb__charcmpoffset, stb__strcmpoffset;$/;"	v
+stb__introspect	inc/stb.h	/^void stb__introspect(char *filename)$/;"	f
+stb__io_add	inc/stb.h	/^int stb__io_add(char *fname, FILE *f, int off, int len, stb_uchar *out, stb_uchar **result, int *olen, int *flag, stb_bgstat *stat)$/;"	f
+stb__io_error	inc/stb.h	/^static void * stb__io_error(stb__disk_command *dc)$/;"	f
+stb__io_init	inc/stb.h	/^void stb__io_init(void)$/;"	f
+stb__io_task	inc/stb.h	/^static void * stb__io_task(void *p)$/;"	f
+stb__lastpage	inc/stb.h	/^static int stb__firstpage, stb__lastpage;$/;"	v
+stb__lex_reset	inc/stb.h	/^static void stb__lex_reset(stb_matcher *matcher)$/;"	f
+stb__line	inc/stb.h	/^static int   stb__line;$/;"	v
+stb__lit	inc/stb.h	/^static void stb__lit(stb_uchar *data, stb_uint length)$/;"	f
+stb__log_active	inc/stb.h	/^static int stb__log_active=1, stb__log_fileline=1;$/;"	v
+stb__log_fileline	inc/stb.h	/^static int stb__log_active=1, stb__log_fileline=1;$/;"	v
+stb__log_filename	inc/stb.h	/^char *stb__log_filename = "stb.log";$/;"	v
+stb__log_filename	inc/stb.h	/^char *stb__log_filename = "temp.log";$/;"	v
+stb__malloc	inc/stb.h	/^   void * stb__malloc(int sz, char *file, int line)$/;"	f
+stb__malloc_failure	inc/stb.h	/^   int stb__malloc_failure;$/;"	v
+stb__malloc_final	inc/stb.h	/^   static void *stb__malloc_final(int sz)$/;"	f
+stb__malloc_iter	inc/stb.h	/^   static int stb__malloc_wait=(1 << 30), stb__malloc_next_wait = (1 << 30), stb__malloc_iter;$/;"	v
+stb__malloc_next_wait	inc/stb.h	/^   static int stb__malloc_wait=(1 << 30), stb__malloc_next_wait = (1 << 30), stb__malloc_iter;$/;"	v
+stb__malloc_wait	inc/stb.h	/^   static int stb__malloc_wait=(1 << 30), stb__malloc_next_wait = (1 << 30), stb__malloc_iter;$/;"	v
+stb__match	inc/stb.h	/^static void stb__match(stb_uchar *data, stb_uint length)$/;"	f
+stb__match_qstring	inc/stb.h	/^static int stb__match_qstring(char *candidate, char *qstring, int qlen, int insensitive)$/;"	f
+stb__matcher_dfa	inc/stb.h	/^static int stb__matcher_dfa(stb_matcher *m, char *str_c, int *len)$/;"	f
+stb__memory_leaf	inc/stb.h	/^} stb__memory_leaf;$/;"	t	typeref:struct:__anon15
+stb__memory_node	inc/stb.h	/^} stb__memory_node;$/;"	t	typeref:struct:__anon16
+stb__memtab_root	inc/stb.h	/^stb__memory_node *stb__memtab_root[STB__NPTR_ROOT_NUM];$/;"	v
+stb__mt_buffer	inc/stb.h	/^unsigned long stb__mt_buffer[STB__MT_LEN];$/;"	v
+stb__mt_index	inc/stb.h	/^int stb__mt_index = STB__MT_LEN*sizeof(unsigned long)+1;$/;"	v
+stb__nc	inc/stb.h	10448;"	d
+stb__nobackpatch	inc/stb.h	/^static void stb__nobackpatch(stbfile *f, unsigned int where, void *buffer, unsigned int len) { assert(0); }$/;"	f
+stb__nochildren	inc/stb.h	/^} stb__nochildren;$/;"	t	typeref:struct:__anon7
+stb__nogetbyte	inc/stb.h	/^static int stb__nogetbyte(stbfile *f) { assert(0); return -1; }$/;"	f
+stb__nogetdata	inc/stb.h	/^static unsigned int stb__nogetdata(stbfile *f, void *buffer, unsigned int len) { assert(0); return 0; }$/;"	f
+stb__noputbyte	inc/stb.h	/^static int stb__noputbyte(stbfile *f, int ch) { assert(0); return 0; }$/;"	f
+stb__noputdata	inc/stb.h	/^static unsigned int stb__noputdata(stbfile *f, void *buffer, unsigned int len) { assert(0); return 0; }$/;"	f
+stb__nptr	inc/stb.h	/^} stb__nptr;$/;"	t	typeref:struct:stb__st_nptr
+stb__nptr_alloc	inc/stb.h	/^static void * stb__nptr_alloc(int size)$/;"	f
+stb__nptr_block	inc/stb.h	/^void stb__nptr_block(void *address, int len, void (*function)(stb__memory_leaf *f, int datum, void *start, void *end), int datum)$/;"	f
+stb__nptr_delete_pointers	inc/stb.h	/^static void stb__nptr_delete_pointers(stb__memory_leaf *f, int offset, void *start, void *end)$/;"	f
+stb__nptr_delete_targets	inc/stb.h	/^static void stb__nptr_delete_targets(stb__memory_leaf *f, int offset, void *start, void *end)$/;"	f
+stb__nptr_find_leaf	inc/stb.h	/^static stb__memory_leaf *stb__nptr_find_leaf(void *mem)$/;"	f
+stb__nptr_find_pointer	inc/stb.h	/^static stb__nptr *stb__nptr_find_pointer(void *ptr, int force)$/;"	f
+stb__nptr_find_target	inc/stb.h	/^static stb__nptr_target *stb__nptr_find_target(void *target, int force)$/;"	f
+stb__nptr_free	inc/stb.h	/^static void stb__nptr_free(void *p)$/;"	f
+stb__nptr_make_leaf	inc/stb.h	/^static stb__memory_leaf *stb__nptr_make_leaf(void *mem)$/;"	f
+stb__nptr_move_pointers	inc/stb.h	/^static void stb__nptr_move_pointers(stb__memory_leaf *f, int offset, void *start, void *end)$/;"	f
+stb__nptr_move_targets	inc/stb.h	/^static void stb__nptr_move_targets(stb__memory_leaf *f, int offset, void *start, void *end)$/;"	f
+stb__nptr_target	inc/stb.h	/^} stb__nptr_target;$/;"	t	typeref:struct:stb__st_nptr_target
+stb__opt	inc/stb.h	/^static int stb__opt(stb_matcher *m, int n)$/;"	f
+stb__optimize	inc/stb.h	/^static void stb__optimize(stb_matcher *m)$/;"	f
+stb__out	inc/stb.h	/^static stb_uchar *stb__out;$/;"	v
+stb__outbytes	inc/stb.h	/^static stb_uint   stb__outbytes;$/;"	v
+stb__outfile	inc/stb.h	/^static FILE      *stb__outfile;$/;"	v
+stb__page_address	inc/stb.h	12427;"	d
+stb__page_number	inc/stb.h	12426;"	d
+stb__page_shift	inc/stb.h	12424;"	d
+stb__page_size	inc/stb.h	12425;"	d
+stb__pages_for_class	inc/stb.h	/^static unsigned char stb__pages_for_class[STB__MAX_SIZE_CLASSES];$/;"	v
+stb__parent	inc/stb.h	2507;"	d
+stb__perfect_prehash	inc/stb.h	/^static void stb__perfect_prehash(stb_perfect *p, stb_uint x, stb_uint16 *a, stb_uint16 *b)$/;"	f
+stb__perfect_rand	inc/stb.h	/^static unsigned long stb__perfect_rand(void)$/;"	f
+stb__prevn	inc/stb.h	/^static void *** stb__prevn(void *p)$/;"	f
+stb__print	inc/stb.h	/^static void stb__print(char *s)$/;"	f
+stb__print_one	inc/stb.h	/^static void stb__print_one(void *handle, char *s, int len)$/;"	f
+stb__ptrpair	inc/stb.h	/^} stb__ptrpair;$/;"	t	typeref:struct:__anon14
+stb__ptrpair_del	inc/stb.h	/^static stb__ptrpair stb__ptrpair_del   = { (void *) 2, (void *) 2 };$/;"	v
+stb__ptrpair_empty	inc/stb.h	/^static stb__ptrpair stb__ptrpair_empty = { (void *) 1, (void *) 1 };$/;"	v
+stb__qsort_strcmp	inc/stb.h	/^int stb__qsort_strcmp(const void *a, const void *b)$/;"	f
+stb__qsort_stricmp	inc/stb.h	/^int stb__qsort_stricmp(const void *a, const void *b)$/;"	f
+stb__rand_seed	inc/stb.h	/^static unsigned long stb__rand_seed=0;$/;"	v
+stb__realloc	inc/stb.h	/^   void * stb__realloc(void *p, int sz, char *file, int line)$/;"	f
+stb__realloc_final	inc/stb.h	/^   static void *stb__realloc_final(void *p, int sz, int old_sz)$/;"	f
+stb__realloc_raw	inc/stb.h	/^static void * stb__realloc_raw(void *p, int sz)$/;"	f
+stb__rec_max	inc/stb.h	/^int stb__rec_max=0x7fffffff;$/;"	v
+stb__record_fileline	inc/stb.h	/^int  stb__record_fileline(char *f, int n)$/;"	f
+stb__reg_parse	inc/stb.h	/^static char *stb__reg_parse(stb_matcher *matcher, int start, char *regex, stb_uint16 *end)$/;"	f
+stb__reg_parse_alt	inc/stb.h	/^static char *stb__reg_parse_alt(stb_matcher *matcher, int start, char *regex, stb_uint16 *end)$/;"	f
+stb__remove_alloc	inc/stb.h	/^static void stb__remove_alloc(int n, char *file, int line)$/;"	f
+stb__renorm_decoder	inc/stb.h	/^static void stb__renorm_decoder(stb_arith *a)$/;"	f
+stb__renorm_encoder	inc/stb.h	/^static void stb__renorm_encoder(stb_arith *a)$/;"	f
+stb__running_adler	inc/stb.h	/^static stb_uint32 stb__running_adler;$/;"	v
+stb__set_span_for_page	inc/stb.h	/^static void stb__set_span_for_page(stb__span *s)$/;"	f
+stb__setchunks	inc/stb.h	2511;"	d
+stb__setparent	inc/stb.h	2510;"	d
+stb__sha1	inc/stb.h	/^static void stb__sha1(stb_uchar *chunk, stb_uint h[5])$/;"	f
+stb__showfile	inc/stb.h	/^static int stb__dircount, stb__dircount_mask, stb__showfile;$/;"	v
+stb__signature	inc/stb.h	/^static char stb__signature[12] = { 's', 'T', 'b', 'D', 'i', 'R', 't', 'R', 'e', 'E', '0', '2' };$/;"	v
+stb__size_for_class	inc/stb.h	/^static           int stb__size_for_class[STB__MAX_SIZE_CLASSES];$/;"	v
+stb__sizeclass	inc/stb.h	/^static int stb__sizeclass(size_t sz)$/;"	f
+stb__slot	inc/stb.h	/^} stb__slot;$/;"	t	typeref:struct:__anon13
+stb__slot_compare	inc/stb.h	/^static int stb__slot_compare(const void *p, const void *q)$/;"	f
+stb__smemset	inc/stb.h	12606;"	d
+stb__smemset	inc/stb.h	12608;"	d
+stb__smemset	inc/stb.h	12610;"	d
+stb__sort_chunks	inc/stb.h	/^static void stb__sort_chunks(stb__alloc *src)$/;"	f
+stb__source_path	inc/stb.h	/^char *stb__source_path;$/;"	v
+stb__span	inc/stb.h	/^typedef struct stb__span$/;"	s
+stb__span	inc/stb.h	/^} stb__span;  \/\/ 24$/;"	t	typeref:struct:stb__span
+stb__span_alloc	inc/stb.h	/^static stb__span *stb__span_alloc(void)$/;"	f
+stb__span_end	inc/stb.h	/^static stb__span *stb__span_first, *stb__span_end;$/;"	v
+stb__span_first	inc/stb.h	/^static stb__span *stb__span_first, *stb__span_end;$/;"	v
+stb__span_for_page	inc/stb.h	/^static stb__span **stb__span_for_page;$/;"	v
+stb__span_free	inc/stb.h	/^static stb__span *stb__span_free=NULL;$/;"	v
+stb__spanlist	inc/stb.h	/^static stb__span *stb__spanlist[512];$/;"	v
+stb__spanlist_add	inc/stb.h	/^static void stb__spanlist_add(int n, stb__span *s)$/;"	f
+stb__spanlist_unlink	inc/stb.h	/^static void stb__spanlist_unlink(stb__span *s)$/;"	f
+stb__splitpath_raw	inc/stb.h	/^static char *stb__splitpath_raw(char *buffer, char *path, int flag)$/;"	f
+stb__st_nptr	inc/stb.h	/^typedef struct stb__st_nptr$/;"	s
+stb__st_nptr_target	inc/stb.h	/^typedef struct stb__st_nptr_target$/;"	s
+stb__stat	inc/stb.h	5131;"	d
+stb__stat	inc/stb.h	5133;"	d
+stb__strcmpoffset	inc/stb.h	/^static int stb__intcmpoffset, stb__charcmpoffset, stb__strcmpoffset;$/;"	v
+stb__strdup	inc/stb.h	/^   char * stb__strdup(char *s, char *file, int line)$/;"	f
+stb__string_constant	inc/stb.h	/^char * stb__string_constant(char *file, int line, char *x)$/;"	f
+stb__stua_nesting	inc/stb.h	/^int stb__stua_nesting;$/;"	v
+stb__sync	inc/stb.h	/^struct stb__sync$/;"	s
+stb__sync_release	inc/stb.h	/^void stb__sync_release(stb_sync s)$/;"	f
+stb__t1	inc/stb.h	/^volatile float stb__t1=1, stb__t2;$/;"	v
+stb__t2	inc/stb.h	/^volatile float stb__t1=1, stb__t2;$/;"	v
+stb__temp	inc/stb.h	/^void * stb__temp(void *b, int b_sz, int want_sz)$/;"	f
+stb__testsize16	inc/stb.h	/^   typedef char stb__testsize16[sizeof(int16)==2];$/;"	t
+stb__testsize2_16	inc/stb.h	/^typedef char stb__testsize2_16[sizeof(stb_uint16)==2 ? 1 : -1];$/;"	t
+stb__testsize2_32	inc/stb.h	/^typedef char stb__testsize2_32[sizeof(stb_uint32)==4 ? 1 : -1];$/;"	t
+stb__testsize2_64	inc/stb.h	/^typedef char stb__testsize2_64[sizeof(stb_uint64)==8 ? 1 : -1];$/;"	t
+stb__testsize2_ptr	inc/stb.h	/^typedef char stb__testsize2_ptr[sizeof(char *) == 4];$/;"	t
+stb__testsize2_ptr	inc/stb.h	/^typedef char stb__testsize2_ptr[sizeof(char *) == 8];$/;"	t
+stb__testsize2_uinta	inc/stb.h	/^typedef char stb__testsize2_uinta[sizeof(stb_uinta)==sizeof(char*) ? 1 : -1];$/;"	t
+stb__testsize32	inc/stb.h	/^   typedef char stb__testsize32[sizeof(int32)==4];$/;"	t
+stb__thread	inc/stb.h	/^} stb__thread;$/;"	t	typeref:struct:__anon36
+stb__thread_run	inc/stb.h	/^static void stb__thread_run(void *t)$/;"	f
+stb__thread_sleep	inc/stb.h	/^static void   stb__thread_sleep(int ms)          { Sleep(ms); }$/;"	f
+stb__thread_workloop	inc/stb.h	/^static void *stb__thread_workloop(void *p)$/;"	f
+stb__threadmutex	inc/stb.h	/^static stb_mutex stb__threadmutex, stb__workmutex;$/;"	v
+stb__threadmutex_init	inc/stb.h	/^static void stb__threadmutex_init(void)$/;"	f
+stb__threadq_add_raw	inc/stb.h	/^int stb__threadq_add_raw(stb_threadqueue *tq2, void *input, int block)$/;"	f
+stb__threadq_get_raw	inc/stb.h	/^int stb__threadq_get_raw(stb_threadqueue *tq2, void *output, int block)$/;"	f
+stb__threadq_grow	inc/stb.h	/^int stb__threadq_grow(volatile stb_threadqueue *tq)$/;"	f
+stb__threadqueue	inc/stb.h	/^struct stb__threadqueue$/;"	s
+stb__to_utf8	inc/stb.h	/^char *stb__to_utf8(stb__wchar *str)$/;"	f
+stb__tq_wrap	inc/stb.h	/^static int stb__tq_wrap(volatile stb_threadqueue *z, int p)$/;"	f
+stb__try_chunk	inc/stb.h	/^static void * stb__try_chunk(stb__chunk *c, int size, int align, int pre_align)$/;"	f
+stb__update_page_range	inc/stb.h	/^static void stb__update_page_range(int first, int last)$/;"	f
+stb__varlen_xform	inc/stb.h	5611;"	d
+stb__wait	inc/stb.h	/^static void stb__wait(int n)$/;"	f
+stb__wait	inc/stb.h	11434;"	d
+stb__wchar	inc/stb.h	/^typedef unsigned short stb__wchar;$/;"	t
+stb__wild_parse	inc/stb.h	/^static char *stb__wild_parse(stb_matcher *matcher, int start, char *str, stb_uint16 *end)$/;"	f
+stb__wildmatch_raw	inc/stb.h	/^int stb__wildmatch_raw(char *expr, char *candidate, int search, int insensitive)$/;"	f
+stb__wildmatch_raw2	inc/stb.h	/^int stb__wildmatch_raw2(char *expr, char *candidate, int search, int insensitive)$/;"	f
+stb__window	inc/stb.h	/^static int stb__window = 0x40000; \/\/ 256K$/;"	v
+stb__windows	inc/stb.h	915;"	d
+stb__windows	inc/stb.h	918;"	d
+stb__work_global	inc/stb.h	/^static stb_workqueue *stb__work_global;$/;"	v
+stb__work_maxitems	inc/stb.h	/^static int stb__work_maxitems = STB_THREADQUEUE_DYNAMIC;$/;"	v
+stb__work_raw	inc/stb.h	/^static int stb__work_raw(stb_workqueue *q, stb_thread_func f, void *d, volatile void **return_code, stb_sync rel)$/;"	f
+stb__workinfo	inc/stb.h	/^} stb__workinfo;$/;"	t	typeref:struct:__anon37
+stb__workmutex	inc/stb.h	/^static stb_mutex stb__threadmutex, stb__workmutex;$/;"	v
+stb__workq_numthreads	inc/stb.h	/^static void stb__workq_numthreads(stb_workqueue *q, int n)$/;"	f
+stb__workqueue	inc/stb.h	/^struct stb__workqueue$/;"	s
+stb__write	inc/stb.h	/^static void stb__write(unsigned char v)$/;"	f
+stb_adler32	inc/stb.h	/^stb_uint stb_adler32(stb_uint adler32, stb_uchar *buffer, stb_uint buflen)$/;"	f
+stb_alloc_alignment	inc/stb.h	/^int stb_alloc_alignment   = -16;$/;"	v
+stb_alloc_chunk_size	inc/stb.h	/^int stb_alloc_chunk_size  = 65536;$/;"	v
+stb_alloc_count_alloc	inc/stb.h	/^int stb_alloc_count_alloc = 0;$/;"	v
+stb_alloc_count_free	inc/stb.h	/^int stb_alloc_count_free  = 0;$/;"	v
+stb_append_to_file	inc/stb.h	/^void stb_append_to_file(char *filename, char *s, ...)$/;"	f
+stb_arith	inc/stb.h	/^} stb_arith;$/;"	t	typeref:struct:__anon33
+stb_arith_decode_advance	inc/stb.h	/^void stb_arith_decode_advance(stb_arith *a, unsigned int totalfreq, unsigned int freq, unsigned int cumfreq)$/;"	f
+stb_arith_decode_advance_log2	inc/stb.h	/^void stb_arith_decode_advance_log2(stb_arith *a, unsigned int totalfreq2, unsigned int freq, unsigned int cumfreq)$/;"	f
+stb_arith_decode_byte	inc/stb.h	/^int  stb_arith_decode_byte(stb_arith *a)$/;"	f
+stb_arith_decode_close	inc/stb.h	/^stbfile *stb_arith_decode_close(stb_arith *a)$/;"	f
+stb_arith_decode_value	inc/stb.h	/^unsigned int stb_arith_decode_value(stb_arith *a, unsigned int totalfreq)$/;"	f
+stb_arith_decode_value_log2	inc/stb.h	/^unsigned int stb_arith_decode_value_log2(stb_arith *a, unsigned int totalfreq2)$/;"	f
+stb_arith_encode	inc/stb.h	/^void stb_arith_encode(stb_arith *a, unsigned int totalfreq, unsigned int freq, unsigned int cumfreq)$/;"	f
+stb_arith_encode_byte	inc/stb.h	/^void stb_arith_encode_byte(stb_arith *a, int byte)$/;"	f
+stb_arith_encode_close	inc/stb.h	/^stbfile *stb_arith_encode_close(stb_arith *a)$/;"	f
+stb_arith_encode_log2	inc/stb.h	/^void stb_arith_encode_log2(stb_arith *a, unsigned int totalfreq2, unsigned int freq, unsigned int cumfreq)$/;"	f
+stb_arith_init_encode	inc/stb.h	/^void stb_arith_init_encode(stb_arith *a, stbfile *out)$/;"	f
+stb_arith_state_create	inc/stb.h	/^stb_arith_symstate *stb_arith_state_create(int num_sym)$/;"	f
+stb_arith_state_rescale	inc/stb.h	/^static void stb_arith_state_rescale(stb_arith_symstate *s)$/;"	f
+stb_arith_symstate	inc/stb.h	/^} stb_arith_symstate;$/;"	t	typeref:struct:__anon35
+stb_arith_symstate_item	inc/stb.h	/^} stb_arith_symstate_item;$/;"	t	typeref:struct:__anon34
+stb_arr__addn	inc/stb.h	3091;"	d
+stb_arr__grow	inc/stb.h	3088;"	d
+stb_arr_add	inc/stb.h	3034;"	d
+stb_arr_addn	inc/stb.h	3098;"	d
+stb_arr_atleast	inc/stb.h	3127;"	d
+stb_arr_check	inc/stb.h	3051;"	d
+stb_arr_check	inc/stb.h	3054;"	d
+stb_arr_check2	inc/stb.h	3052;"	d
+stb_arr_check2	inc/stb.h	3055;"	d
+stb_arr_copy	inc/stb.h	3131;"	d
+stb_arr_delete	inc/stb.h	3110;"	d
+stb_arr_deleten	inc/stb.h	3107;"	d
+stb_arr_empty	inc/stb.h	3033;"	d
+stb_arr_end	inc/stb.h	3085;"	d
+stb_arr_fastdelete	inc/stb.h	3113;"	d
+stb_arr_for	inc/stb.h	3136;"	d
+stb_arr_free	inc/stb.h	3148;"	d
+stb_arr_free_	inc/stb.h	/^void stb_arr_free_(void **pp)$/;"	f
+stb_arr_insert	inc/stb.h	3104;"	d
+stb_arr_insertn	inc/stb.h	3101;"	d
+stb_arr_last	inc/stb.h	3082;"	d
+stb_arr_lastn	inc/stb.h	3063;"	d
+stb_arr_len	inc/stb.h	3061;"	d
+stb_arr_len2	inc/stb.h	3062;"	d
+stb_arr_makevalid	inc/stb.h	3075;"	d
+stb_arr_malloc	inc/stb.h	/^void stb_arr_malloc(void **target, void *context)$/;"	f
+stb_arr_malloc_parent	inc/stb.h	/^void *stb_arr_malloc_parent(void *p)$/;"	f
+stb_arr_pop	inc/stb.h	3079;"	d
+stb_arr_push	inc/stb.h	3035;"	d
+stb_arr_setlen	inc/stb.h	3070;"	d
+stb_arr_setsize	inc/stb.h	3124;"	d
+stb_arr_signature	inc/stb.h	3044;"	d
+stb_arr_storage	inc/stb.h	3134;"	d
+stb_arr_valid	inc/stb.h	3066;"	d
+stb_array_block_alloc	inc/stb.h	/^void **stb_array_block_alloc(int count, int blocksize)$/;"	f
+stb_arrcount	inc/stb.h	1056;"	d
+stb_arrcurmax	inc/stb.h	3120;"	d
+stb_arrcurmax2	inc/stb.h	3121;"	d
+stb_arrhead	inc/stb.h	3047;"	d
+stb_arrhead2	inc/stb.h	3048;"	d
+stb_backpatch	inc/stb.h	/^void stb_backpatch(stbfile *f, unsigned int tell, void *buffer, unsigned int len)$/;"	f
+stb_barrier	inc/stb.h	/^void stb_barrier(void)$/;"	f
+stb_bgio_read	inc/stb.h	/^int stb_bgio_read(char *filename, int offset, int len, stb_uchar **result, int *olen)$/;"	f
+stb_bgio_read_to	inc/stb.h	/^int stb_bgio_read_to(char *filename, int offset, int len, stb_uchar *buffer, int *olen)$/;"	f
+stb_bgio_readf	inc/stb.h	/^int stb_bgio_readf(FILE *f, int offset, int len, stb_uchar **result, int *olen)$/;"	f
+stb_bgio_readf_to	inc/stb.h	/^int stb_bgio_readf_to(FILE *f, int offset, int len, stb_uchar *buffer, int *olen)$/;"	f
+stb_bgio_stat	inc/stb.h	/^STB_EXTERN int stb_bgio_stat    (char *filename, stb_bgstat *result)$/;"	f
+stb_bgstat	inc/stb.h	/^} stb_bgstat;$/;"	t	typeref:struct:__anon38
+stb_big16	inc/stb.h	1415;"	d
+stb_big32	inc/stb.h	1413;"	d
+stb_bitcount	inc/stb.h	/^int stb_bitcount(unsigned int a)$/;"	f
+stb_bitreverse	inc/stb.h	/^unsigned int stb_bitreverse(unsigned int n)$/;"	f
+stb_bitreverse8	inc/stb.h	/^unsigned int stb_bitreverse8(unsigned char n)$/;"	f
+stb_bitset	inc/stb.h	/^typedef stb_uint32 stb_bitset;$/;"	t
+stb_bitset_clearall	inc/stb.h	8633;"	d
+stb_bitset_clearbit	inc/stb.h	8637;"	d
+stb_bitset_disjoint	inc/stb.h	/^int stb_bitset_disjoint(stb_bitset *p0, stb_bitset *p1, int len)$/;"	f
+stb_bitset_disjoint_0	inc/stb.h	/^int stb_bitset_disjoint_0(stb_bitset *p0, stb_bitset *p1, int len)$/;"	f
+stb_bitset_eq	inc/stb.h	/^int stb_bitset_eq(stb_bitset *p0, stb_bitset *p1, int len)$/;"	f
+stb_bitset_getlist	inc/stb.h	/^int *stb_bitset_getlist(stb_bitset *out, int start, int end)$/;"	f
+stb_bitset_new	inc/stb.h	/^stb_bitset *stb_bitset_new(int value, int len)$/;"	f
+stb_bitset_setall	inc/stb.h	8634;"	d
+stb_bitset_setbit	inc/stb.h	8636;"	d
+stb_bitset_subset	inc/stb.h	/^int stb_bitset_subset(stb_bitset *bigger, stb_bitset *smaller, int len)$/;"	f
+stb_bitset_testbit	inc/stb.h	8638;"	d
+stb_bitset_union	inc/stb.h	/^stb_bitset *stb_bitset_union(stb_bitset *p0, stb_bitset *p1, int len)$/;"	f
+stb_bitset_unioneq_changed	inc/stb.h	/^int stb_bitset_unioneq_changed(stb_bitset *p0, stb_bitset *p1, int len)$/;"	f
+stb_box_face_vertex_axis_side	inc/stb.h	/^int stb_box_face_vertex_axis_side(int face_number, int vertex_number, int axis)$/;"	f
+stb_bst	inc/stb.h	4578;"	d
+stb_bst_base	inc/stb.h	4335;"	d
+stb_bst_fields	inc/stb.h	4325;"	d
+stb_bst_fields_parent	inc/stb.h	4329;"	d
+stb_bst_find	inc/stb.h	4557;"	d
+stb_bst_parent	inc/stb.h	4580;"	d
+stb_bst_raw	inc/stb.h	4569;"	d
+stb_bucket_create2	inc/stb.h	/^static stb_ps_bucket *stb_bucket_create2(void *v0, void *v1)$/;"	f
+stb_bucket_create3	inc/stb.h	/^static stb_ps_bucket * stb_bucket_create3(void **v)$/;"	f
+stb_bucket_free	inc/stb.h	/^static void stb_bucket_free(stb_ps_bucket *b)$/;"	f
+stb_cfg	inc/stb.h	/^typedef struct stb_cfg_st stb_cfg;$/;"	t	typeref:struct:stb_cfg_st
+stb_cfg_close	inc/stb.h	/^void stb_cfg_close(stb_cfg *z)$/;"	f
+stb_cfg_delete	inc/stb.h	/^int stb_cfg_delete(stb_cfg *z, char *key)$/;"	f
+stb_cfg_open	inc/stb.h	/^STB_EXTERN stb_cfg * stb_cfg_open(char *config, char *mode)$/;"	f
+stb_cfg_read	inc/stb.h	/^int stb_cfg_read(stb_cfg *z, char *key, void *value, int len)$/;"	f
+stb_cfg_read_string	inc/stb.h	/^int stb_cfg_read_string(stb_cfg *z, char *key, char *value, int len)$/;"	f
+stb_cfg_set_directory	inc/stb.h	/^STB_EXTERN void stb_cfg_set_directory(char *dir)$/;"	f
+stb_cfg_st	inc/stb.h	/^struct stb_cfg_st$/;"	s
+stb_cfg_write	inc/stb.h	/^void stb_cfg_write(stb_cfg *z, char *key, void *value, int len)$/;"	f
+stb_cfg_write_string	inc/stb.h	/^void stb_cfg_write_string(stb_cfg *z, char *key, char *value)$/;"	f
+stb_charcmp	inc/stb.h	/^int (*stb_charcmp(int offset))(const void *, const void *)$/;"	f
+stb_clamp	inc/stb.h	1262;"	d
+stb_close	inc/stb.h	/^void stb_close(stbfile *f)$/;"	f
+stb_compare_func	inc/stb.h	/^typedef int (*stb_compare_func)(void *a, void *b);$/;"	t
+stb_compress	inc/stb.h	/^stb_uint stb_compress(stb_uchar *out, stb_uchar *input, stb_uint length)$/;"	f
+stb_compress_chunk	inc/stb.h	/^static int stb_compress_chunk(stb_uchar *history,$/;"	f
+stb_compress_hashsize	inc/stb.h	/^void stb_compress_hashsize(unsigned int y)$/;"	f
+stb_compress_inner	inc/stb.h	/^static int stb_compress_inner(stb_uchar *input, stb_uint length)$/;"	f
+stb_compress_intofile	inc/stb.h	/^int stb_compress_intofile(FILE *f, char *input, unsigned int length)$/;"	f
+stb_compress_stream_end	inc/stb.h	/^void stb_compress_stream_end(int close)$/;"	f
+stb_compress_stream_start	inc/stb.h	/^int stb_compress_stream_start(FILE *f)$/;"	f
+stb_compress_streaming_end	inc/stb.h	/^static int stb_compress_streaming_end(void)$/;"	f
+stb_compress_streaming_start	inc/stb.h	/^static int stb_compress_streaming_start(void)$/;"	f
+stb_compress_tofile	inc/stb.h	/^int stb_compress_tofile(char *filename, char *input, unsigned int length)$/;"	f
+stb_compress_window	inc/stb.h	/^void stb_compress_window(int z)$/;"	f
+stb_copy	inc/stb.h	/^void *stb_copy(void *p, size_t sz)$/;"	f
+stb_copyfile	inc/stb.h	/^int stb_copyfile(char *src, char *dest)$/;"	f
+stb_crc32	inc/stb.h	/^stb_uint stb_crc32(unsigned char *buffer, stb_uint len)$/;"	f
+stb_crc32_block	inc/stb.h	/^stb_uint stb_crc32_block(stb_uint crc, unsigned char *buffer, stb_uint len)$/;"	f
+stb_create_thread	inc/stb.h	/^stb_thread stb_create_thread(stb_thread_func f, void *d)$/;"	f
+stb_create_thread2	inc/stb.h	/^stb_thread stb_create_thread2(stb_thread_func f, void *d, volatile void **return_code, stb_semaphore rel)$/;"	f
+stb_create_thread_raw	inc/stb.h	/^static stb_thread stb_create_thread_raw(stb_thread_func f, void *d, volatile void **return_code, stb_semaphore rel)$/;"	f
+stb_cubic_bezier_1d	inc/stb.h	/^float stb_cubic_bezier_1d(float t, float p0, float p1, float p2, float p3)$/;"	f
+stb_declare_hash	inc/stb.h	3798;"	d
+stb_declare_sort	inc/stb.h	8514;"	d
+stb_decompress	inc/stb.h	/^stb_uint stb_decompress(stb_uchar *output, stb_uchar *i, stb_uint length)$/;"	f
+stb_decompress_fromfile	inc/stb.h	/^char *stb_decompress_fromfile(char *filename, unsigned int *len)$/;"	f
+stb_decompress_length	inc/stb.h	/^stb_uint stb_decompress_length(stb_uchar *input)$/;"	f
+stb_decompress_token	inc/stb.h	/^static stb_uchar *stb_decompress_token(stb_uchar *i)$/;"	f
+stb_define_hash	inc/stb.h	4077;"	d
+stb_define_hash_base	inc/stb.h	3827;"	d
+stb_define_hash_vnull	inc/stb.h	4083;"	d
+stb_define_sort	inc/stb.h	8516;"	d
+stb_define_sort_static	inc/stb.h	8518;"	d
+stb_delete_directory_recursive	inc/stb.h	/^void stb_delete_directory_recursive(char *dir)$/;"	f
+stb_destroy_thread	inc/stb.h	/^void          stb_destroy_thread(stb_thread t)   { TerminateThread(t,0); }$/;"	f
+stb_dfa	inc/stb.h	/^} stb_dfa;$/;"	t	typeref:struct:__anon28
+stb_dir_is_prefix	inc/stb.h	/^int stb_dir_is_prefix(char *dir, int dirlen, char *file)$/;"	f
+stb_dirtree	inc/stb.h	/^} stb_dirtree;$/;"	t	typeref:struct:__anon22
+stb_dirtree2	inc/stb.h	/^struct stb_dirtree2$/;"	s
+stb_dirtree2	inc/stb.h	/^typedef struct stb_dirtree2 stb_dirtree2;$/;"	t	typeref:struct:stb_dirtree2
+stb_dirtree2_from_files	inc/stb.h	/^stb_dirtree2 *stb_dirtree2_from_files(char **filelist, int count)$/;"	f
+stb_dirtree2_from_files_relative	inc/stb.h	/^stb_dirtree2 *stb_dirtree2_from_files_relative(char *src, char **filelist, int count)$/;"	f
+stb_dirtree_db_add_dir	inc/stb.h	/^void stb_dirtree_db_add_dir(stb_dirtree *active, char *path, time_t last)$/;"	f
+stb_dirtree_db_add_file	inc/stb.h	/^void stb_dirtree_db_add_file(stb_dirtree *active, char *name, int dir, stb_int64 size, time_t last)$/;"	f
+stb_dirtree_db_read	inc/stb.h	/^void stb_dirtree_db_read(stb_dirtree *target, char *filename, char *dir)$/;"	f
+stb_dirtree_db_write	inc/stb.h	/^void stb_dirtree_db_write(stb_dirtree *target, char *filename, char *dir)$/;"	f
+stb_dirtree_dir	inc/stb.h	/^} stb_dirtree_dir;$/;"	t	typeref:struct:__anon20
+stb_dirtree_file	inc/stb.h	/^} stb_dirtree_file;$/;"	t	typeref:struct:__anon21
+stb_dirtree_free	inc/stb.h	/^void stb_dirtree_free(stb_dirtree *d)$/;"	f
+stb_dirtree_get	inc/stb.h	/^stb_dirtree *stb_dirtree_get(char *dir)$/;"	f
+stb_dirtree_get_dir	inc/stb.h	/^stb_dirtree *stb_dirtree_get_dir(char *dir, char *cache_dir)$/;"	f
+stb_dirtree_get_with_file	inc/stb.h	/^stb_dirtree *stb_dirtree_get_with_file(char *dir, char *cache_file)$/;"	f
+stb_doublecmp	inc/stb.h	/^int (*stb_doublecmp(int offset))(const void *, const void *)$/;"	f
+stb_dupe	inc/stb.h	/^struct stb_dupe$/;"	s
+stb_dupe	inc/stb.h	/^typedef struct stb_dupe stb_dupe;$/;"	t	typeref:struct:stb_dupe
+stb_dupe_add	inc/stb.h	/^void stb_dupe_add(stb_dupe *sd, void *item)$/;"	f
+stb_dupe_create	inc/stb.h	/^stb_dupe *stb_dupe_create(stb_hash_func hash, stb_compare_func eq, int size,$/;"	f
+stb_dupe_finish	inc/stb.h	/^void stb_dupe_finish(stb_dupe *sd)$/;"	f
+stb_dupe_free	inc/stb.h	/^void stb_dupe_free(stb_dupe *sd)$/;"	f
+stb_dupe_numsets	inc/stb.h	/^int stb_dupe_numsets(stb_dupe *sd)$/;"	f
+stb_dupe_set	inc/stb.h	/^void **stb_dupe_set(stb_dupe *sd, int num)$/;"	f
+stb_dupe_set_count	inc/stb.h	/^int stb_dupe_set_count(stb_dupe *sd, int num)$/;"	f
+stb_duplower	inc/stb.h	/^char *stb_duplower(char *s)$/;"	f
+stb_dupreplace	inc/stb.h	/^char *stb_dupreplace(char *src, char *find, char *replace)$/;"	f
+stb_fatal	inc/stb.h	/^void stb_fatal(char *s, ...)$/;"	f
+stb_fatal	inc/stb.h	1218;"	d
+stb_fclose	inc/stb.h	/^int     stb_fclose(FILE *f, int keep)$/;"	f
+stb_fcmp	inc/stb.h	/^int stb_fcmp(char *s1, char *s2)$/;"	f
+stb_fcmp_core	inc/stb.h	/^static int stb_fcmp_core(FILE *f, FILE *g)$/;"	f
+stb_feq	inc/stb.h	/^int stb_feq(char *s1, char *s2)$/;"	f
+stb_fexists	inc/stb.h	/^int stb_fexists(char *filename)$/;"	f
+stb_fget_ranged	inc/stb.h	/^int     stb_fget_ranged(FILE *f, int b, stb_uint n)$/;"	f
+stb_fget_string	inc/stb.h	/^char *stb_fget_string(FILE *f, void *p)$/;"	f
+stb_fget_varlen	inc/stb.h	/^int     stb_fget_varlen(FILE *f)$/;"	f
+stb_fget_varlen64	inc/stb.h	/^stb_uint64   stb_fget_varlen64(FILE *f)$/;"	f
+stb_fget_varlenu	inc/stb.h	/^unsigned int stb_fget_varlenu(FILE *f)$/;"	f
+stb_fgetc	inc/stb.h	5634;"	d
+stb_fgets	inc/stb.h	/^char * stb_fgets(char *buffer, int buflen, FILE *f)$/;"	f
+stb_fgets_malloc	inc/stb.h	/^char * stb_fgets_malloc(FILE *f)$/;"	f
+stb_file	inc/stb.h	/^void *stb_file(char *filename, size_t *length)$/;"	f
+stb_file_max	inc/stb.h	/^void *  stb_file_max(char *filename, size_t *length)$/;"	f
+stb_filec	inc/stb.h	5013;"	d
+stb_filelen	inc/stb.h	/^size_t  stb_filelen(FILE *f)$/;"	f
+stb_fileu	inc/stb.h	5014;"	d
+stb_filewrite	inc/stb.h	/^int stb_filewrite(char *filename, void *data, size_t length)$/;"	f
+stb_filewritestr	inc/stb.h	/^int stb_filewritestr(char *filename, char *data)$/;"	f
+stb_fixpath	inc/stb.h	/^void stb_fixpath(char *path)$/;"	f
+stb_float_eq	inc/stb.h	/^int stb_float_eq(float x, float y, float delta, int max_ulps)$/;"	f
+stb_floatcmp	inc/stb.h	/^int (*stb_floatcmp(int offset))(const void *, const void *)$/;"	f
+stb_fopen	inc/stb.h	/^FILE *  stb_fopen(char *filename, char *mode)$/;"	f
+stb_force_uniprocessor	inc/stb.h	/^void stb_force_uniprocessor(void)$/;"	f
+stb_fput_ranged	inc/stb.h	/^void    stb_fput_ranged(FILE *f, int v, int b, stb_uint n)$/;"	f
+stb_fput_string	inc/stb.h	/^void stb_fput_string(FILE *f, char *s)$/;"	f
+stb_fput_varlen	inc/stb.h	/^void    stb_fput_varlen(FILE *f, int v) { stb_fput_varlenu(f, stb__varlen_xform(v)); }$/;"	f
+stb_fput_varlen64	inc/stb.h	/^void    stb_fput_varlen64(FILE *f, stb_uint64 v)$/;"	f
+stb_fput_varlenu	inc/stb.h	/^void    stb_fput_varlenu(FILE *f, unsigned int z)$/;"	f
+stb_frand	inc/stb.h	/^double stb_frand(void)$/;"	f
+stb_frandLCG	inc/stb.h	/^double stb_frandLCG(void)$/;"	f
+stb_free	inc/stb.h	/^void stb_free(void *p)$/;"	f
+stb_from_utf8	inc/stb.h	/^stb__wchar * stb_from_utf8(stb__wchar *buffer, char *ostr, int n)$/;"	f
+stb_ftimestamp	inc/stb.h	/^time_t stb_ftimestamp(char *filename)$/;"	f
+stb_fullpath	inc/stb.h	/^int stb_fullpath(char *abs, int abs_size, char *rel)$/;"	f
+stb_fwrite32	inc/stb.h	/^void stb_fwrite32(FILE *f, stb_uint32 x)$/;"	f
+stb_getc	inc/stb.h	/^unsigned int stb_getc(stbfile *f) { return f->getbyte(f); }$/;"	f
+stb_getdata	inc/stb.h	/^unsigned int stb_getdata(stbfile *f, void *buffer, unsigned int len)$/;"	f
+stb_getopt	inc/stb.h	/^char **stb_getopt(int *argc, char **argv)$/;"	f
+stb_getopt_free	inc/stb.h	/^void   stb_getopt_free(char **opts)$/;"	f
+stb_getopt_param	inc/stb.h	/^char **stb_getopt_param(int *argc, char **argv, char *param)$/;"	f
+stb_hash	inc/stb.h	/^unsigned int stb_hash(char *str)$/;"	f
+stb_hash2	inc/stb.h	/^unsigned int stb_hash2(char *str, unsigned int *hash2_ptr)$/;"	f
+stb_hash_fast	inc/stb.h	/^unsigned int stb_hash_fast(void *p, int len)$/;"	f
+stb_hash_func	inc/stb.h	/^typedef int (*stb_hash_func)(void *a, unsigned int seed);$/;"	t
+stb_hash_number	inc/stb.h	/^unsigned int stb_hash_number(unsigned int hash)$/;"	f
+stb_hashlen	inc/stb.h	/^unsigned int stb_hashlen(char *str, int len)$/;"	f
+stb_hashptr	inc/stb.h	/^unsigned int stb_hashptr(void *p)$/;"	f
+stb_highbit8	inc/stb.h	/^int stb_highbit8(unsigned int n)$/;"	f
+stb_idict_new_size	inc/stb.h	/^stb_idict * stb_idict_new_size(int size)$/;"	f
+stb_idict_remove_all	inc/stb.h	/^void stb_idict_remove_all(stb_idict *e)$/;"	f
+stb_image_write_test	inc/stb_image_write.h	/^typedef int stb_image_write_test[sizeof(stbiw_uint32)==4 ? 1 : -1];$/;"	t
+stb_int16	inc/stb.h	/^typedef          short stb_int16;$/;"	t
+stb_int32	inc/stb.h	/^  typedef          int   stb_int32;$/;"	t
+stb_int32	inc/stb.h	/^  typedef          long  stb_int32;$/;"	t
+stb_int64	inc/stb.h	/^  typedef          __int64 stb_int64;$/;"	t
+stb_int64	inc/stb.h	/^  typedef          long long stb_int64;$/;"	t
+stb_int8	inc/stb.h	/^typedef   signed char  stb_int8;$/;"	t
+stb_inta	inc/stb.h	/^typedef stb_int32  stb_inta;$/;"	t
+stb_inta	inc/stb.h	/^typedef stb_int64  stb_inta;$/;"	t
+stb_intcmp	inc/stb.h	/^int (*stb_intcmp(int offset))(const void *, const void *)$/;"	f
+stb_is_pow2	inc/stb.h	/^int stb_is_pow2(unsigned int n)$/;"	f
+stb_is_prime	inc/stb.h	/^int stb_is_prime(unsigned int m)$/;"	f
+stb_ischar	inc/stb.h	/^int stb_ischar(char c, char *set)$/;"	f
+stb_keep_if_different	inc/stb.h	/^   stb_keep_if_different = 2,$/;"	e	enum:__anon17
+stb_keep_no	inc/stb.h	/^   stb_keep_no = 0,$/;"	e	enum:__anon17
+stb_keep_yes	inc/stb.h	/^   stb_keep_yes = 1,$/;"	e	enum:__anon17
+stb_lerp	inc/stb.h	1259;"	d
+stb_lex	inc/stb.h	/^int stb_lex(stb_matcher *m, char *str, int *len)$/;"	f
+stb_lex_item	inc/stb.h	/^int stb_lex_item(stb_matcher *matcher, char *regex, int result)$/;"	f
+stb_lex_item_wild	inc/stb.h	/^int stb_lex_item_wild(stb_matcher *matcher, char *regex, int result)$/;"	f
+stb_lex_matcher	inc/stb.h	/^stb_matcher *stb_lex_matcher(void)$/;"	f
+stb_linear_controller	inc/stb.h	/^void stb_linear_controller(float *curpos, float target_pos, float acc, float deacc, float dt)$/;"	f
+stb_linear_remap	inc/stb.h	/^double stb_linear_remap(double x, double x_min, double x_max,$/;"	f
+stb_linear_remap	inc/stb.h	1405;"	d
+stb_little16	inc/stb.h	1416;"	d
+stb_little32	inc/stb.h	1414;"	d
+stb_log	inc/stb.h	/^void stb_log(int active)$/;"	f
+stb_log	inc/stb.h	1215;"	d
+stb_log2_ceil	inc/stb.h	/^int stb_log2_ceil(unsigned int n)$/;"	f
+stb_log2_floor	inc/stb.h	/^int stb_log2_floor(unsigned int n)$/;"	f
+stb_log_fileline	inc/stb.h	/^void stb_log_fileline(int active)$/;"	f
+stb_log_name	inc/stb.h	/^void stb_log_name(char *s)$/;"	f
+stb_lowbit8	inc/stb.h	/^int stb_lowbit8(unsigned int n)$/;"	f
+stb_malloc	inc/stb.h	/^   int stb_malloc;$/;"	m	struct:__anon11
+stb_malloc	inc/stb.h	/^void *stb_malloc(void *context, size_t size)$/;"	f
+stb_malloc_check_counter	inc/stb.h	/^   void stb_malloc_check_counter(int init_delay, int rep_delay)$/;"	f
+stb_malloc_checkall	inc/stb.h	/^   void stb_malloc_checkall(void) { }$/;"	f
+stb_malloc_checkall	inc/stb.h	/^   void stb_malloc_checkall(void)$/;"	f
+stb_malloc_global	inc/stb.h	/^void *stb_malloc_global(size_t size)$/;"	f
+stb_malloc_leaf	inc/stb.h	/^void *stb_malloc_leaf(void *context, size_t size)$/;"	f
+stb_malloc_nofree	inc/stb.h	/^void *stb_malloc_nofree(void *context, size_t size)$/;"	f
+stb_malloc_raw	inc/stb.h	/^void *stb_malloc_raw(void *context, size_t size)$/;"	f
+stb_malloc_record	inc/stb.h	/^} stb_malloc_record;$/;"	t	typeref:struct:__anon23
+stb_malloc_string	inc/stb.h	/^char *stb_malloc_string(void *context, size_t size)$/;"	f
+stb_malloc_validate	inc/stb.h	/^void stb_malloc_validate(void *p, void *parent)$/;"	f
+stb_matcher	inc/stb.h	/^struct stb_matcher$/;"	s
+stb_matcher	inc/stb.h	/^typedef struct stb_matcher stb_matcher;$/;"	t	typeref:struct:stb_matcher
+stb_matcher_find	inc/stb.h	/^int stb_matcher_find(stb_matcher *m, char *str)$/;"	f
+stb_matcher_free	inc/stb.h	/^void stb_matcher_free(stb_matcher *f)$/;"	f
+stb_matcher_match	inc/stb.h	/^int stb_matcher_match(stb_matcher *m, char *str)$/;"	f
+stb_matchlen	inc/stb.h	/^static unsigned int stb_matchlen(stb_uchar *m1, stb_uchar *m2, stb_uint maxlen)$/;"	f
+stb_max	inc/stb.h	277;"	d
+stb_mcheck	inc/stb.h	/^   int stb_mcheck(void *p)$/;"	f
+stb_mcheck	inc/stb.h	473;"	d
+stb_mcheck_all	inc/stb.h	/^   void stb_mcheck_all(void)$/;"	f
+stb_min	inc/stb.h	276;"	d
+stb_mktemp	inc/stb.h	5002;"	d
+stb_mktemp	inc/stb.h	5004;"	d
+stb_mprintf	inc/stb.h	/^char *stb_mprintf(const char *fmt, ...)$/;"	f
+stb_mutex	inc/stb.h	/^typedef void *stb_mutex;$/;"	t
+stb_mutex_begin	inc/stb.h	/^void      stb_mutex_begin(stb_mutex m)   { stb__wait(500); if (m) stb_sem_waitfor(m); }$/;"	f
+stb_mutex_begin	inc/stb.h	/^void stb_mutex_begin(void *p)$/;"	f
+stb_mutex_delete	inc/stb.h	/^void      stb_mutex_delete(stb_mutex m)  { stb_sem_delete (m);      }$/;"	f
+stb_mutex_delete	inc/stb.h	/^void stb_mutex_delete(void *p)$/;"	f
+stb_mutex_end	inc/stb.h	/^void      stb_mutex_end(stb_mutex m)     { if (m) stb_sem_release(m); stb__wait(500); }$/;"	f
+stb_mutex_end	inc/stb.h	/^void stb_mutex_end(void *p)$/;"	f
+stb_mutex_new	inc/stb.h	/^stb_mutex stb_mutex_new(void)            { return stb_sem_new_extra(1,1); }$/;"	f
+stb_mutex_new	inc/stb.h	/^void *stb_mutex_new(void)$/;"	f
+stb_newell_normal	inc/stb.h	/^void stb_newell_normal(float *normal, int num_vert, float **vert, int normalize)$/;"	f
+stb_nfa_edge	inc/stb.h	/^} stb_nfa_edge;$/;"	t	typeref:struct:__anon29
+stb_nfa_node	inc/stb.h	/^} stb_nfa_node;$/;"	t	typeref:struct:__anon30
+stb_not_crap	inc/stb.h	/^static int stb_not_crap(int best, int dist)$/;"	f
+stb_nptr_didfree	inc/stb.h	/^void stb_nptr_didfree(void *address_being_freed, int len)$/;"	f
+stb_nptr_didset	inc/stb.h	/^void stb_nptr_didset(void *address_of_pointer)$/;"	f
+stb_nptr_free	inc/stb.h	/^void stb_nptr_free(void *address_being_freed, int len)$/;"	f
+stb_nptr_move	inc/stb.h	/^void stb_nptr_move(void *new_address, void *old_address)$/;"	f
+stb_nptr_realloc	inc/stb.h	/^void stb_nptr_realloc(void *new_address, void *old_address, int len)$/;"	f
+stb_nptr_recache	inc/stb.h	/^void stb_nptr_recache(void)$/;"	f
+stb_nptr_set	inc/stb.h	/^void stb_nptr_set(void *address_of_pointer, void *value_to_write)$/;"	f
+stb_open	inc/stb.h	/^stbfile *stb_open(char *filename, char *mode)$/;"	f
+stb_open_inbuffer	inc/stb.h	/^stbfile *stb_open_inbuffer(void *buffer, unsigned int len)$/;"	f
+stb_open_inbuffer_free	inc/stb.h	/^stbfile *stb_open_inbuffer_free(void *buffer, unsigned int len)$/;"	f
+stb_open_outbuffer	inc/stb.h	/^stbfile *stb_open_outbuffer(unsigned char **update_on_close)$/;"	f
+stb_openf	inc/stb.h	/^stbfile *stb_openf(FILE *f)$/;"	f
+stb_out	inc/stb.h	10356;"	d
+stb_out2	inc/stb.h	/^static void stb_out2(stb_uint v)$/;"	f
+stb_out3	inc/stb.h	/^static void stb_out3(stb_uint v) { stb_out(v >> 16); stb_out(v >> 8); stb_out(v); }$/;"	f
+stb_out4	inc/stb.h	/^static void stb_out4(stb_uint v) { stb_out(v >> 24); stb_out(v >> 16);$/;"	f
+stb_out_backpatch	inc/stb.h	/^static void stb_out_backpatch(size_t id, stb_uint value)$/;"	f
+stb_out_backpatch_id	inc/stb.h	/^static size_t stb_out_backpatch_id(void)$/;"	f
+stb_perfect	inc/stb.h	/^} stb_perfect;$/;"	t	typeref:struct:__anon12
+stb_perfect_create	inc/stb.h	/^int stb_perfect_create(stb_perfect *p, unsigned int *v, int n)$/;"	f
+stb_perfect_destroy	inc/stb.h	/^void stb_perfect_destroy(stb_perfect *p)$/;"	f
+stb_perfect_hash	inc/stb.h	/^int stb_perfect_hash(stb_perfect *p, unsigned int x)$/;"	f
+stb_perfect_hash_max_failures	inc/stb.h	/^int stb_perfect_hash_max_failures;$/;"	v
+stb_plural	inc/stb.h	/^char *stb_plural(int n)$/;"	f
+stb_pointer_array_free	inc/stb.h	/^void stb_pointer_array_free(void *q, int len)$/;"	f
+stb_power_of_two_nearest_prime	inc/stb.h	/^unsigned int stb_power_of_two_nearest_prime(int n)$/;"	f
+stb_prefix	inc/stb.h	/^int stb_prefix(char *s, char *t)$/;"	f
+stb_prefix_count	inc/stb.h	/^int stb_prefix_count(char *s, char *t)$/;"	f
+stb_prefixi	inc/stb.h	1756;"	d
+stb_probe	inc/stb.h	/^int stb_probe(stb_search *s, int compare, int *result)$/;"	f
+stb_probe_guess	inc/stb.h	/^static int stb_probe_guess(stb_search *s, int *result)$/;"	f
+stb_processor_count	inc/stb.h	/^int stb_processor_count(void)$/;"	f
+stb_ps	inc/stb.h	/^typedef struct stb_ps stb_ps;$/;"	t	typeref:struct:stb_ps
+stb_ps_add	inc/stb.h	/^stb_ps *  stb_ps_add   (stb_ps *ps, void *value)$/;"	f
+stb_ps_array	inc/stb.h	/^} stb_ps_array;$/;"	t	typeref:struct:__anon26
+stb_ps_array_max	inc/stb.h	/^static int stb_ps_array_max = 13;$/;"	v
+stb_ps_bucket	inc/stb.h	/^} stb_ps_bucket;$/;"	t	typeref:struct:__anon25
+stb_ps_copy	inc/stb.h	/^stb_ps *stb_ps_copy(stb_ps *ps)$/;"	f
+stb_ps_count	inc/stb.h	/^int stb_ps_count (stb_ps *ps)$/;"	f
+stb_ps_delete	inc/stb.h	/^void stb_ps_delete(stb_ps *ps)$/;"	f
+stb_ps_empty	inc/stb.h	7613;"	d
+stb_ps_enum	inc/stb.h	/^int stb_ps_enum(stb_ps *ps, void *data, int (*func)(void *value, void *data))$/;"	f
+stb_ps_eq	inc/stb.h	/^int stb_ps_eq(stb_ps *p0, stb_ps *p1)$/;"	f
+stb_ps_fastlist	inc/stb.h	/^void ** stb_ps_fastlist(stb_ps *ps, int *count)$/;"	f
+stb_ps_fastlist_valid	inc/stb.h	7542;"	d
+stb_ps_find	inc/stb.h	/^int stb_ps_find(stb_ps *ps, void *value)$/;"	f
+stb_ps_getlist	inc/stb.h	/^void ** stb_ps_getlist(stb_ps *ps, int *count)$/;"	f
+stb_ps_hash	inc/stb.h	/^} stb_ps_hash;$/;"	t	typeref:struct:__anon27
+stb_ps_makehash	inc/stb.h	/^static stb_ps_hash *stb_ps_makehash(int size, int old_size, void **old_data)$/;"	f
+stb_ps_remove	inc/stb.h	/^stb_ps *stb_ps_remove(stb_ps *ps, void *value)$/;"	f
+stb_ps_remove_any	inc/stb.h	/^stb_ps *stb_ps_remove_any(stb_ps *ps, void **value)$/;"	f
+stb_ps_subset	inc/stb.h	/^int stb_ps_subset(stb_ps *bigger, stb_ps *smaller)$/;"	f
+stb_ps_writelist	inc/stb.h	/^int stb_ps_writelist(stb_ps *ps, void **list, int size )$/;"	f
+stb_ptrmap_delete	inc/stb.h	/^void stb_ptrmap_delete(stb_ptrmap *e, void (*free_func)(void *))$/;"	f
+stb_ptrmap_new	inc/stb.h	/^stb_ptrmap *stb_ptrmap_new(void)$/;"	f
+stb_putc	inc/stb.h	/^int stb_putc(stbfile *f, int ch)  { return f->putbyte(f, ch); }$/;"	f
+stb_putdata	inc/stb.h	/^unsigned int stb_putdata(stbfile *f, void *buffer, unsigned int len)$/;"	f
+stb_qsort_strcmp	inc/stb.h	/^int (*stb_qsort_strcmp(int offset))(const void *, const void *)$/;"	f
+stb_qsort_stricmp	inc/stb.h	/^int (*stb_qsort_stricmp(int offset))(const void *, const void *)$/;"	f
+stb_quadratic_controller	inc/stb.h	/^float stb_quadratic_controller(float target_pos, float curpos, float maxvel, float maxacc, float dt, float *curvel)$/;"	f
+stb_rand	inc/stb.h	/^unsigned long stb_rand()$/;"	f
+stb_randLCG	inc/stb.h	/^unsigned long stb_randLCG(void)$/;"	f
+stb_randLCG_explicit	inc/stb.h	/^unsigned long stb_randLCG_explicit(unsigned long seed)$/;"	f
+stb_rand_define	inc/stb.h	8142;"	d
+stb_readdir_files	inc/stb.h	/^char **stb_readdir_files  (char *dir) { return readdir_raw(dir, 0, NULL); }$/;"	f
+stb_readdir_files_mask	inc/stb.h	/^char **stb_readdir_files_mask(char *dir, char *wild) { return readdir_raw(dir, 0, wild); }$/;"	f
+stb_readdir_free	inc/stb.h	/^void stb_readdir_free(char **files)$/;"	f
+stb_readdir_rec	inc/stb.h	/^static char **stb_readdir_rec(char **sofar, char *dir, char *filespec)$/;"	f
+stb_readdir_recursive	inc/stb.h	/^char **stb_readdir_recursive(char *dir, char *filespec)$/;"	f
+stb_readdir_subdirs	inc/stb.h	/^char **stb_readdir_subdirs(char *dir) { return readdir_raw(dir, 1, NULL); }$/;"	f
+stb_readdir_subdirs_mask	inc/stb.h	/^char **stb_readdir_subdirs_mask(char *dir, char *wild) { return readdir_raw(dir, 1, wild); }$/;"	f
+stb_realloc	inc/stb.h	/^void *stb_realloc(void *ptr, size_t newsize)$/;"	f
+stb_realloc_c	inc/stb.h	/^void *stb_realloc_c(void *context, void *ptr, size_t newsize)$/;"	f
+stb_reassign	inc/stb.h	/^void stb_reassign(void *new_context, void *ptr)$/;"	f
+stb_reg_close	inc/stb.h	/^void stb_reg_close(void *reg)$/;"	f
+stb_reg_open	inc/stb.h	/^void *stb_reg_open(char *mode, char *where)$/;"	f
+stb_reg_read	inc/stb.h	/^int stb_reg_read(void *zreg, char *str, void *data, unsigned long len)$/;"	f
+stb_reg_read_string	inc/stb.h	/^int stb_reg_read_string(void *zreg, char *str, char *data, int len)$/;"	f
+stb_reg_write	inc/stb.h	/^void stb_reg_write(void *zreg, char *str, void *data, unsigned long len)$/;"	f
+stb_reg_write_string	inc/stb.h	/^void stb_reg_write_string(void *zreg, char *str, char *data)$/;"	f
+stb_regex	inc/stb.h	/^int stb_regex(char *regex, char *str)$/;"	f
+stb_regex_matcher	inc/stb.h	/^stb_matcher *stb_regex_matcher(char *regex)$/;"	f
+stb_rehash	inc/stb.h	3340;"	d
+stb_rehash_improved	inc/stb.h	/^unsigned int stb_rehash_improved(unsigned int v)$/;"	f
+stb_rename	inc/stb.h	5001;"	d
+stb_rename	inc/stb.h	5005;"	d
+stb_replacedir	inc/stb.h	/^char *stb_replacedir(char *output, char *src, char *dir)$/;"	f
+stb_replaceext	inc/stb.h	/^char *stb_replaceext(char *output, char *src, char *ext)$/;"	f
+stb_replaceinplace	inc/stb.h	/^void stb_replaceinplace(char *src, char *find, char *replace)$/;"	f
+stb_reverse	inc/stb.h	/^void stb_reverse(void *p, size_t n, size_t sz)$/;"	f
+stb_scalloc	inc/stb.h	/^void *stb_scalloc(size_t n, size_t sz)$/;"	f
+stb_sdict__copy	inc/stb.h	4253;"	d
+stb_sdict__dispose	inc/stb.h	4257;"	d
+stb_sdict_change	inc/stb.h	/^void * stb_sdict_change(stb_sdict *d, char *str, void *p)$/;"	f
+stb_sdict_copy	inc/stb.h	/^stb_sdict* stb_sdict_copy(stb_sdict *old)$/;"	f
+stb_sdict_count	inc/stb.h	/^int stb_sdict_count(stb_sdict *a)$/;"	f
+stb_sdict_delete	inc/stb.h	/^void stb_sdict_delete(stb_sdict *d)$/;"	f
+stb_sdict_for	inc/stb.h	4244;"	d
+stb_sdict_new	inc/stb.h	/^stb_sdict * stb_sdict_new(int use_arena)$/;"	f
+stb_search	inc/stb.h	/^} stb_search;$/;"	t	typeref:struct:__anon5
+stb_search_binary	inc/stb.h	/^int stb_search_binary(stb_search *s, int minv, int maxv, int find_smallest)$/;"	f
+stb_search_open	inc/stb.h	/^int stb_search_open(stb_search *s, int minv, int find_smallest)$/;"	f
+stb_sem_delete	inc/stb.h	/^void          stb_sem_delete(stb_semaphore s)    { if (s != NULL) CloseHandle(s); }$/;"	f
+stb_sem_new	inc/stb.h	/^stb_semaphore stb_sem_new(int maxv)                {return CreateSemaphoreA(NULL,0,maxv,NULL); }$/;"	f
+stb_sem_new_extra	inc/stb.h	/^stb_semaphore stb_sem_new_extra(int maxv,int start){return CreateSemaphoreA(NULL,start,maxv,NULL); }$/;"	f
+stb_sem_release	inc/stb.h	/^void          stb_sem_release(stb_semaphore s)   { ReleaseSemaphore(s,1,NULL); }$/;"	f
+stb_sem_waitfor	inc/stb.h	/^void          stb_sem_waitfor(stb_semaphore s)   { WaitForSingleObject(s, 0xffffffff); } \/\/ INFINITE$/;"	f
+stb_semaphore	inc/stb.h	/^typedef void *stb_semaphore;$/;"	t
+stb_sfree	inc/stb.h	/^void stb_sfree(void *p)$/;"	f
+stb_sha1	inc/stb.h	/^void stb_sha1(stb_uchar output[20], stb_uchar *buffer, stb_uint len)$/;"	f
+stb_sha1_file	inc/stb.h	/^int stb_sha1_file(stb_uchar output[20], char *file)$/;"	f
+stb_sha1_readable	inc/stb.h	/^void stb_sha1_readable(char display[27], unsigned char sha[20])$/;"	f
+stb_shorten_path_readable	inc/stb.h	/^char * stb_shorten_path_readable(char *path, int len)$/;"	f
+stb_shuffle	inc/stb.h	/^void stb_shuffle(void *p, size_t n, size_t sz, unsigned long seed)$/;"	f
+stb_size	inc/stb.h	/^unsigned int stb_size(stbfile *f) { return f->size(f); }$/;"	f
+stb_size_ranged	inc/stb.h	/^int     stb_size_ranged(int b, stb_uint n)$/;"	f
+stb_size_varlen	inc/stb.h	/^int stb_size_varlen(int v) { return stb_size_varlenu(stb__varlen_xform(v)); }$/;"	f
+stb_size_varlen64	inc/stb.h	/^int stb_size_varlen64(stb_uint64 v)$/;"	f
+stb_size_varlenu	inc/stb.h	/^int stb_size_varlenu(unsigned int v)$/;"	f
+stb_skipnewline	inc/stb.h	/^char *stb_skipnewline(char *s)$/;"	f
+stb_skipwhite	inc/stb.h	/^char *stb_skipwhite(char *s)$/;"	f
+stb_smalloc	inc/stb.h	/^void *stb_smalloc(size_t sz)$/;"	f
+stb_smoothstep	inc/stb.h	/^float stb_smoothstep(float t)$/;"	f
+stb_snprintf	inc/stb.h	/^int stb_snprintf(char *s, size_t n, const char *fmt, ...)$/;"	f
+stb_source_path	inc/stb.h	/^void stb_source_path(char *path)$/;"	f
+stb_sparse_ptr_matrix_free	inc/stb.h	/^void stb_sparse_ptr_matrix_free(stb_spmatrix *z)$/;"	f
+stb_sparse_ptr_matrix_get	inc/stb.h	/^void *stb_sparse_ptr_matrix_get(stb_spmatrix *z, void *a, void *b, int create)$/;"	f
+stb_sparse_ptr_matrix_new	inc/stb.h	/^stb_spmatrix *stb_sparse_ptr_matrix_new(int val_size)$/;"	f
+stb_splitpath	inc/stb.h	/^char *stb_splitpath(char *output, char *src, int flag)$/;"	f
+stb_splitpath_flag	inc/stb.h	/^enum stb_splitpath_flag$/;"	g
+stb_splitpathdup	inc/stb.h	/^char *stb_splitpathdup(char *src, int flag)$/;"	f
+stb_spmatrix	inc/stb.h	/^typedef struct stb__st_stb_spmatrix stb_spmatrix;$/;"	t	typeref:struct:stb__st_stb_spmatrix
+stb_sprintf	inc/stb.h	/^char *stb_sprintf(const char *fmt, ...)$/;"	f
+stb_srand	inc/stb.h	/^void stb_srand(unsigned long seed)$/;"	f
+stb_srandLCG	inc/stb.h	/^unsigned long stb_srandLCG(unsigned long seed)$/;"	f
+stb_srealloc	inc/stb.h	/^void *stb_srealloc(void *p, size_t sz)$/;"	f
+stb_ssize	inc/stb.h	/^int stb_ssize(void *p)$/;"	f
+stb_sstrdup	inc/stb.h	/^char *stb_sstrdup(char *s)$/;"	f
+stb_strchr2	inc/stb.h	/^char *stb_strchr2(char *s, char x, char y)$/;"	f
+stb_strdup	inc/stb.h	/^char *stb_strdup(char *str, void *pool)$/;"	f
+stb_strichr	inc/stb.h	/^char *stb_strichr(char *s, char t)$/;"	f
+stb_stricmp	inc/stb.h	1531;"	d
+stb_stricmp	inc/stb.h	1534;"	d
+stb_stringfile	inc/stb.h	/^char ** stb_stringfile(char *filename, int *plen)$/;"	f
+stb_stringfile_trimmed	inc/stb.h	/^char ** stb_stringfile_trimmed(char *name, int *len, char comment)$/;"	f
+stb_strip_final_slash	inc/stb.h	/^char *stb_strip_final_slash(char *t)$/;"	f
+stb_strip_final_slash_regardless	inc/stb.h	/^char *stb_strip_final_slash_regardless(char *t)$/;"	f
+stb_stristr	inc/stb.h	/^char *stb_stristr(char *s, char *t)$/;"	f
+stb_strncpy	inc/stb.h	/^char *stb_strncpy(char *s, char *t, int n)$/;"	f
+stb_strnicmp	inc/stb.h	1532;"	d
+stb_strnicmp	inc/stb.h	1535;"	d
+stb_strrchr2	inc/stb.h	/^char *stb_strrchr2(char *s, char x, char y)$/;"	f
+stb_strscpy	inc/stb.h	/^size_t stb_strscpy(char *d, const char *s, size_t n)$/;"	f
+stb_strtok	inc/stb.h	/^char *stb_strtok(char *output, char *src, char *delimit)$/;"	f
+stb_strtok_invert	inc/stb.h	/^char *stb_strtok_invert(char *output, char *src, char *delimit)$/;"	f
+stb_strtok_keep	inc/stb.h	/^char *stb_strtok_keep(char *output, char *src, char *delimit)$/;"	f
+stb_strtok_raw	inc/stb.h	/^static char *stb_strtok_raw(char *output, char *src, char *delimit, int keep, int invert)$/;"	f
+stb_substr	inc/stb.h	/^char *stb_substr(char *t, int n)$/;"	f
+stb_suffix	inc/stb.h	/^int stb_suffix(char *s, char *t)$/;"	f
+stb_suffixi	inc/stb.h	/^int stb_suffixi(char *s, char *t)$/;"	f
+stb_swap	inc/stb.h	/^void stb_swap(void *p, void *q, size_t sz)$/;"	f
+stb_sync	inc/stb.h	/^typedef struct stb__sync *stb_sync;$/;"	t	typeref:struct:stb__sync
+stb_sync_delete	inc/stb.h	/^void stb_sync_delete(stb_sync s)$/;"	f
+stb_sync_new	inc/stb.h	/^stb_sync stb_sync_new(void)$/;"	f
+stb_sync_reach	inc/stb.h	/^int stb_sync_reach(stb_sync s)$/;"	f
+stb_sync_reach_and_wait	inc/stb.h	/^void stb_sync_reach_and_wait(stb_sync s)$/;"	f
+stb_sync_set_target	inc/stb.h	/^int stb_sync_set_target(stb_sync s, int count)$/;"	f
+stb_tell	inc/stb.h	/^unsigned int stb_tell(stbfile *f) { return f->tell(f); }$/;"	f
+stb_temp	inc/stb.h	1230;"	d
+stb_tempfree	inc/stb.h	/^void   stb_tempfree(void *b, void *p)$/;"	f
+stb_thread	inc/stb.h	/^typedef void *stb_thread;$/;"	t
+stb_thread_cleanup	inc/stb.h	/^void stb_thread_cleanup(void)$/;"	f
+stb_thread_func	inc/stb.h	/^typedef void * (*stb_thread_func)(void *);$/;"	t
+stb_threadq_add	inc/stb.h	/^int stb_threadq_add(stb_threadqueue *tq, void *input)$/;"	f
+stb_threadq_add_block	inc/stb.h	/^int stb_threadq_add_block(stb_threadqueue *tq, void *input)$/;"	f
+stb_threadq_delete	inc/stb.h	/^void stb_threadq_delete(stb_threadqueue *tq)$/;"	f
+stb_threadq_get	inc/stb.h	/^int stb_threadq_get(stb_threadqueue *tq, void *output)$/;"	f
+stb_threadq_get_block	inc/stb.h	/^void stb_threadq_get_block(stb_threadqueue *tq, void *output)$/;"	f
+stb_threadq_length	inc/stb.h	/^int stb_threadq_length(stb_threadqueue *tq2)$/;"	f
+stb_threadq_new	inc/stb.h	/^stb_threadqueue *stb_threadq_new(int item_size, int num_items, int many_add, int many_remove)$/;"	f
+stb_threadqueue	inc/stb.h	/^typedef struct stb__threadqueue stb_threadqueue;$/;"	t	typeref:struct:stb__threadqueue
+stb_to_utf8	inc/stb.h	/^char * stb_to_utf8(char *buffer, stb__wchar *str, int n)$/;"	f
+stb_tokens	inc/stb.h	/^char **stb_tokens(char *src, char *delimit, int *count)$/;"	f
+stb_tokens_allowempty	inc/stb.h	/^char **stb_tokens_allowempty(char *src, char *delimit, int *count)$/;"	f
+stb_tokens_nested	inc/stb.h	/^char **stb_tokens_nested(char *src, char *delimit, int *count, char *nest_in, char *nest_out)$/;"	f
+stb_tokens_nested_empty	inc/stb.h	/^char **stb_tokens_nested_empty(char *src, char *delimit, int *count, char *nest_in, char *nest_out)$/;"	f
+stb_tokens_quoted	inc/stb.h	/^char **stb_tokens_quoted(char *src, char *delimit, int *count)$/;"	f
+stb_tokens_raw	inc/stb.h	/^static char **stb_tokens_raw(char *src_, char *delimit, int *count,$/;"	f
+stb_tokens_stripwhite	inc/stb.h	/^char **stb_tokens_stripwhite(char *src, char *delimit, int *count)$/;"	f
+stb_tolower	inc/stb.h	/^void stb_tolower(char *s)$/;"	f
+stb_trimwhite	inc/stb.h	/^char *stb_trimwhite(char *s)$/;"	f
+stb_uchar	inc/stb.h	/^typedef unsigned char stb_uchar;$/;"	t
+stb_uint	inc/stb.h	/^typedef unsigned int  stb_uint;$/;"	t
+stb_uint16	inc/stb.h	/^typedef unsigned short stb_uint16;$/;"	t
+stb_uint32	inc/stb.h	/^  typedef unsigned int   stb_uint32;$/;"	t
+stb_uint32	inc/stb.h	/^  typedef unsigned long  stb_uint32;$/;"	t
+stb_uint64	inc/stb.h	/^  typedef unsigned __int64 stb_uint64;$/;"	t
+stb_uint64	inc/stb.h	/^  typedef unsigned long long stb_uint64;$/;"	t
+stb_uint8	inc/stb.h	/^typedef unsigned char stb_uint8;$/;"	t
+stb_uinta	inc/stb.h	/^typedef stb_uint32 stb_uinta;$/;"	t
+stb_uinta	inc/stb.h	/^typedef stb_uint64 stb_uinta;$/;"	t
+stb_uintptr	inc/stb.h	/^} stb_uintptr;$/;"	t	typeref:union:__anon2
+stb_unlerp	inc/stb.h	1260;"	d
+stb_vsnprintf	inc/stb.h	/^int stb_vsnprintf(char *s, size_t n, const char *fmt, va_list v)$/;"	f
+stb_wildfind	inc/stb.h	/^int stb_wildfind(char *expr, char *candidate)$/;"	f
+stb_wildfindi	inc/stb.h	/^int stb_wildfindi(char *expr, char *candidate)$/;"	f
+stb_wildmatch	inc/stb.h	/^int stb_wildmatch(char *expr, char *candidate)$/;"	f
+stb_wildmatchi	inc/stb.h	/^int stb_wildmatchi(char *expr, char *candidate)$/;"	f
+stb_wordwrap	inc/stb.h	/^int stb_wordwrap(int *pairs, int pair_max, int count, char *str)$/;"	f
+stb_wordwrapalloc	inc/stb.h	/^int *stb_wordwrapalloc(int count, char *str)$/;"	f
+stb_work	inc/stb.h	/^int stb_work(stb_thread_func f, void *d, volatile void **return_code)$/;"	f
+stb_work_init	inc/stb.h	/^static void stb_work_init(int num_threads)$/;"	f
+stb_work_maxunits	inc/stb.h	/^int stb_work_maxunits(int n)$/;"	f
+stb_work_numthreads	inc/stb.h	/^void stb_work_numthreads(int n)$/;"	f
+stb_work_reach	inc/stb.h	/^int stb_work_reach(stb_thread_func f, void *d, volatile void **return_code, stb_sync rel)$/;"	f
+stb_workq	inc/stb.h	/^int stb_workq(stb_workqueue *q, stb_thread_func f, void *d, volatile void **return_code)$/;"	f
+stb_workq_delete	inc/stb.h	/^void stb_workq_delete(stb_workqueue *q)$/;"	f
+stb_workq_length	inc/stb.h	/^int stb_workq_length(stb_workqueue *q)$/;"	f
+stb_workq_new	inc/stb.h	/^stb_workqueue *stb_workq_new(int num_threads, int max_units)$/;"	f
+stb_workq_new_flags	inc/stb.h	/^stb_workqueue *stb_workq_new_flags(int numthreads, int max_units, int no_add_mutex, int no_remove_mutex)$/;"	f
+stb_workq_numthreads	inc/stb.h	/^void stb_workq_numthreads(stb_workqueue *q, int n)$/;"	f
+stb_workq_reach	inc/stb.h	/^int stb_workq_reach(stb_workqueue *q, stb_thread_func f, void *d, volatile void **return_code, stb_sync rel)$/;"	f
+stb_workqueue	inc/stb.h	/^typedef struct stb__workqueue stb_workqueue;$/;"	t	typeref:struct:stb__workqueue
+stb_wrapper_allocsize	inc/stb.h	/^int stb_wrapper_allocsize(void *p)$/;"	f
+stb_wrapper_check	inc/stb.h	/^void stb_wrapper_check(void *p)$/;"	f
+stb_wrapper_dump	inc/stb.h	/^void stb_wrapper_dump(char *filename)$/;"	f
+stb_wrapper_free	inc/stb.h	/^void stb_wrapper_free(void *p, char *file, int line)$/;"	f
+stb_wrapper_listall	inc/stb.h	/^void stb_wrapper_listall(void (*func)(void *ptr, int sz, char *file, int line))$/;"	f
+stb_wrapper_malloc	inc/stb.h	/^void stb_wrapper_malloc(void *p, int sz, char *file, int line)$/;"	f
+stb_wrapper_realloc	inc/stb.h	/^void stb_wrapper_realloc(void *p, void *q, int sz, char *file, int line)$/;"	f
+stb_write	inc/stb.h	/^void stb_write(char *data, int data_len)$/;"	f
+stbfile	inc/stb.h	/^typedef struct stbfile$/;"	s
+stbfile	inc/stb.h	/^} stbfile;$/;"	t	typeref:struct:stbfile
+stbi__DNL	inc/stb_image.h	3035;"	d
+stbi__EOI	inc/stb_image.h	3037;"	d
+stbi__SOF	inc/stb_image.h	3038;"	d
+stbi__SOF_progressive	inc/stb_image.h	3041;"	d
+stbi__SOI	inc/stb_image.h	3036;"	d
+stbi__SOS	inc/stb_image.h	3039;"	d
+stbi__YCbCr_to_RGB_row	inc/stb_image.h	/^static void stbi__YCbCr_to_RGB_row(stbi_uc *out, const stbi_uc *y, const stbi_uc *pcb, const stbi_uc *pcr, int count, int step)$/;"	f
+stbi__YCbCr_to_RGB_simd	inc/stb_image.h	/^static void stbi__YCbCr_to_RGB_simd(stbi_uc *out, stbi_uc const *y, stbi_uc const *pcb, stbi_uc const *pcr, int count, int step)$/;"	f
+stbi__addsizes_valid	inc/stb_image.h	/^static int stbi__addsizes_valid(int a, int b)$/;"	f
+stbi__at_eof	inc/stb_image.h	/^stbi_inline static int stbi__at_eof(stbi__context *s)$/;"	f
+stbi__bit_reverse	inc/stb_image.h	/^stbi_inline static int stbi__bit_reverse(int v, int bits)$/;"	f
+stbi__bitcount	inc/stb_image.h	/^static int stbi__bitcount(unsigned int a)$/;"	f
+stbi__bitreverse16	inc/stb_image.h	/^stbi_inline static int stbi__bitreverse16(int n)$/;"	f
+stbi__blinn_8x8	inc/stb_image.h	/^static stbi_uc stbi__blinn_8x8(stbi_uc x, stbi_uc y)$/;"	f
+stbi__bmask	inc/stb_image.h	/^static stbi__uint32 stbi__bmask[17]={0,1,3,7,15,31,63,127,255,511,1023,2047,4095,8191,16383,32767,65535};$/;"	v
+stbi__bmp_data	inc/stb_image.h	/^} stbi__bmp_data;$/;"	t	typeref:struct:__anon66
+stbi__bmp_info	inc/stb_image.h	/^static int stbi__bmp_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__bmp_load	inc/stb_image.h	/^static void *stbi__bmp_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__bmp_parse_header	inc/stb_image.h	/^static void *stbi__bmp_parse_header(stbi__context *s, stbi__bmp_data *info)$/;"	f
+stbi__bmp_test	inc/stb_image.h	/^static int stbi__bmp_test(stbi__context *s)$/;"	f
+stbi__bmp_test_raw	inc/stb_image.h	/^static int stbi__bmp_test_raw(stbi__context *s)$/;"	f
+stbi__build_fast_ac	inc/stb_image.h	/^static void stbi__build_fast_ac(stbi__int16 *fast_ac, stbi__huffman *h)$/;"	f
+stbi__build_huffman	inc/stb_image.h	/^static int stbi__build_huffman(stbi__huffman *h, int *count)$/;"	f
+stbi__check_png_header	inc/stb_image.h	/^static int stbi__check_png_header(stbi__context *s)$/;"	f
+stbi__clamp	inc/stb_image.h	/^stbi_inline static stbi_uc stbi__clamp(int x)$/;"	f
+stbi__cleanup_jpeg	inc/stb_image.h	/^static void stbi__cleanup_jpeg(stbi__jpeg *j)$/;"	f
+stbi__compute_huffman_codes	inc/stb_image.h	/^static int stbi__compute_huffman_codes(stbi__zbuf *a)$/;"	f
+stbi__compute_transparency	inc/stb_image.h	/^static int stbi__compute_transparency(stbi__png *z, stbi_uc tc[3], int out_n)$/;"	f
+stbi__compute_transparency16	inc/stb_image.h	/^static int stbi__compute_transparency16(stbi__png *z, stbi__uint16 tc[3], int out_n)$/;"	f
+stbi__compute_y	inc/stb_image.h	/^static stbi_uc stbi__compute_y(int r, int g, int b)$/;"	f
+stbi__compute_y_16	inc/stb_image.h	/^static stbi__uint16 stbi__compute_y_16(int r, int g, int b)$/;"	f
+stbi__context	inc/stb_image.h	/^} stbi__context;$/;"	t	typeref:struct:__anon53
+stbi__convert_16_to_8	inc/stb_image.h	/^static stbi_uc *stbi__convert_16_to_8(stbi__uint16 *orig, int w, int h, int channels)$/;"	f
+stbi__convert_8_to_16	inc/stb_image.h	/^static stbi__uint16 *stbi__convert_8_to_16(stbi_uc *orig, int w, int h, int channels)$/;"	f
+stbi__convert_format	inc/stb_image.h	/^static unsigned char *stbi__convert_format(unsigned char *data, int img_n, int req_comp, unsigned int x, unsigned int y)$/;"	f
+stbi__convert_format16	inc/stb_image.h	/^static stbi__uint16 *stbi__convert_format16(stbi__uint16 *data, int img_n, int req_comp, unsigned int x, unsigned int y)$/;"	f
+stbi__copyval	inc/stb_image.h	/^static void stbi__copyval(int channel,stbi_uc *dest,const stbi_uc *src)$/;"	f
+stbi__cpuid3	inc/stb_image.h	/^static int stbi__cpuid3(void)$/;"	f
+stbi__create_png_image	inc/stb_image.h	/^static int stbi__create_png_image(stbi__png *a, stbi_uc *image_data, stbi__uint32 image_data_len, int out_n, int depth, int color, int interlaced)$/;"	f
+stbi__create_png_image_raw	inc/stb_image.h	/^static int stbi__create_png_image_raw(stbi__png *a, stbi_uc *raw, stbi__uint32 raw_len, int out_n, stbi__uint32 x, stbi__uint32 y, int depth, int color)$/;"	f
+stbi__de_iphone	inc/stb_image.h	/^static void stbi__de_iphone(stbi__png *z)$/;"	f
+stbi__de_iphone_flag	inc/stb_image.h	/^static int stbi__de_iphone_flag = 0;$/;"	v
+stbi__decode_jpeg_header	inc/stb_image.h	/^static int stbi__decode_jpeg_header(stbi__jpeg *z, int scan)$/;"	f
+stbi__decode_jpeg_image	inc/stb_image.h	/^static int stbi__decode_jpeg_image(stbi__jpeg *j)$/;"	f
+stbi__depth_scale_table	inc/stb_image.h	/^static stbi_uc stbi__depth_scale_table[9] = { 0, 0xff, 0x55, 0, 0x11, 0,0,0, 0x01 };$/;"	v
+stbi__div16	inc/stb_image.h	3162;"	d
+stbi__div4	inc/stb_image.h	3113;"	d
+stbi__do_png	inc/stb_image.h	/^static void *stbi__do_png(stbi__png *p, int *x, int *y, int *n, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__do_zlib	inc/stb_image.h	/^static int stbi__do_zlib(stbi__zbuf *a, char *obuf, int olen, int exp, int parse_header)$/;"	f
+stbi__end_write_file	inc/stb_image_write.h	/^static void stbi__end_write_file(stbi__write_context *s)$/;"	f
+stbi__err	inc/stb_image.h	/^static int stbi__err(const char *str)$/;"	f
+stbi__err	inc/stb_image.h	925;"	d
+stbi__err	inc/stb_image.h	927;"	d
+stbi__err	inc/stb_image.h	929;"	d
+stbi__errpf	inc/stb_image.h	932;"	d
+stbi__errpuc	inc/stb_image.h	933;"	d
+stbi__expand_png_palette	inc/stb_image.h	/^static int stbi__expand_png_palette(stbi__png *a, stbi_uc *palette, int len, int pal_img_n)$/;"	f
+stbi__extend_receive	inc/stb_image.h	/^stbi_inline static int stbi__extend_receive(stbi__jpeg *j, int n)$/;"	f
+stbi__f2f	inc/stb_image.h	2114;"	d
+stbi__fill_bits	inc/stb_image.h	/^static void stbi__fill_bits(stbi__zbuf *z)$/;"	f
+stbi__fill_gif_background	inc/stb_image.h	/^static void stbi__fill_gif_background(stbi__gif *g, int x0, int y0, int x1, int y1)$/;"	f
+stbi__float2fixed	inc/stb_image.h	3318;"	d
+stbi__float2int	inc/stb_image.h	1586;"	d
+stbi__float_postprocess	inc/stb_image.h	/^static void stbi__float_postprocess(float *result, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi__fopen	inc/stb_image.h	/^static FILE *stbi__fopen(char const *filename, char const *mode)$/;"	f
+stbi__free_jpeg_components	inc/stb_image.h	/^static int stbi__free_jpeg_components(stbi__jpeg *z, int ncomp, int why)$/;"	f
+stbi__fsh	inc/stb_image.h	2115;"	d
+stbi__g_failure_reason	inc/stb_image.h	/^static const char *stbi__g_failure_reason;$/;"	v
+stbi__get16be	inc/stb_image.h	/^static int stbi__get16be(stbi__context *s)$/;"	f
+stbi__get16le	inc/stb_image.h	/^static int stbi__get16le(stbi__context *s)$/;"	f
+stbi__get32be	inc/stb_image.h	/^static stbi__uint32 stbi__get32be(stbi__context *s)$/;"	f
+stbi__get32le	inc/stb_image.h	/^static stbi__uint32 stbi__get32le(stbi__context *s)$/;"	f
+stbi__get8	inc/stb_image.h	/^stbi_inline static stbi_uc stbi__get8(stbi__context *s)$/;"	f
+stbi__get_chunk_header	inc/stb_image.h	/^static stbi__pngchunk stbi__get_chunk_header(stbi__context *s)$/;"	f
+stbi__get_marker	inc/stb_image.h	/^static stbi_uc stbi__get_marker(stbi__jpeg *j)$/;"	f
+stbi__getn	inc/stb_image.h	/^static int stbi__getn(stbi__context *s, stbi_uc *buffer, int n)$/;"	f
+stbi__gif	inc/stb_image.h	/^} stbi__gif;$/;"	t	typeref:struct:__anon69
+stbi__gif_header	inc/stb_image.h	/^static int stbi__gif_header(stbi__context *s, stbi__gif *g, int *comp, int is_info)$/;"	f
+stbi__gif_info	inc/stb_image.h	/^static int stbi__gif_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__gif_info_raw	inc/stb_image.h	/^static int stbi__gif_info_raw(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__gif_load	inc/stb_image.h	/^static void *stbi__gif_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__gif_load_next	inc/stb_image.h	/^static stbi_uc *stbi__gif_load_next(stbi__context *s, stbi__gif *g, int *comp, int req_comp)$/;"	f
+stbi__gif_lzw	inc/stb_image.h	/^} stbi__gif_lzw;$/;"	t	typeref:struct:__anon68
+stbi__gif_parse_colortable	inc/stb_image.h	/^static void stbi__gif_parse_colortable(stbi__context *s, stbi_uc pal[256][4], int num_entries, int transp)$/;"	f
+stbi__gif_test	inc/stb_image.h	/^static int stbi__gif_test(stbi__context *s)$/;"	f
+stbi__gif_test_raw	inc/stb_image.h	/^static int stbi__gif_test_raw(stbi__context *s)$/;"	f
+stbi__grow_buffer_unsafe	inc/stb_image.h	/^static void stbi__grow_buffer_unsafe(stbi__jpeg *j)$/;"	f
+stbi__h2l_gamma_i	inc/stb_image.h	/^static float stbi__h2l_gamma_i=1.0f\/2.2f, stbi__h2l_scale_i=1.0f;$/;"	v
+stbi__h2l_scale_i	inc/stb_image.h	/^static float stbi__h2l_gamma_i=1.0f\/2.2f, stbi__h2l_scale_i=1.0f;$/;"	v
+stbi__hdr_convert	inc/stb_image.h	/^static void stbi__hdr_convert(float *output, stbi_uc *input, int req_comp)$/;"	f
+stbi__hdr_gettoken	inc/stb_image.h	/^static char *stbi__hdr_gettoken(stbi__context *z, char *buffer)$/;"	f
+stbi__hdr_info	inc/stb_image.h	/^static int stbi__hdr_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__hdr_load	inc/stb_image.h	/^static float *stbi__hdr_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__hdr_test	inc/stb_image.h	/^static int stbi__hdr_test(stbi__context* s)$/;"	f
+stbi__hdr_test_core	inc/stb_image.h	/^static int stbi__hdr_test_core(stbi__context *s, const char *signature)$/;"	f
+stbi__hdr_to_ldr	inc/stb_image.h	/^static stbi_uc *stbi__hdr_to_ldr(float   *data, int x, int y, int comp)$/;"	f
+stbi__high_bit	inc/stb_image.h	/^static int stbi__high_bit(unsigned int z)$/;"	f
+stbi__huffman	inc/stb_image.h	/^} stbi__huffman;$/;"	t	typeref:struct:__anon57
+stbi__idct_block	inc/stb_image.h	/^static void stbi__idct_block(stbi_uc *out, int out_stride, short data[64])$/;"	f
+stbi__idct_simd	inc/stb_image.h	/^static void stbi__idct_simd(stbi_uc *out, int out_stride, short data[64])$/;"	f
+stbi__info_main	inc/stb_image.h	/^static int stbi__info_main(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__int16	inc/stb_image.h	/^typedef   signed short stbi__int16;$/;"	t
+stbi__int16	inc/stb_image.h	/^typedef int16_t  stbi__int16;$/;"	t
+stbi__int32	inc/stb_image.h	/^typedef   signed int   stbi__int32;$/;"	t
+stbi__int32	inc/stb_image.h	/^typedef int32_t  stbi__int32;$/;"	t
+stbi__jbias	inc/stb_image.h	/^static int const stbi__jbias[16] = {0,-1,-3,-7,-15,-31,-63,-127,-255,-511,-1023,-2047,-4095,-8191,-16383,-32767};$/;"	v
+stbi__jpeg	inc/stb_image.h	/^} stbi__jpeg;$/;"	t	typeref:struct:__anon58
+stbi__jpeg_decode_block	inc/stb_image.h	/^static int stbi__jpeg_decode_block(stbi__jpeg *j, short data[64], stbi__huffman *hdc, stbi__huffman *hac, stbi__int16 *fac, int b, stbi__uint16 *dequant)$/;"	f
+stbi__jpeg_decode_block_prog_ac	inc/stb_image.h	/^static int stbi__jpeg_decode_block_prog_ac(stbi__jpeg *j, short data[64], stbi__huffman *hac, stbi__int16 *fac)$/;"	f
+stbi__jpeg_decode_block_prog_dc	inc/stb_image.h	/^static int stbi__jpeg_decode_block_prog_dc(stbi__jpeg *j, short data[64], stbi__huffman *hdc, int b)$/;"	f
+stbi__jpeg_dequantize	inc/stb_image.h	/^static void stbi__jpeg_dequantize(short *data, stbi__uint16 *dequant)$/;"	f
+stbi__jpeg_dezigzag	inc/stb_image.h	/^static stbi_uc stbi__jpeg_dezigzag[64+15] =$/;"	v
+stbi__jpeg_finish	inc/stb_image.h	/^static void stbi__jpeg_finish(stbi__jpeg *z)$/;"	f
+stbi__jpeg_get_bit	inc/stb_image.h	/^stbi_inline static int stbi__jpeg_get_bit(stbi__jpeg *j)$/;"	f
+stbi__jpeg_get_bits	inc/stb_image.h	/^stbi_inline static int stbi__jpeg_get_bits(stbi__jpeg *j, int n)$/;"	f
+stbi__jpeg_huff_decode	inc/stb_image.h	/^stbi_inline static int stbi__jpeg_huff_decode(stbi__jpeg *j, stbi__huffman *h)$/;"	f
+stbi__jpeg_info	inc/stb_image.h	/^static int stbi__jpeg_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__jpeg_info_raw	inc/stb_image.h	/^static int stbi__jpeg_info_raw(stbi__jpeg *j, int *x, int *y, int *comp)$/;"	f
+stbi__jpeg_load	inc/stb_image.h	/^static void *stbi__jpeg_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__jpeg_reset	inc/stb_image.h	/^static void stbi__jpeg_reset(stbi__jpeg *j)$/;"	f
+stbi__jpeg_test	inc/stb_image.h	/^static int stbi__jpeg_test(stbi__context *s)$/;"	f
+stbi__l2h_gamma	inc/stb_image.h	/^static float stbi__l2h_gamma=2.2f, stbi__l2h_scale=1.0f;$/;"	v
+stbi__l2h_scale	inc/stb_image.h	/^static float stbi__l2h_gamma=2.2f, stbi__l2h_scale=1.0f;$/;"	v
+stbi__ldr_to_hdr	inc/stb_image.h	/^static float   *stbi__ldr_to_hdr(stbi_uc *data, int x, int y, int comp)$/;"	f
+stbi__load_and_postprocess_16bit	inc/stb_image.h	/^static stbi__uint16 *stbi__load_and_postprocess_16bit(stbi__context *s, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi__load_and_postprocess_8bit	inc/stb_image.h	/^static unsigned char *stbi__load_and_postprocess_8bit(stbi__context *s, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi__load_main	inc/stb_image.h	/^static void *stbi__load_main(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri, int bpc)$/;"	f
+stbi__loadf_main	inc/stb_image.h	/^static float *stbi__loadf_main(stbi__context *s, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi__mad2sizes_valid	inc/stb_image.h	/^static int stbi__mad2sizes_valid(int a, int b, int add)$/;"	f
+stbi__mad3sizes_valid	inc/stb_image.h	/^static int stbi__mad3sizes_valid(int a, int b, int c, int add)$/;"	f
+stbi__mad4sizes_valid	inc/stb_image.h	/^static int stbi__mad4sizes_valid(int a, int b, int c, int d, int add)$/;"	f
+stbi__malloc	inc/stb_image.h	/^static void *stbi__malloc(size_t size)$/;"	f
+stbi__malloc_mad2	inc/stb_image.h	/^static void *stbi__malloc_mad2(int a, int b, int add)$/;"	f
+stbi__malloc_mad3	inc/stb_image.h	/^static void *stbi__malloc_mad3(int a, int b, int c, int add)$/;"	f
+stbi__malloc_mad4	inc/stb_image.h	/^static void *stbi__malloc_mad4(int a, int b, int c, int d, int add)$/;"	f
+stbi__mul2sizes_valid	inc/stb_image.h	/^static int stbi__mul2sizes_valid(int a, int b)$/;"	f
+stbi__out_gif_code	inc/stb_image.h	/^static void stbi__out_gif_code(stbi__gif *g, stbi__uint16 code)$/;"	f
+stbi__paeth	inc/stb_image.h	/^static int stbi__paeth(int a, int b, int c)$/;"	f
+stbi__parse_entropy_coded_data	inc/stb_image.h	/^static int stbi__parse_entropy_coded_data(stbi__jpeg *z)$/;"	f
+stbi__parse_huffman_block	inc/stb_image.h	/^static int stbi__parse_huffman_block(stbi__zbuf *a)$/;"	f
+stbi__parse_png_file	inc/stb_image.h	/^static int stbi__parse_png_file(stbi__png *z, int scan, int req_comp)$/;"	f
+stbi__parse_uncompressed_block	inc/stb_image.h	/^static int stbi__parse_uncompressed_block(stbi__zbuf *a)$/;"	f
+stbi__parse_zlib	inc/stb_image.h	/^static int stbi__parse_zlib(stbi__zbuf *a, int parse_header)$/;"	f
+stbi__parse_zlib_header	inc/stb_image.h	/^static int stbi__parse_zlib_header(stbi__zbuf *a)$/;"	f
+stbi__pic_info	inc/stb_image.h	/^static int stbi__pic_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__pic_is4	inc/stb_image.h	/^static int stbi__pic_is4(stbi__context *s,const char *str)$/;"	f
+stbi__pic_load	inc/stb_image.h	/^static void *stbi__pic_load(stbi__context *s,int *px,int *py,int *comp,int req_comp, stbi__result_info *ri)$/;"	f
+stbi__pic_load_core	inc/stb_image.h	/^static stbi_uc *stbi__pic_load_core(stbi__context *s,int width,int height,int *comp, stbi_uc *result)$/;"	f
+stbi__pic_packet	inc/stb_image.h	/^} stbi__pic_packet;$/;"	t	typeref:struct:__anon67
+stbi__pic_test	inc/stb_image.h	/^static int stbi__pic_test(stbi__context *s)$/;"	f
+stbi__pic_test_core	inc/stb_image.h	/^static int stbi__pic_test_core(stbi__context *s)$/;"	f
+stbi__png	inc/stb_image.h	/^} stbi__png;$/;"	t	typeref:struct:__anon64
+stbi__png_info	inc/stb_image.h	/^static int stbi__png_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__png_info_raw	inc/stb_image.h	/^static int stbi__png_info_raw(stbi__png *p, int *x, int *y, int *comp)$/;"	f
+stbi__png_load	inc/stb_image.h	/^static void *stbi__png_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__png_test	inc/stb_image.h	/^static int stbi__png_test(stbi__context *s)$/;"	f
+stbi__pngchunk	inc/stb_image.h	/^} stbi__pngchunk;$/;"	t	typeref:struct:__anon63
+stbi__pnm_getinteger	inc/stb_image.h	/^static int      stbi__pnm_getinteger(stbi__context *s, char *c)$/;"	f
+stbi__pnm_info	inc/stb_image.h	/^static int      stbi__pnm_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__pnm_isdigit	inc/stb_image.h	/^static int      stbi__pnm_isdigit(char c)$/;"	f
+stbi__pnm_isspace	inc/stb_image.h	/^static int      stbi__pnm_isspace(char c)$/;"	f
+stbi__pnm_load	inc/stb_image.h	/^static void *stbi__pnm_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__pnm_skip_whitespace	inc/stb_image.h	/^static void     stbi__pnm_skip_whitespace(stbi__context *s, char *c)$/;"	f
+stbi__pnm_test	inc/stb_image.h	/^static int      stbi__pnm_test(stbi__context *s)$/;"	f
+stbi__process_frame_header	inc/stb_image.h	/^static int stbi__process_frame_header(stbi__jpeg *z, int scan)$/;"	f
+stbi__process_gif_raster	inc/stb_image.h	/^static stbi_uc *stbi__process_gif_raster(stbi__context *s, stbi__gif *g)$/;"	f
+stbi__process_marker	inc/stb_image.h	/^static int stbi__process_marker(stbi__jpeg *z, int m)$/;"	f
+stbi__process_scan_header	inc/stb_image.h	/^static int stbi__process_scan_header(stbi__jpeg *z)$/;"	f
+stbi__psd_decode_rle	inc/stb_image.h	/^static int stbi__psd_decode_rle(stbi__context *s, stbi_uc *p, int pixelCount)$/;"	f
+stbi__psd_info	inc/stb_image.h	/^static int stbi__psd_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__psd_load	inc/stb_image.h	/^static void *stbi__psd_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri, int bpc)$/;"	f
+stbi__psd_test	inc/stb_image.h	/^static int stbi__psd_test(stbi__context *s)$/;"	f
+stbi__readval	inc/stb_image.h	/^static stbi_uc *stbi__readval(stbi__context *s, int channel, stbi_uc *dest)$/;"	f
+stbi__refill_buffer	inc/stb_image.h	/^static void stbi__refill_buffer(stbi__context *s)$/;"	f
+stbi__resample	inc/stb_image.h	/^} stbi__resample;$/;"	t	typeref:struct:__anon60
+stbi__resample_row_generic	inc/stb_image.h	/^static stbi_uc *stbi__resample_row_generic(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
+stbi__resample_row_h_2	inc/stb_image.h	/^static stbi_uc*  stbi__resample_row_h_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
+stbi__resample_row_hv_2	inc/stb_image.h	/^static stbi_uc *stbi__resample_row_hv_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
+stbi__resample_row_hv_2_simd	inc/stb_image.h	/^static stbi_uc *stbi__resample_row_hv_2_simd(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
+stbi__resample_row_v_2	inc/stb_image.h	/^static stbi_uc* stbi__resample_row_v_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
+stbi__result_info	inc/stb_image.h	/^} stbi__result_info;$/;"	t	typeref:struct:__anon55
+stbi__rewind	inc/stb_image.h	/^static void stbi__rewind(stbi__context *s)$/;"	f
+stbi__setup_jpeg	inc/stb_image.h	/^static void stbi__setup_jpeg(stbi__jpeg *j)$/;"	f
+stbi__shiftsigned	inc/stb_image.h	/^static int stbi__shiftsigned(int v, int shift, int bits)$/;"	f
+stbi__skip	inc/stb_image.h	/^static void stbi__skip(stbi__context *s, int n)$/;"	f
+stbi__sse2_available	inc/stb_image.h	/^static int stbi__sse2_available()$/;"	f
+stbi__start_callbacks	inc/stb_image.h	/^static void stbi__start_callbacks(stbi__context *s, stbi_io_callbacks *c, void *user)$/;"	f
+stbi__start_file	inc/stb_image.h	/^static void stbi__start_file(stbi__context *s, FILE *f)$/;"	f
+stbi__start_mem	inc/stb_image.h	/^static void stbi__start_mem(stbi__context *s, stbi_uc const *buffer, int len)$/;"	f
+stbi__start_write_callbacks	inc/stb_image_write.h	/^static void stbi__start_write_callbacks(stbi__write_context *s, stbi_write_func *c, void *context)$/;"	f
+stbi__start_write_file	inc/stb_image_write.h	/^static int stbi__start_write_file(stbi__write_context *s, const char *filename)$/;"	f
+stbi__stdio_callbacks	inc/stb_image.h	/^static stbi_io_callbacks stbi__stdio_callbacks =$/;"	v
+stbi__stdio_eof	inc/stb_image.h	/^static int stbi__stdio_eof(void *user)$/;"	f
+stbi__stdio_read	inc/stb_image.h	/^static int stbi__stdio_read(void *user, char *data, int size)$/;"	f
+stbi__stdio_skip	inc/stb_image.h	/^static void stbi__stdio_skip(void *user, int n)$/;"	f
+stbi__stdio_write	inc/stb_image_write.h	/^static void stbi__stdio_write(void *context, void *data, int size)$/;"	f
+stbi__tga_get_comp	inc/stb_image.h	/^static int stbi__tga_get_comp(int bits_per_pixel, int is_grey, int* is_rgb16)$/;"	f
+stbi__tga_info	inc/stb_image.h	/^static int stbi__tga_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
+stbi__tga_load	inc/stb_image.h	/^static void *stbi__tga_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
+stbi__tga_read_rgb16	inc/stb_image.h	/^static void stbi__tga_read_rgb16(stbi__context *s, stbi_uc* out)$/;"	f
+stbi__tga_test	inc/stb_image.h	/^static int stbi__tga_test(stbi__context *s)$/;"	f
+stbi__uint16	inc/stb_image.h	/^typedef uint16_t stbi__uint16;$/;"	t
+stbi__uint16	inc/stb_image.h	/^typedef unsigned short stbi__uint16;$/;"	t
+stbi__uint32	inc/stb_image.h	/^typedef uint32_t stbi__uint32;$/;"	t
+stbi__uint32	inc/stb_image.h	/^typedef unsigned int   stbi__uint32;$/;"	t
+stbi__unpremultiply_on_load	inc/stb_image.h	/^static int stbi__unpremultiply_on_load = 0;$/;"	v
+stbi__vertically_flip_on_load	inc/stb_image.h	/^static int stbi__vertically_flip_on_load = 0;$/;"	v
+stbi__write_context	inc/stb_image_write.h	/^} stbi__write_context;$/;"	t	typeref:struct:__anon1
+stbi__zbuf	inc/stb_image.h	/^} stbi__zbuf;$/;"	t	typeref:struct:__anon62
+stbi__zbuild_huffman	inc/stb_image.h	/^static int stbi__zbuild_huffman(stbi__zhuffman *z, const stbi_uc *sizelist, int num)$/;"	f
+stbi__zdefault_distance	inc/stb_image.h	/^static const stbi_uc stbi__zdefault_distance[32] =$/;"	v
+stbi__zdefault_length	inc/stb_image.h	/^static const stbi_uc stbi__zdefault_length[288] =$/;"	v
+stbi__zdist_base	inc/stb_image.h	/^static int stbi__zdist_base[32] = { 1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,$/;"	v
+stbi__zdist_extra	inc/stb_image.h	/^static int stbi__zdist_extra[32] =$/;"	v
+stbi__zexpand	inc/stb_image.h	/^static int stbi__zexpand(stbi__zbuf *z, char *zout, int n)  \/\/ need to make room for n bytes$/;"	f
+stbi__zget8	inc/stb_image.h	/^stbi_inline static stbi_uc stbi__zget8(stbi__zbuf *z)$/;"	f
+stbi__zhuffman	inc/stb_image.h	/^} stbi__zhuffman;$/;"	t	typeref:struct:__anon61
+stbi__zhuffman_decode	inc/stb_image.h	/^stbi_inline static int stbi__zhuffman_decode(stbi__zbuf *a, stbi__zhuffman *z)$/;"	f
+stbi__zhuffman_decode_slowpath	inc/stb_image.h	/^static int stbi__zhuffman_decode_slowpath(stbi__zbuf *a, stbi__zhuffman *z)$/;"	f
+stbi__zlength_base	inc/stb_image.h	/^static int stbi__zlength_base[31] = {$/;"	v
+stbi__zlength_extra	inc/stb_image.h	/^static int stbi__zlength_extra[31]=$/;"	v
+stbi__zreceive	inc/stb_image.h	/^stbi_inline static unsigned int stbi__zreceive(stbi__zbuf *z, int n)$/;"	f
+stbi_convert_iphone_png_to_rgb	inc/stb_image.h	/^STBIDEF void stbi_convert_iphone_png_to_rgb(int flag_true_if_should_convert)$/;"	f
+stbi_failure_reason	inc/stb_image.h	/^STBIDEF const char *stbi_failure_reason(void)$/;"	f
+stbi_hdr_to_ldr_gamma	inc/stb_image.h	/^STBIDEF void   stbi_hdr_to_ldr_gamma(float gamma) { stbi__h2l_gamma_i = 1\/gamma; }$/;"	f
+stbi_hdr_to_ldr_scale	inc/stb_image.h	/^STBIDEF void   stbi_hdr_to_ldr_scale(float scale) { stbi__h2l_scale_i = 1\/scale; }$/;"	f
+stbi_image_free	inc/stb_image.h	/^STBIDEF void stbi_image_free(void *retval_from_stbi_load)$/;"	f
+stbi_info	inc/stb_image.h	/^STBIDEF int stbi_info(char const *filename, int *x, int *y, int *comp)$/;"	f
+stbi_info_from_callbacks	inc/stb_image.h	/^STBIDEF int stbi_info_from_callbacks(stbi_io_callbacks const *c, void *user, int *x, int *y, int *comp)$/;"	f
+stbi_info_from_file	inc/stb_image.h	/^STBIDEF int stbi_info_from_file(FILE *f, int *x, int *y, int *comp)$/;"	f
+stbi_info_from_memory	inc/stb_image.h	/^STBIDEF int stbi_info_from_memory(stbi_uc const *buffer, int len, int *x, int *y, int *comp)$/;"	f
+stbi_inline	inc/stb_image.h	521;"	d
+stbi_inline	inc/stb_image.h	523;"	d
+stbi_inline	inc/stb_image.h	526;"	d
+stbi_io_callbacks	inc/stb_image.h	/^} stbi_io_callbacks;$/;"	t	typeref:struct:__anon52
+stbi_is_hdr	inc/stb_image.h	/^STBIDEF int      stbi_is_hdr          (char const *filename)$/;"	f
+stbi_is_hdr_from_callbacks	inc/stb_image.h	/^STBIDEF int      stbi_is_hdr_from_callbacks(stbi_io_callbacks const *clbk, void *user)$/;"	f
+stbi_is_hdr_from_file	inc/stb_image.h	/^STBIDEF int      stbi_is_hdr_from_file(FILE *f)$/;"	f
+stbi_is_hdr_from_memory	inc/stb_image.h	/^STBIDEF int stbi_is_hdr_from_memory(stbi_uc const *buffer, int len)$/;"	f
+stbi_ldr_to_hdr_gamma	inc/stb_image.h	/^STBIDEF void   stbi_ldr_to_hdr_gamma(float gamma) { stbi__l2h_gamma = gamma; }$/;"	f
+stbi_ldr_to_hdr_scale	inc/stb_image.h	/^STBIDEF void   stbi_ldr_to_hdr_scale(float scale) { stbi__l2h_scale = scale; }$/;"	f
+stbi_load	inc/stb_image.h	/^STBIDEF stbi_uc *stbi_load(char const *filename, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_load_16	inc/stb_image.h	/^STBIDEF stbi_us *stbi_load_16(char const *filename, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_load_from_callbacks	inc/stb_image.h	/^STBIDEF stbi_uc *stbi_load_from_callbacks(stbi_io_callbacks const *clbk, void *user, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_load_from_file	inc/stb_image.h	/^STBIDEF stbi_uc *stbi_load_from_file(FILE *f, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_load_from_file_16	inc/stb_image.h	/^STBIDEF stbi__uint16 *stbi_load_from_file_16(FILE *f, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_load_from_memory	inc/stb_image.h	/^STBIDEF stbi_uc *stbi_load_from_memory(stbi_uc const *buffer, int len, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_loadf	inc/stb_image.h	/^STBIDEF float *stbi_loadf(char const *filename, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_loadf_from_callbacks	inc/stb_image.h	/^STBIDEF float *stbi_loadf_from_callbacks(stbi_io_callbacks const *clbk, void *user, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_loadf_from_file	inc/stb_image.h	/^STBIDEF float *stbi_loadf_from_file(FILE *f, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_loadf_from_memory	inc/stb_image.h	/^STBIDEF float *stbi_loadf_from_memory(stbi_uc const *buffer, int len, int *x, int *y, int *comp, int req_comp)$/;"	f
+stbi_lrot	inc/stb_image.h	557;"	d
+stbi_lrot	inc/stb_image.h	559;"	d
+stbi_set_flip_vertically_on_load	inc/stb_image.h	/^STBIDEF void stbi_set_flip_vertically_on_load(int flag_true_if_should_flip)$/;"	f
+stbi_set_unpremultiply_on_load	inc/stb_image.h	/^STBIDEF void stbi_set_unpremultiply_on_load(int flag_true_if_should_unpremultiply)$/;"	f
+stbi_uc	inc/stb_image.h	/^typedef unsigned char stbi_uc;$/;"	t
+stbi_us	inc/stb_image.h	/^typedef unsigned short stbi_us;$/;"	t
+stbi_write_bmp	inc/stb_image_write.h	/^STBIWDEF int stbi_write_bmp(char const *filename, int x, int y, int comp, const void *data)$/;"	f
+stbi_write_bmp_core	inc/stb_image_write.h	/^static int stbi_write_bmp_core(stbi__write_context *s, int x, int y, int comp, const void *data)$/;"	f
+stbi_write_bmp_to_func	inc/stb_image_write.h	/^STBIWDEF int stbi_write_bmp_to_func(stbi_write_func *func, void *context, int x, int y, int comp, const void *data)$/;"	f
+stbi_write_func	inc/stb_image_write.h	/^typedef void stbi_write_func(void *context, void *data, int size);$/;"	t
+stbi_write_hdr	inc/stb_image_write.h	/^int stbi_write_hdr(char const *filename, int x, int y, int comp, const float *data)$/;"	f
+stbi_write_hdr_core	inc/stb_image_write.h	/^static int stbi_write_hdr_core(stbi__write_context *s, int x, int y, int comp, float *data)$/;"	f
+stbi_write_hdr_to_func	inc/stb_image_write.h	/^int stbi_write_hdr_to_func(stbi_write_func *func, void *context, int x, int y, int comp, const float *data)$/;"	f
+stbi_write_png	inc/stb_image_write.h	/^STBIWDEF int stbi_write_png(char const *filename, int x, int y, int comp, const void *data, int stride_bytes)$/;"	f
+stbi_write_png_to_func	inc/stb_image_write.h	/^STBIWDEF int stbi_write_png_to_func(stbi_write_func *func, void *context, int x, int y, int comp, const void *data, int stride_bytes)$/;"	f
+stbi_write_png_to_mem	inc/stb_image_write.h	/^unsigned char *stbi_write_png_to_mem(unsigned char *pixels, int stride_bytes, int x, int y, int n, int *out_len)$/;"	f
+stbi_write_tga	inc/stb_image_write.h	/^int stbi_write_tga(char const *filename, int x, int y, int comp, const void *data)$/;"	f
+stbi_write_tga_core	inc/stb_image_write.h	/^static int stbi_write_tga_core(stbi__write_context *s, int x, int y, int comp, void *data)$/;"	f
+stbi_write_tga_to_func	inc/stb_image_write.h	/^int stbi_write_tga_to_func(stbi_write_func *func, void *context, int x, int y, int comp, const void *data)$/;"	f
+stbi_write_tga_with_rle	inc/stb_image_write.h	/^int stbi_write_tga_with_rle = 1;$/;"	v
+stbi_write_tga_with_rle	inc/stb_image_write.h	/^static int stbi_write_tga_with_rle = 1;$/;"	v
+stbi_zlib_compress	inc/stb_image_write.h	/^unsigned char * stbi_zlib_compress(unsigned char *data, int data_len, int *out_len, int quality)$/;"	f
+stbi_zlib_decode_buffer	inc/stb_image.h	/^STBIDEF int stbi_zlib_decode_buffer(char *obuffer, int olen, char const *ibuffer, int ilen)$/;"	f
+stbi_zlib_decode_malloc	inc/stb_image.h	/^STBIDEF char *stbi_zlib_decode_malloc(char const *buffer, int len, int *outlen)$/;"	f
+stbi_zlib_decode_malloc_guesssize	inc/stb_image.h	/^STBIDEF char *stbi_zlib_decode_malloc_guesssize(const char *buffer, int len, int initial_size, int *outlen)$/;"	f
+stbi_zlib_decode_malloc_guesssize_headerflag	inc/stb_image.h	/^STBIDEF char *stbi_zlib_decode_malloc_guesssize_headerflag(const char *buffer, int len, int initial_size, int *outlen, int parse_header)$/;"	f
+stbi_zlib_decode_noheader_buffer	inc/stb_image.h	/^STBIDEF int stbi_zlib_decode_noheader_buffer(char *obuffer, int olen, const char *ibuffer, int ilen)$/;"	f
+stbi_zlib_decode_noheader_malloc	inc/stb_image.h	/^STBIDEF char *stbi_zlib_decode_noheader_malloc(char const *buffer, int len, int *outlen)$/;"	f
+stbiw__ZHASH	inc/stb_image_write.h	727;"	d
+stbiw__crc32	inc/stb_image_write.h	/^static unsigned int stbiw__crc32(unsigned char *buffer, int len)$/;"	f
+stbiw__linear_to_rgbe	inc/stb_image_write.h	/^void stbiw__linear_to_rgbe(unsigned char *rgbe, float *linear)$/;"	f
+stbiw__max	inc/stb_image_write.h	477;"	d
+stbiw__outfile	inc/stb_image_write.h	/^static int stbiw__outfile(stbi__write_context *s, int rgb_dir, int vdir, int x, int y, int comp, int expand_mono, void *data, int alpha, int pad, const char *fmt, ...)$/;"	f
+stbiw__paeth	inc/stb_image_write.h	/^static unsigned char stbiw__paeth(int a, int b, int c)$/;"	f
+stbiw__sbcount	inc/stb_image_write.h	659;"	d
+stbiw__sbfree	inc/stb_image_write.h	660;"	d
+stbiw__sbgrow	inc/stb_image_write.h	656;"	d
+stbiw__sbgrowf	inc/stb_image_write.h	/^static void *stbiw__sbgrowf(void **arr, int increment, int itemsize)$/;"	f
+stbiw__sbm	inc/stb_image_write.h	651;"	d
+stbiw__sbmaybegrow	inc/stb_image_write.h	655;"	d
+stbiw__sbn	inc/stb_image_write.h	652;"	d
+stbiw__sbneedgrow	inc/stb_image_write.h	654;"	d
+stbiw__sbpush	inc/stb_image_write.h	658;"	d
+stbiw__sbraw	inc/stb_image_write.h	650;"	d
+stbiw__wp32	inc/stb_image_write.h	880;"	d
+stbiw__wpcrc	inc/stb_image_write.h	/^static void stbiw__wpcrc(unsigned char **data, int len)$/;"	f
+stbiw__wpng4	inc/stb_image_write.h	879;"	d
+stbiw__wptag	inc/stb_image_write.h	881;"	d
+stbiw__write3	inc/stb_image_write.h	/^static void stbiw__write3(stbi__write_context *s, unsigned char a, unsigned char b, unsigned char c)$/;"	f
+stbiw__write_dump_data	inc/stb_image_write.h	/^void stbiw__write_dump_data(stbi__write_context *s, int length, unsigned char *data)$/;"	f
+stbiw__write_hdr_scanline	inc/stb_image_write.h	/^void stbiw__write_hdr_scanline(stbi__write_context *s, int width, int ncomp, unsigned char *scratch, float *scanline)$/;"	f
+stbiw__write_pixel	inc/stb_image_write.h	/^static void stbiw__write_pixel(stbi__write_context *s, int rgb_dir, int comp, int write_alpha, int expand_mono, unsigned char *d)$/;"	f
+stbiw__write_pixels	inc/stb_image_write.h	/^static void stbiw__write_pixels(stbi__write_context *s, int rgb_dir, int vdir, int x, int y, int comp, void *data, int write_alpha, int scanline_pad, int expand_mono)$/;"	f
+stbiw__write_run_data	inc/stb_image_write.h	/^void stbiw__write_run_data(stbi__write_context *s, int length, unsigned char databyte)$/;"	f
+stbiw__writef	inc/stb_image_write.h	/^static void stbiw__writef(stbi__write_context *s, const char *fmt, ...)$/;"	f
+stbiw__writefv	inc/stb_image_write.h	/^static void stbiw__writefv(stbi__write_context *s, const char *fmt, va_list v)$/;"	f
+stbiw__zhash	inc/stb_image_write.h	/^static unsigned int stbiw__zhash(unsigned char *data)$/;"	f
+stbiw__zlib_add	inc/stb_image_write.h	716;"	d
+stbiw__zlib_bitrev	inc/stb_image_write.h	/^static int stbiw__zlib_bitrev(int code, int codebits)$/;"	f
+stbiw__zlib_countm	inc/stb_image_write.h	/^static unsigned int stbiw__zlib_countm(unsigned char *a, unsigned char *b, int limit)$/;"	f
+stbiw__zlib_flush	inc/stb_image_write.h	715;"	d
+stbiw__zlib_flushf	inc/stb_image_write.h	/^static unsigned char *stbiw__zlib_flushf(unsigned char *data, unsigned int *bitbuffer, int *bitcount)$/;"	f
+stbiw__zlib_huff	inc/stb_image_write.h	724;"	d
+stbiw__zlib_huff1	inc/stb_image_write.h	720;"	d
+stbiw__zlib_huff2	inc/stb_image_write.h	721;"	d
+stbiw__zlib_huff3	inc/stb_image_write.h	722;"	d
+stbiw__zlib_huff4	inc/stb_image_write.h	723;"	d
+stbiw__zlib_huffa	inc/stb_image_write.h	718;"	d
+stbiw__zlib_huffb	inc/stb_image_write.h	725;"	d
+stbiw_uint32	inc/stb_image_write.h	/^typedef unsigned int stbiw_uint32;$/;"	t
+stbprint	inc/stb.h	/^void stbprint(const char *fmt, ...)$/;"	f
+step	inc/stb.h	/^   int mode, step;$/;"	m	struct:__anon5
+step	inc/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon69
+store	inc/stb.h	/^      void *store;           \/\/ pointer to free that holds 'code'$/;"	m	union:stu__func::__anon47
+strdup	inc/stb.h	450;"	d
+strdup	inc/stb.h	703;"	d
+strdup	inc/stb.h	716;"	d
+string_pool	inc/stb.h	/^   void             * string_pool;   \/\/ used to free data en masse$/;"	m	struct:__anon22
+stu__accept	inc/stb.h	/^static int stu__accept(int p)$/;"	f
+stu__assign	inc/stb.h	/^static int stu__assign(void)$/;"	f
+stu__box	inc/stb.h	/^typedef struct stu__box { STU__BOX; } stu__box;$/;"	s
+stu__box	inc/stb.h	/^typedef struct stu__box { STU__BOX; } stu__box;$/;"	t	typeref:struct:stu__box
+stu__bufstart	inc/stb.h	/^static char *stu__curbuf, *stu__bufstart;$/;"	v
+stu__c	inc/stb.h	/^static stua_dict       *stu__c;$/;"	v
+stu__cc	inc/stb.h	/^static void stu__cc(int a)$/;"	f
+stu__cc1	inc/stb.h	/^static int stu__cc1(int a)                      { stu__cc(a); return stu__off()-1; }$/;"	f
+stu__cc2	inc/stb.h	/^static int stu__cc2(int a, int b)               { stu__cc(a); stu__cc(b); return stu__off()-2; }$/;"	f
+stu__cc3	inc/stb.h	/^static int stu__cc3(int a, int b, int c)        {$/;"	f
+stu__cc4	inc/stb.h	/^static int stu__cc4(int a, int b, int c, int d) { stu__cc(a); stu__cc(b); stu__cc(c); stu__cc(d); return stu__off()-4; }$/;"	f
+stu__cdt	inc/stb.h	/^static int stu__cdt(void)$/;"	f
+stu__cdv	inc/stb.h	/^static int stu__cdv(stua_obj p)$/;"	f
+stu__checkt	inc/stb.h	13101;"	d
+stu__comp_err_line	inc/stb.h	/^static int stu__comp_err_line;$/;"	v
+stu__comp_err_str	inc/stb.h	/^static char stu__comp_err_str[1024];$/;"	v
+stu__comp_func	inc/stb.h	/^} stu__comp_func;$/;"	t	typeref:struct:__anon50
+stu__comp_id	inc/stb.h	/^static int stu__comp_id(void)$/;"	f
+stu__compile_global_scope	inc/stb.h	/^static int stu__compile_global_scope(void)$/;"	f
+stu__compile_unary	inc/stb.h	/^static int stu__compile_unary(int z, int outparm, int require_inparm)$/;"	f
+stu__cond	inc/stb.h	/^static int stu__cond(stua_obj x)$/;"	f
+stu__consider_gc	inc/stb.h	/^static void stu__consider_gc(stua_obj x)$/;"	f
+stu__const	inc/stb.h	13131;"	d
+stu__curbuf	inc/stb.h	/^static char *stu__curbuf, *stu__bufstart;$/;"	v
+stu__demand	inc/stb.h	/^static int stu__demand(int p)$/;"	f
+stu__demandv	inc/stb.h	/^static int stu__demandv(int p, stua_obj *val)$/;"	f
+stu__dictdef	inc/stb.h	/^static int stu__dictdef(int end, int *count)$/;"	f
+stu__end	inc/stb.h	/^static unsigned char stu__prec[ST__max_terminals], stu__end[ST__max_terminals];$/;"	v
+stu__err	inc/stb.h	/^static int stu__err(char *str, ...)$/;"	f
+stu__eval	inc/stb.h	/^static stua_obj stu__eval(int n)$/;"	f
+stu__expr	inc/stb.h	/^static int stu__expr(int p)$/;"	f
+stu__f	inc/stb.h	/^static short *stu__f;$/;"	v
+stu__f_obj	inc/stb.h	/^static stua_obj  stu__f_obj;$/;"	v
+stu__false	inc/stb.h	/^stu__box stu__false = { STU___boolean, 1, };$/;"	v
+stu__finish_func	inc/stb.h	/^static stua_obj stu__finish_func(stua_obj *param, int start)$/;"	f
+stu__float	inc/stb.h	13067;"	d
+stu__float_init	inc/stb.h	/^static void stu__float_init(void)$/;"	f
+stu__float_tag	inc/stb.h	13058;"	d
+stu__floatp	inc/stb.h	/^static stua_obj stu__floatp(float *f)$/;"	f
+stu__flow	inc/stb.h	/^} stu__flow;$/;"	v	typeref:enum:__anon48
+stu__flow_val	inc/stb.h	/^static stua_obj stu__flow_val = stua_nil; \/\/ used for break & return$/;"	v
+stu__free_func	inc/stb.h	/^static void stu__free_func(stu__func *f)$/;"	f
+stu__func	inc/stb.h	/^typedef struct stu__func$/;"	s
+stu__func	inc/stb.h	/^} stu__func;$/;"	t	typeref:struct:stu__func
+stu__funcdef	inc/stb.h	/^static int stu__funcdef(stua_obj *id, stua_obj *result)$/;"	f
+stu__funceval	inc/stb.h	/^static stua_obj stu__funceval(stua_obj fo, stua_obj co)$/;"	f
+stu__gc_ptrlist	inc/stb.h	/^static stu__box ** stu__gc_ptrlist;$/;"	v
+stu__gc_root_stack	inc/stb.h	/^static stua_obj * stu__gc_root_stack;$/;"	v
+stu__get	inc/stb.h	/^static stua_obj stu__get(stua_dict *d, stua_obj k, stua_obj res)$/;"	f
+stu__getfloat	inc/stb.h	/^static float stu__getfloat(stua_obj v)$/;"	f
+stu__getfloat_addend	inc/stb.h	/^static unsigned char stu__getfloat_addend[256];$/;"	v
+stu__globaldict	inc/stb.h	/^static stua_dict  * stu__globaldict;$/;"	v
+stu__int	inc/stb.h	13066;"	d
+stu__int_tag	inc/stb.h	13057;"	d
+stu__isint	inc/stb.h	13064;"	d
+stu__lex_matcher	inc/stb.h	/^static stb_matcher *stu__lex_matcher;$/;"	v
+stu__lexemes	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	v	typeref:struct:__anon49
+stu__makeint	inc/stb.h	13069;"	d
+stu__makeobj	inc/stb.h	/^static stua_obj stu__makeobj(int type, void *data, int size, int safe_to_gc)$/;"	f
+stu__makeptr	inc/stb.h	13089;"	d
+stu__mark	inc/stb.h	/^static void stu__mark(stua_obj z)$/;"	f
+stu__myprint	inc/stb.h	/^stua_obj stu__myprint(stua_dict *context)$/;"	f
+stu__nexpr	inc/stb.h	/^int stu__nexpr(int p) { stu__nexttoken(); return stu__expr(p); }$/;"	f
+stu__nexttoken	inc/stb.h	/^static void stu__nexttoken(void)$/;"	f
+stu__nil	inc/stb.h	/^stu__box stu__nil   = { 0, 1 };$/;"	v
+stu__nonlocal_id	inc/stb.h	/^static int stu__nonlocal_id(stua_obj var_obj)$/;"	f
+stu__num_allocs	inc/stb.h	/^static int stu__num_allocs, stu__size_allocs;$/;"	v
+stu__number	inc/stb.h	13063;"	d
+stu__off	inc/stb.h	/^static int stu__off(void)                { return stb_arr_len(stu__pfunc.code); }$/;"	f
+stu__op	inc/stb.h	/^static stua_obj stu__op(int op, stua_obj a, stua_obj b, stua_obj c)$/;"	f
+stu__parse_if	inc/stb.h	/^static int stu__parse_if(void)      \/\/ parse both ST_if and ST_elseif$/;"	f
+stu__pd	inc/stb.h	13140;"	d
+stu__pf	inc/stb.h	13142;"	d
+stu__pfunc	inc/stb.h	/^static stu__comp_func stu__pfunc;$/;"	v
+stu__pop_func_comp	inc/stb.h	/^static void stu__pop_func_comp(void)$/;"	f
+stu__postexpr	inc/stb.h	/^static int stu__postexpr(int z, int p)$/;"	f
+stu__prec	inc/stb.h	/^static unsigned char stu__prec[ST__max_terminals], stu__end[ST__max_terminals];$/;"	v
+stu__ptr	inc/stb.h	13099;"	d
+stu__ptr_tag	inc/stb.h	13059;"	d
+stu__push_func_comp	inc/stb.h	/^static void stu__push_func_comp(void)$/;"	f
+stu__pw	inc/stb.h	13141;"	d
+stu__seq	inc/stb.h	/^static int stu__seq(int a, int b)$/;"	f
+stu__set	inc/stb.h	/^static void     stu__set(stua_dict *d, stua_obj k, stua_obj v)$/;"	f
+stu__size_allocs	inc/stb.h	/^static int stu__num_allocs, stu__size_allocs;$/;"	v
+stu__statements	inc/stb.h	/^static int stu__statements(int once, int stop_while)$/;"	f
+stu__strings	inc/stb.h	/^static stb_sdict *stu__strings;$/;"	v
+stu__tag	inc/stb.h	13062;"	d
+stu__tok	inc/stb.h	/^static int stu__tok;$/;"	v
+stu__tok	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	m	struct:__anon49
+stu__tokval	inc/stb.h	/^static stua_obj stu__tokval;$/;"	v
+stu__true	inc/stb.h	/^stu__box stu__true  = { STU___boolean, 1, };$/;"	v
+stu__varinit	inc/stb.h	/^int stu__varinit(int z, int in_globals)$/;"	f
+stu__wrapper	inc/stb.h	/^} stu__wrapper;$/;"	t	typeref:struct:__anon46
+stua_box	inc/stb.h	/^stua_obj stua_box(int type, void *data, int size)$/;"	f
+stua_dict	inc/stb.h	/^typedef stb_idict stua_dict;$/;"	t
+stua_error	inc/stb.h	/^stua_obj stua_error(char *z, ...)$/;"	f
+stua_false	inc/stb.h	13093;"	d
+stua_float	inc/stb.h	/^stua_obj stua_float(float f) $/;"	f
+stua_gc	inc/stb.h	/^static void stua_gc(int force)$/;"	f
+stua_getfalse	inc/stb.h	/^stua_obj stua_getfalse(void) { return stua_false; }$/;"	f
+stua_getnil	inc/stb.h	/^stua_obj stua_getnil(void)   { return stua_nil; }$/;"	f
+stua_gettrue	inc/stb.h	/^stua_obj stua_gettrue(void)  { return stua_true; }$/;"	f
+stua_globals	inc/stb.h	/^       stua_obj     stua_globals;$/;"	v
+stua_init	inc/stb.h	/^void stua_init(void)$/;"	f
+stua_key4	inc/stb.h	13680;"	d
+stua_make_number	inc/stb.h	/^stua_obj stua_make_number(double d)$/;"	f
+stua_nil	inc/stb.h	13091;"	d
+stua_number	inc/stb.h	/^double stua_number(stua_obj z)$/;"	f
+stua_obj	inc/stb.h	/^typedef stb_int32 stua_obj;$/;"	t
+stua_overload	inc/stb.h	/^STB_EXTERN stua_obj (*stua_overload)(int op, stua_obj a, stua_obj b, stua_obj c);$/;"	v
+stua_overload	inc/stb.h	/^stua_obj (*stua_overload)(int op, stua_obj a, stua_obj b, stua_obj c) = NULL;$/;"	v
+stua_poproot	inc/stb.h	/^void     stua_poproot (   void   ) { stb_arr_pop(stu__gc_root_stack); }$/;"	f
+stua_pushroot	inc/stb.h	/^stua_obj stua_pushroot(stua_obj o) { stb_arr_push(stu__gc_root_stack, o); return o; }$/;"	f
+stua_run_script	inc/stb.h	/^void stua_run_script(char *s)$/;"	f
+stua_string	inc/stb.h	/^stua_obj stua_string(char *z)$/;"	f
+stua_true	inc/stb.h	13092;"	d
+stua_uninit	inc/stb.h	/^void stua_uninit(void)$/;"	f
+subdirs	inc/stb.h	/^   stb_dirtree2 **subdirs;$/;"	m	struct:stb_dirtree2
+succ_high	inc/stb_image.h	/^   int            succ_high;$/;"	m	struct:__anon58
+succ_low	inc/stb_image.h	/^   int            succ_low;$/;"	m	struct:__anon58
+suffix	inc/stb_image.h	/^   stbi_uc suffix;$/;"	m	struct:__anon68
+sum	inc/test.h	/^int sum(int a, int b) {$/;"	f
+sval	inc/stb.h	/^      char *sval;$/;"	m	union:__anon41::__anon42
+swap	inc/stb.h	303;"	d
+sync	inc/stb.h	/^   stb_sync sync;$/;"	m	struct:__anon37
+table	inc/stb.h	/^   stb_uint32 *table;$/;"	m	struct:__anon12
+table	inc/stb.h	/^   void *table[1];$/;"	m	struct:__anon27
+table_mask	inc/stb.h	/^   stb_uint table_mask;$/;"	m	struct:__anon12
+tail	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
+tail_blockers	inc/stb.h	/^   int tail_blockers;$/;"	m	struct:stb__threadqueue
+target	inc/stb.h	/^   int target;  \/\/ target number of threads to hit it$/;"	m	struct:stb__sync
+targets	inc/stb.h	/^   stb__nptr_target *targets;$/;"	m	struct:__anon15
+tell	inc/stb.h	/^   unsigned int (*tell)(struct stbfile *);$/;"	m	struct:stbfile
+temp_name	inc/stb.h	/^   char *temp_name;$/;"	m	struct:__anon18
+timestamp	inc/stb.h	/^   time_t timestamp;$/;"	m	struct:__anon43
+todo	inc/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon58
+token_names	inc/stb.h	/^enum token_names$/;"	g
+total_bytes	inc/stb.h	/^   stb_uint total_bytes;$/;"	m	struct:__anon31
+tq	inc/stb.h	/^   stb_threadqueue *tq;$/;"	m	struct:stb__workqueue
+tq	inc/stb_image.h	/^      int tq;$/;"	m	struct:__anon58::__anon59
+transition	inc/stb.h	/^   stb_int16 transition[256];$/;"	m	struct:__anon28
+transparent	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
+type	inc/stb.h	/^   int type;$/;"	m	struct:__anon41
+type	inc/stb_image.h	/^   stbi__uint32 type;$/;"	m	struct:__anon63
+type	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon67
+uchar	inc/mn_cv_image.h	/^typedef unsigned char uchar;$/;"	t
+uchar	inc/stb.h	/^   typedef unsigned char  uchar ;$/;"	t
+uint	inc/stb.h	/^   typedef unsigned int   uint  ;$/;"	t
+uint16	inc/stb.h	/^   typedef unsigned short uint16;$/;"	t
+uint32	inc/stb.h	/^   typedef unsigned int   uint32;$/;"	t
+uint32	inc/stb.h	/^   typedef unsigned long  uint32;$/;"	t
+uint8	inc/stb.h	/^   typedef unsigned char  uint8 ;$/;"	t
+ulong	inc/stb.h	/^   typedef unsigned long  ulong ;$/;"	t
+ushort	inc/stb.h	/^   typedef unsigned short ushort;$/;"	t
+v	inc/stb_image.h	/^      int h,v;$/;"	m	struct:__anon58::__anon59
+valid	inc/stb.h	/^   int valid;          \/\/ amount of valid data in bytes$/;"	m	struct:__anon31
+validate_uint32	inc/stb_image.h	/^typedef unsigned char validate_uint32[sizeof(stbi__uint32)==4 ? 1 : -1];$/;"	t
+value	inc/stb.h	/^   void *value;$/;"	m	struct:__anon19
+value	inc/stb_image.h	/^   stbi__uint16 value[288];$/;"	m	struct:__anon61
+value_len	inc/stb.h	/^   int value_len;$/;"	m	struct:__anon19
+values	inc/stb_image.h	/^   stbi_uc  values[256];$/;"	m	struct:__anon57
+various	inc/stb.h	/^      int various;$/;"	m	union:stbfile::__anon32
+vs	inc/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon60
+w	inc/stb_image.h	/^   int w,h;$/;"	m	struct:__anon69
+w2	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
+w_lores	inc/stb_image.h	/^   int w_lores; \/\/ horizontal pixels pre-expansion$/;"	m	struct:__anon60
+waiting	inc/stb.h	/^   int waiting; \/\/ total threads waiting$/;"	m	struct:stb__sync
+weight	inc/stb.h	/^   float weight;$/;"	m	struct:stb_dirtree2
+width	inc/mn_cv_image.h	/^   int     width;$/;"	m	struct:Image
+window	inc/stb.h	/^   int window;$/;"	m	struct:__anon31
+x	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
+xtb	inc/stb.h	/^} xtb;$/;"	v	typeref:struct:__anon31
+y	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
+ypos	inc/stb_image.h	/^   int ypos;    \/\/ which pre-expansion row we're on$/;"	m	struct:__anon60
+ystep	inc/stb_image.h	/^   int ystep;   \/\/ how far through vertical expansion we are$/;"	m	struct:__anon60
+z_distance	inc/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon62
+z_expandable	inc/stb_image.h	/^   int   z_expandable;$/;"	m	struct:__anon62
+z_length	inc/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon62
+zbuffer	inc/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon62
+zbuffer_end	inc/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon62
+zout	inc/stb_image.h	/^   char *zout;$/;"	m	struct:__anon62
+zout_end	inc/stb_image.h	/^   char *zout_end;$/;"	m	struct:__anon62
+zout_start	inc/stb_image.h	/^   char *zout_start;$/;"	m	struct:__anon62

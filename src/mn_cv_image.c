@@ -43,50 +43,50 @@ You should have received a copy of the GNU General Public License
  * @param c
  * @param value
  */
-static void mn_cv_set_pixel(struct Image img, int x, int y, int c, float value)
+static void mn_cv_set_pixel(struct Image* img, int x, int y, int c, float value)
 {
 
    /* check the imputs */
    /* TODO(elsuizo:2018-03-28):porque no hacer que la imagen tenga uint directamente */
-   if (x < 0 || y < 0 || c < 0 || x >= img.width || y >= img.height || c >= img.channels) {
+   if (x < 0 || y < 0 || c < 0 || x >= img->width || y >= img->height || c >= img->channels) {
       /* TODO(elsuizo:2018-03-28):imprimir un error */
       return;
    }
-   assert(x < img.width && y < img.height && c < img.channels);
-   img.data[c * img.height * img.width + y * img.width + x] = value;
+   assert(x < img->width && y < img->height && c < img->channels);
+   img->data[c * img->height * img->width + y * img->width + x] = value;
 }
 
-static void mn_cv_add_pixel(struct Image img, int x, int y, int c, float value)
+static void mn_cv_add_pixel(struct Image* img, int x, int y, int c, float value)
 {
    /* check the inputs */
-   assert(x < img.width && y < img.height && c < img.channels);
-   img.data[c * img.height * img.width + y * img.width + x] += value;
+   assert(x < img->width && y < img->height && c < img->channels);
+   img->data[c * img->height * img->width + y * img->width + x] += value;
 }
 
-static void mn_cv_mul_pixel(struct Image img, int x, int y, int c, float value)
+static void mn_cv_mul_pixel(struct Image* img, int x, int y, int c, float value)
 {
    /* check the inputs */
-   assert(x < img.width && y < img.height && c < img.channels);
-   img.data[c * img.height * img.width + y * img.width + x] *= value;
+   assert(x < img->width && y < img->height && c < img->channels);
+   img->data[c * img->height * img->width + y * img->width + x] *= value;
 }
 
-static float mn_cv_get_pixel(struct Image m, int x, int y, int c)
+static float mn_cv_get_pixel(struct Image* img, int x, int y, int c)
 {
-   assert(x < m.width && y < m.height && c < m.channels);
-   return m.data[c * m.height * m.width + y * m.width + x];
+   assert(x < img->width && y < img->height && c < img->channels);
+   return img->data[c * img->height * img->width + y * img->width + x];
 }
 
-static float mn_cv_get_pixel_extend(struct Image m, int x, int y, int c)
+static float mn_cv_get_pixel_extend(struct Image* img, int x, int y, int c)
 {
-   if(x < 0 || x >= m.width || y < 0 || y >= m.height) return 0;
+   if(x < 0 || x >= img->width || y < 0 || y >= img->height) return 0;
    /*
       if(x < 0) x = 0;
-      if(x >= m.w) x = m.w-1;
+      if(x >= img.w) x = img.w-1;
       if(y < 0) y = 0;
-      if(y >= m.h) y = m.h-1;
+      if(y >= img.h) y = img.h-1;
       */
-   if(c < 0 || c >= m.channels) return 0;
-   return mn_cv_get_pixel(m, x, y, c);
+   if(c < 0 || c >= img->channels) return 0;
+   return mn_cv_get_pixel(&img, x, y, c);
 }
 
 /*-------------------------------------------------------------------------
@@ -160,14 +160,14 @@ resize_image(struct Image im, int width, int height)
          for(c = 0; c < width; ++c){
             float val = 0;
             if(c == width - 1 || im.width == 1){
-               val = mn_cv_get_pixel(im, im.width - 1, r, k);
+               val = mn_cv_get_pixel(&im, im.width - 1, r, k);
             } else {
                float sx = c * w_scale;
                int ix = (int) sx;
                float dx = sx - ix;
-               val = (1 - dx) * mn_cv_get_pixel(im, ix, r, k) + dx * mn_cv_get_pixel(im, ix + 1, r, k);
+               val = (1 - dx) * mn_cv_get_pixel(&im, ix, r, k) + dx * mn_cv_get_pixel(&im, ix + 1, r, k);
             }
-            mn_cv_set_pixel(part, c, r, k, val);
+            mn_cv_set_pixel(&part, c, r, k, val);
          }
       }
    }
@@ -177,18 +177,18 @@ resize_image(struct Image im, int width, int height)
          int iy = (int) sy;
          float dy = sy - iy;
          for(c = 0; c < width; ++c){
-            float val = (1-dy) * mn_cv_get_pixel(part, c, iy, k);
-            mn_cv_set_pixel(resized, c, r, k, val);
+            float val = (1-dy) * mn_cv_get_pixel(&part, c, iy, k);
+            mn_cv_set_pixel(&resized, c, r, k, val);
          }
          if(r == height-1 || im.height == 1) continue;
          for(c = 0; c < width; ++c){
-            float val = dy * mn_cv_get_pixel(part, c, iy + 1, k);
-            mn_cv_add_pixel(resized, c, r, k, val);
+            float val = dy * mn_cv_get_pixel(&part, c, iy + 1, k);
+            mn_cv_add_pixel(&resized, c, r, k, val);
          }
       }
    }
 
-   mn_cv_free_image(part);
+   mn_cv_free_image(&part);
    return resized;
 }
 
@@ -199,16 +199,16 @@ mn_cv_load_image(char* filename, int width, int height, int c)
 
    if((height && width) && (height != out.height || width != out.width)){
       struct Image resized = resize_image(out, width, height);
-      mn_cv_free_image(out);
+      mn_cv_free_image(&out);
       out = resized;
    }
    return out;
 }
 
-void mn_cv_free_image(struct Image m)
+void mn_cv_free_image(struct Image* img)
 {
-   if(m.data){
-      free(m.data);
+   if(img->data){
+      free(img->data);
    }
 }
 
