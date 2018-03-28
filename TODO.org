@@ -8,3 +8,4 @@
  - [ ] roi
  - [ ] generar rectangulos en imagen
  - [ ] Componentes conexas, etiquetas a las regiones
+ - [ ] Hacer una funcion para realizar falso color

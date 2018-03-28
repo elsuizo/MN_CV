@@ -22,7 +22,7 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 ---------------------------------------------------------------------------*/
-#include "../inc/mv_cv_image.h"
+#include "../inc/mn_cv_image.h"
 
 int main(void)
 {

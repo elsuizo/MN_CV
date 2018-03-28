@@ -28,7 +28,7 @@ You should have received a copy of the GNU General Public License
 #include "../inc/stb_image_write.h"
 
 #include "../inc/mn_cv_image.h"
-#include "../inc/test.h"
+/* #include "../inc/test.h" */
 
 /*-------------------------------------------------------------------------
                         private functions
