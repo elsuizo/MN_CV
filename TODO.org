@@ -1,6 +1,6 @@
 * Roadmap o TODO
  - [ ] suma de imagenes
- - [ ] multiplicacion por un escalar
+ - [X] multiplicacion por un escalar
  - [ ] coordenadas cromaticas
  - [ ] white-patch
  - [ ] otsu
@@ -9,3 +9,5 @@
  - [ ] generar rectangulos en imagen
  - [ ] Componentes conexas, etiquetas a las regiones
  - [ ] Hacer una funcion para realizar falso color
+ - [ ] Hacer funciones que devuelvan los canales de una imagen
+
