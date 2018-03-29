@@ -150,8 +150,19 @@ mn_cv_resize_image(struct Image im, int width, int height)
    return resized;
 }
 
+static struct Image
+mn_cv_get_image_channel(struct Image* img, int channel_selected) {
+
+    struct Image result = mn_cv_make_image(img->width, img->height, 1);
+    int i;
+    for(i = 0; i < img->height * img->width; ++i){
+        result.data[i] = img->data[i + channel_selected * img->height * img->width];
+    }
+    return result;
+}
+
 /*-------------------------------------------------------------------------
-  implementations
+                     Public implementations
 -------------------------------------------------------------------------*/
 struct Image
 mn_cv_make_empty_image(int width, int height, int channels)
@@ -341,13 +352,3 @@ mn_cv_binarize(struct Image* img, float value)
     return result;
 }
 
-struct Image
-mn_cv_get_image_channel(struct Image* img, int channel_selected) {
-
-    struct Image result = mn_cv_make_image(img->width, img->height, 1);
-    int i;
-    for(i = 0; i < img->height * img->width; ++i){
-        result.data[i] = img->data[i + channel_selected * img->height * img->width];
-    }
-    return result;
-}
