@@ -38,17 +38,23 @@ struct Image {
    float*  data;
 };
 
+/* TODO(elsuizo:2018-03-29):manejo de errores */
+enum ERRORS {
+   FATAL,
+   READ,
+   OK,
+};
 /*-------------------------------------------------------------------------
                               prototypes
 -------------------------------------------------------------------------*/
 struct Image
-mn_cv_load_image_color(char* filename, int w, int h);
+mn_cv_load_image_color(const char* filename, int w, int h);
 
 struct Image
-mn_cv_load_image(char* filename, int w, int h, int c);
+mn_cv_load_image(const char* filename, int w, int h, int c);
 
 struct Image
-mn_cv_load_image_stb(char* filename, int channels_in);
+mn_cv_load_image_stb(const char* filename, int channels_in);
 
 struct Image
 mn_cv_make_image(int width, int height, int channels);
@@ -56,8 +62,23 @@ mn_cv_make_image(int width, int height, int channels);
 struct Image
 mn_cv_make_empty_image(int width, int height, int channels);
 
+struct Image
+mn_cv_sum(struct Image* img1, struct Image* img2);
+
 void mn_cv_free_image(struct Image* m);
 
 void mn_cv_save_image_png(struct Image im, const char* name);
+
+struct Image
+mn_cv_grayscale_image(struct Image* img);
+
+struct Image
+mn_cv_threshold_image(struct Image* img, float thresh);
+
+struct Image
+mn_cv_copy_image(struct Image* img);
+
+struct Image
+mn_cv_binarize(struct Image* img, float value);
 
 #endif

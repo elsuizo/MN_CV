@@ -26,9 +26,20 @@ You should have received a copy of the GNU General Public License
 
 int main(void)
 {
+   /* path to test image */
    char* path = "Images/DKF4tPVXkAAP8FY.jpg";
-   struct Image im = mn_cv_load_image_color(path, 300, 300);
-   mn_cv_save_image_png(im, "/home/elsuizo/flores3.png");
+   struct Image img = mn_cv_load_image_color(path, 300, 300);
+   mn_cv_save_image_png(img, "/home/elsuizo/flores3.png");
+
+   /* image to grayscale */
+   struct Image img_gray = mn_cv_grayscale_image(&img);
+   mn_cv_save_image_png(img_gray, "/home/elsuizo/flores3_gray.png");
+
+   /* binarize image */
+   struct Image img_bin = mn_cv_binarize(&img_gray, 0.3);
+   mn_cv_save_image_png(img_bin, "/home/elsuizo/flores3_bin.png");
+
+
    return(0);
 }
 
