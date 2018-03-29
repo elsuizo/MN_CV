@@ -266,18 +266,27 @@ mn_cv_sum(struct Image* img1, struct Image* img2) {
    return result;
 }
 
-static struct Image
+struct Image
 mn_cv_red_channel(struct Image* img) {
+   struct Image result = mn_cv_get_image_channel(img, 1);
 
+   return result;
 }
 
-static struct Image
+struct Image
 mn_cv_blue_channel(struct Image* img) {
 
+   struct Image result = mn_cv_get_image_channel(img, 2);
+
+   return result;
 }
-static struct Image
+
+struct Image
 mn_cv_green_channel(struct Image* img) {
 
+   struct Image result = mn_cv_get_image_channel(img, 3);
+
+   return result;
 }
 
 struct Image
@@ -328,6 +337,17 @@ mn_cv_binarize(struct Image* img, float value)
         } else {
            result.data[i] = 0;
         }
+    }
+    return result;
+}
+
+struct Image
+mn_cv_get_image_channel(struct Image* img, int channel_selected) {
+
+    struct Image result = mn_cv_make_image(img->width, img->height, 1);
+    int i;
+    for(i = 0; i < img->height * img->width; ++i){
+        result.data[i] = img->data[i + channel_selected * img->height * img->width];
     }
     return result;
 }

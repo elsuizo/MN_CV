@@ -29,16 +29,27 @@ int main(void)
    /* path to test image */
    char* path = "Images/DKF4tPVXkAAP8FY.jpg";
    struct Image img = mn_cv_load_image_color(path, 300, 300);
-   mn_cv_save_image_png(img, "/home/elsuizo/flores3.png");
+   mn_cv_save_image_png(img, "Images/flores3.png");
 
    /* image to grayscale */
    struct Image img_gray = mn_cv_grayscale_image(&img);
-   mn_cv_save_image_png(img_gray, "/home/elsuizo/flores3_gray.png");
+   mn_cv_save_image_png(img_gray, "Images/flores3_gray.png");
 
    /* binarize image */
    struct Image img_bin = mn_cv_binarize(&img_gray, 0.3);
-   mn_cv_save_image_png(img_bin, "/home/elsuizo/flores3_bin.png");
+   mn_cv_save_image_png(img_bin, "Images/flores3_bin.png");
 
+   /* get the red channel */
+   struct Image img_red = mn_cv_red_channel(&img);
+   mn_cv_save_image_png(img_red, "Images/flores3_red_channel.png");
+
+   /* get the green channel */
+   struct Image img_green = mn_cv_green_channel(&img);
+   mn_cv_save_image_png(img_green, "Images/flores3_green_channel.png");
+
+   /* get the blue channel */
+   struct Image img_blue = mn_cv_blue_channel(&img);
+   mn_cv_save_image_png(img_blue, "Images/flores3_blue_channel.png");
 
    return(0);
 }

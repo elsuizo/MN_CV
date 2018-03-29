@@ -81,4 +81,16 @@ mn_cv_copy_image(struct Image* img);
 struct Image
 mn_cv_binarize(struct Image* img, float value);
 
+struct Image
+mn_cv_red_channel(struct Image* img);
+
+struct Image
+mn_cv_green_channel(struct Image* img);
+
+struct Image
+mn_cv_blue_channel(struct Image* img);
+
+struct Image
+mn_cv_get_image_channel(struct Image* img, int channel_selected);
+
 #endif

@@ -8,6 +8,7 @@ BINDIR	Makefile	/^BINDIR   = bin$/;"	m
 Bool	inc/stb.h	/^   typedef int Bool;$/;"	t
 CC	Makefile	/^CC       = clang$/;"	m
 CFLAGS	Makefile	/^CFLAGS   = -std=c99 -Wall -I.$/;"	m
+ERRORS	inc/mn_cv_image.h	/^enum ERRORS {$/;"	g
 EncodeArray	inc/stb.h	7596;"	d
 EncodeArray	inc/stb.h	8118;"	d
 EncodeBucket	inc/stb.h	7561;"	d
@@ -16,12 +17,13 @@ EncodeHash	inc/stb.h	7611;"	d
 EncodeHash	inc/stb.h	8119;"	d
 FALSE	inc/stb.h	291;"	d
 FAST_BITS	inc/stb_image.h	1639;"	d
+FATAL	inc/mn_cv_image.h	/^   FATAL,$/;"	e	enum:ERRORS
 FILE	inc/stb.h	10073;"	d
-FLOW_break	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
-FLOW_continue	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
-FLOW_error	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
-FLOW_normal	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
-FLOW_return	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon48
+FLOW_break	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon67
+FLOW_continue	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon67
+FLOW_error	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon67
+FLOW_normal	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon67
+FLOW_return	inc/stb.h	/^   FLOW_normal,  FLOW_continue,   FLOW_break,  FLOW_return,  FLOW_error,$/;"	e	enum:__anon67
 False	inc/stb.h	239;"	d
 GetArray	inc/stb.h	7595;"	d
 GetArray	inc/stb.h	8114;"	d
@@ -47,7 +49,9 @@ MN_CV_IMAGE_H	inc/mn_cv_image.h	26;"	d
 M_PI	inc/stb.h	286;"	d
 OBJDIR	Makefile	/^OBJDIR   = obj$/;"	m
 OBJECTS	Makefile	/^OBJECTS       := $(SOURCES:$(SRCDIR)\/%.c=$(OBJDIR)\/%.o)$/;"	m
+OK	inc/mn_cv_image.h	/^   OK,$/;"	e	enum:ERRORS
 POW2_LIMIT	inc/stb.h	11216;"	d
+READ	inc/mn_cv_image.h	/^   READ,$/;"	e	enum:ERRORS
 SOURCES	Makefile	/^SOURCES       := $(wildcard $(SRCDIR)\/*.c)$/;"	m
 SOURCES_TESTS	Makefile	/^SOURCES_TESTS := $(wildcard $(TESTDIR)\/*.c)$/;"	m
 SRCDIR	Makefile	/^SRCDIR   = src$/;"	m
@@ -82,8 +86,8 @@ STBI_NO_SIMD	inc/stb_image.h	595;"	d
 STBI_NO_SIMD	inc/stb_image.h	610;"	d
 STBI_NO_TGA	inc/stb_image.h	478;"	d
 STBI_NO_ZLIB	inc/stb_image.h	495;"	d
-STBI_ORDER_BGR	inc/stb_image.h	/^   STBI_ORDER_BGR$/;"	e	enum:__anon54
-STBI_ORDER_RGB	inc/stb_image.h	/^   STBI_ORDER_RGB,$/;"	e	enum:__anon54
+STBI_ORDER_BGR	inc/stb_image.h	/^   STBI_ORDER_BGR$/;"	e	enum:__anon4
+STBI_ORDER_RGB	inc/stb_image.h	/^   STBI_ORDER_RGB,$/;"	e	enum:__anon4
 STBI_REALLOC	inc/stb_image.h	572;"	d
 STBI_REALLOC_SIZED	inc/stb_image.h	577;"	d
 STBI_SIMD_ALIGN	inc/stb_image.h	640;"	d
@@ -103,30 +107,30 @@ STBI__CASE	inc/stb_image.h	4378;"	d
 STBI__CASE	inc/stb_image.h	4391;"	d
 STBI__COMBO	inc/stb_image.h	1489;"	d
 STBI__COMBO	inc/stb_image.h	1538;"	d
-STBI__F_avg	inc/stb_image.h	/^   STBI__F_avg=3,$/;"	e	enum:__anon65
-STBI__F_avg_first	inc/stb_image.h	/^   STBI__F_avg_first,$/;"	e	enum:__anon65
-STBI__F_none	inc/stb_image.h	/^   STBI__F_none=0,$/;"	e	enum:__anon65
-STBI__F_paeth	inc/stb_image.h	/^   STBI__F_paeth=4,$/;"	e	enum:__anon65
-STBI__F_paeth_first	inc/stb_image.h	/^   STBI__F_paeth_first$/;"	e	enum:__anon65
-STBI__F_sub	inc/stb_image.h	/^   STBI__F_sub=1,$/;"	e	enum:__anon65
-STBI__F_up	inc/stb_image.h	/^   STBI__F_up=2,$/;"	e	enum:__anon65
+STBI__F_avg	inc/stb_image.h	/^   STBI__F_avg=3,$/;"	e	enum:__anon15
+STBI__F_avg_first	inc/stb_image.h	/^   STBI__F_avg_first,$/;"	e	enum:__anon15
+STBI__F_none	inc/stb_image.h	/^   STBI__F_none=0,$/;"	e	enum:__anon15
+STBI__F_paeth	inc/stb_image.h	/^   STBI__F_paeth=4,$/;"	e	enum:__anon15
+STBI__F_paeth_first	inc/stb_image.h	/^   STBI__F_paeth_first$/;"	e	enum:__anon15
+STBI__F_sub	inc/stb_image.h	/^   STBI__F_sub=1,$/;"	e	enum:__anon15
+STBI__F_up	inc/stb_image.h	/^   STBI__F_up=2,$/;"	e	enum:__anon15
 STBI__HDR_BUFLEN	inc/stb_image.h	6423;"	d
 STBI__IDCT_1D	inc/stb_image.h	2118;"	d
 STBI__MARKER_none	inc/stb_image.h	2603;"	d
 STBI__PNG_TYPE	inc/stb_image.h	4678;"	d
 STBI__RESTART	inc/stb_image.h	2620;"	d
-STBI__SCAN_header	inc/stb_image.h	/^   STBI__SCAN_header$/;"	e	enum:__anon56
-STBI__SCAN_load	inc/stb_image.h	/^   STBI__SCAN_load=0,$/;"	e	enum:__anon56
-STBI__SCAN_type	inc/stb_image.h	/^   STBI__SCAN_type,$/;"	e	enum:__anon56
+STBI__SCAN_header	inc/stb_image.h	/^   STBI__SCAN_header$/;"	e	enum:__anon6
+STBI__SCAN_load	inc/stb_image.h	/^   STBI__SCAN_load=0,$/;"	e	enum:__anon6
+STBI__SCAN_type	inc/stb_image.h	/^   STBI__SCAN_type,$/;"	e	enum:__anon6
 STBI__X64_TARGET	inc/stb_image.h	582;"	d
 STBI__X86_TARGET	inc/stb_image.h	584;"	d
 STBI__ZFAST_BITS	inc/stb_image.h	3740;"	d
 STBI__ZFAST_MASK	inc/stb_image.h	3741;"	d
-STBI_default	inc/stb_image.h	/^   STBI_default = 0, \/\/ only used for req_comp$/;"	e	enum:__anon51
-STBI_grey	inc/stb_image.h	/^   STBI_grey       = 1,$/;"	e	enum:__anon51
-STBI_grey_alpha	inc/stb_image.h	/^   STBI_grey_alpha = 2,$/;"	e	enum:__anon51
-STBI_rgb	inc/stb_image.h	/^   STBI_rgb        = 3,$/;"	e	enum:__anon51
-STBI_rgb_alpha	inc/stb_image.h	/^   STBI_rgb_alpha  = 4$/;"	e	enum:__anon51
+STBI_default	inc/stb_image.h	/^   STBI_default = 0, \/\/ only used for req_comp$/;"	e	enum:__anon1
+STBI_grey	inc/stb_image.h	/^   STBI_grey       = 1,$/;"	e	enum:__anon1
+STBI_grey_alpha	inc/stb_image.h	/^   STBI_grey_alpha = 2,$/;"	e	enum:__anon1
+STBI_rgb	inc/stb_image.h	/^   STBI_rgb        = 3,$/;"	e	enum:__anon1
+STBI_rgb_alpha	inc/stb_image.h	/^   STBI_rgb_alpha  = 4$/;"	e	enum:__anon1
 STB_	inc/stb.h	3793;"	d
 STB_ADLER32_SEED	inc/stb.h	6204;"	d
 STB_BGIO_READ_ALL	inc/stb.h	12114;"	d
@@ -188,11 +192,11 @@ STB__ARGS	inc/stb.h	3015;"	d
 STB__ARGS	inc/stb.h	3018;"	d
 STB__BIAS	inc/stb.h	483;"	d
 STB__CHUNKS	inc/stb.h	2492;"	d
-STB__CTYPE_double	inc/stb.h	/^   STB__CTYPE_double,$/;"	e	enum:__anon40
-STB__CTYPE_float	inc/stb.h	/^   STB__CTYPE_float,$/;"	e	enum:__anon40
-STB__CTYPE_int	inc/stb.h	/^   STB__CTYPE_int,$/;"	e	enum:__anon40
-STB__CTYPE_string	inc/stb.h	/^   STB__CTYPE_string,$/;"	e	enum:__anon40
-STB__CTYPE_uint	inc/stb.h	/^   STB__CTYPE_uint,$/;"	e	enum:__anon40
+STB__CTYPE_double	inc/stb.h	/^   STB__CTYPE_double,$/;"	e	enum:__anon59
+STB__CTYPE_float	inc/stb.h	/^   STB__CTYPE_float,$/;"	e	enum:__anon59
+STB__CTYPE_int	inc/stb.h	/^   STB__CTYPE_int,$/;"	e	enum:__anon59
+STB__CTYPE_string	inc/stb.h	/^   STB__CTYPE_string,$/;"	e	enum:__anon59
+STB__CTYPE_uint	inc/stb.h	/^   STB__CTYPE_uint,$/;"	e	enum:__anon59
 STB__DEBUG	inc/stb.h	1220;"	d
 STB__DEBUG	inc/stb.h	1222;"	d
 STB__DECODE	inc/stb.h	2504;"	d
@@ -246,12 +250,12 @@ STB__TRY	inc/stb.h	10450;"	d
 STB__TWIST	inc/stb.h	8225;"	d
 STB__UPPER_MASK	inc/stb.h	8222;"	d
 STB__WINDOWS_PAGE	inc/stb.h	542;"	d
-STB__alloc	inc/stb.h	/^   STB__alloc      = STB__CHUNKS,$/;"	e	enum:__anon10
-STB__chunk_raw	inc/stb.h	/^   STB__chunk_raw  = 4,$/;"	e	enum:__anon10
-STB__chunked	inc/stb.h	/^   STB__chunked    = STB__PARENT,$/;"	e	enum:__anon10
+STB__alloc	inc/stb.h	/^   STB__alloc      = STB__CHUNKS,$/;"	e	enum:__anon29
+STB__chunk_raw	inc/stb.h	/^   STB__chunk_raw  = 4,$/;"	e	enum:__anon29
+STB__chunked	inc/stb.h	/^   STB__chunked    = STB__PARENT,$/;"	e	enum:__anon29
 STB__equal_ptrpair	inc/stb.h	4189;"	d
 STB__level	inc/stb.h	4333;"	d
-STB__nochildren	inc/stb.h	/^   STB__nochildren = 0,$/;"	e	enum:__anon10
+STB__nochildren	inc/stb.h	/^   STB__nochildren = 0,$/;"	e	enum:__anon29
 STB__nogcc	inc/stb.h	3822;"	d
 STB__nogcc	inc/stb.h	3824;"	d
 STB__ptr	inc/stb.h	486;"	d
@@ -266,24 +270,24 @@ STB_nonullvalue	inc/stb.h	3815;"	d
 STB_noprefix	inc/stb.h	3819;"	d
 STB_nosafe	inc/stb.h	3818;"	d
 STB_nullvalue	inc/stb.h	3816;"	d
-STB_probe_binary_largest	inc/stb.h	/^   STB_probe_binary_largest,$/;"	e	enum:__anon6
-STB_probe_binary_smallest	inc/stb.h	/^   STB_probe_binary_smallest,$/;"	e	enum:__anon6
-STB_probe_open_largest	inc/stb.h	/^   STB_probe_open_largest,$/;"	e	enum:__anon6
-STB_probe_open_smallest	inc/stb.h	/^   STB_probe_open_smallest,$/;"	e	enum:__anon6
-STB_ps_array	inc/stb.h	/^   STB_ps_array  = 2,$/;"	e	enum:__anon24
-STB_ps_bucket	inc/stb.h	/^   STB_ps_bucket = 1,$/;"	e	enum:__anon24
-STB_ps_direct	inc/stb.h	/^   STB_ps_direct = 0,$/;"	e	enum:__anon24
-STB_ps_hash	inc/stb.h	/^   STB_ps_hash   = 3,$/;"	e	enum:__anon24
+STB_probe_binary_largest	inc/stb.h	/^   STB_probe_binary_largest,$/;"	e	enum:__anon25
+STB_probe_binary_smallest	inc/stb.h	/^   STB_probe_binary_smallest,$/;"	e	enum:__anon25
+STB_probe_open_largest	inc/stb.h	/^   STB_probe_open_largest,$/;"	e	enum:__anon25
+STB_probe_open_smallest	inc/stb.h	/^   STB_probe_open_smallest,$/;"	e	enum:__anon25
+STB_ps_array	inc/stb.h	/^   STB_ps_array  = 2,$/;"	e	enum:__anon43
+STB_ps_bucket	inc/stb.h	/^   STB_ps_bucket = 1,$/;"	e	enum:__anon43
+STB_ps_direct	inc/stb.h	/^   STB_ps_direct = 0,$/;"	e	enum:__anon43
+STB_ps_hash	inc/stb.h	/^   STB_ps_hash   = 3,$/;"	e	enum:__anon43
 STB_safecompare	inc/stb.h	3817;"	d
 STUA_NO_VALUE	inc/stb.h	12989;"	d
-STUA_op_ge	inc/stb.h	/^   STUA_op_shl,   STUA_op_ge,$/;"	e	enum:__anon44
-STUA_op_last	inc/stb.h	/^   STUA_op_last$/;"	e	enum:__anon44
-STUA_op_le	inc/stb.h	/^   STUA_op_shr,   STUA_op_le,$/;"	e	enum:__anon44
-STUA_op_negate	inc/stb.h	/^   STUA_op_negate=129,$/;"	e	enum:__anon44
-STUA_op_shl	inc/stb.h	/^   STUA_op_shl,   STUA_op_ge,$/;"	e	enum:__anon44
-STUA_op_shr	inc/stb.h	/^   STUA_op_shr,   STUA_op_le,$/;"	e	enum:__anon44
-STUA_op_shru	inc/stb.h	/^   STUA_op_shru,$/;"	e	enum:__anon44
-STU__BOX	inc/stb.h	/^   STU__BOX;$/;"	m	struct:__anon46
+STUA_op_ge	inc/stb.h	/^   STUA_op_shl,   STUA_op_ge,$/;"	e	enum:__anon63
+STUA_op_last	inc/stb.h	/^   STUA_op_last$/;"	e	enum:__anon63
+STUA_op_le	inc/stb.h	/^   STUA_op_shr,   STUA_op_le,$/;"	e	enum:__anon63
+STUA_op_negate	inc/stb.h	/^   STUA_op_negate=129,$/;"	e	enum:__anon63
+STUA_op_shl	inc/stb.h	/^   STUA_op_shl,   STUA_op_ge,$/;"	e	enum:__anon63
+STUA_op_shr	inc/stb.h	/^   STUA_op_shr,   STUA_op_le,$/;"	e	enum:__anon63
+STUA_op_shru	inc/stb.h	/^   STUA_op_shru,$/;"	e	enum:__anon63
+STU__BOX	inc/stb.h	/^   STU__BOX;$/;"	m	struct:__anon65
 STU__BOX	inc/stb.h	/^   STU__BOX;$/;"	m	struct:stu__func
 STU__BOX	inc/stb.h	/^typedef struct stu__box { STU__BOX; } stu__box;$/;"	m	struct:stu__box
 STU__BOX	inc/stb.h	13082;"	d
@@ -294,14 +298,14 @@ STU__F	inc/stb.h	13393;"	d
 STU__FB	inc/stb.h	13385;"	d
 STU__HANDLE_BREAK	inc/stb.h	13453;"	d
 STU__I	inc/stb.h	13399;"	d
-STU___boolean	inc/stb.h	/^   STU___boolean  = 7,   STU___error    = 8,$/;"	e	enum:__anon45
-STU___dict	inc/stb.h	/^   STU___function = 5,   STU___dict     = 6,$/;"	e	enum:__anon45
-STU___error	inc/stb.h	/^   STU___boolean  = 7,   STU___error    = 8,$/;"	e	enum:__anon45
-STU___float	inc/stb.h	/^   STU___float    = 1,   STU___int      = 2,$/;"	e	enum:__anon45
-STU___function	inc/stb.h	/^   STU___function = 5,   STU___dict     = 6,$/;"	e	enum:__anon45
-STU___int	inc/stb.h	/^   STU___float    = 1,   STU___int      = 2,$/;"	e	enum:__anon45
-STU___number	inc/stb.h	/^   STU___number   = 3,   STU___string   = 4,$/;"	e	enum:__anon45
-STU___string	inc/stb.h	/^   STU___number   = 3,   STU___string   = 4,$/;"	e	enum:__anon45
+STU___boolean	inc/stb.h	/^   STU___boolean  = 7,   STU___error    = 8,$/;"	e	enum:__anon64
+STU___dict	inc/stb.h	/^   STU___function = 5,   STU___dict     = 6,$/;"	e	enum:__anon64
+STU___error	inc/stb.h	/^   STU___boolean  = 7,   STU___error    = 8,$/;"	e	enum:__anon64
+STU___float	inc/stb.h	/^   STU___float    = 1,   STU___int      = 2,$/;"	e	enum:__anon64
+STU___function	inc/stb.h	/^   STU___function = 5,   STU___dict     = 6,$/;"	e	enum:__anon64
+STU___int	inc/stb.h	/^   STU___float    = 1,   STU___int      = 2,$/;"	e	enum:__anon64
+STU___number	inc/stb.h	/^   STU___number   = 3,   STU___string   = 4,$/;"	e	enum:__anon64
+STU___string	inc/stb.h	/^   STU___number   = 3,   STU___string   = 4,$/;"	e	enum:__anon64
 STU__defaultparm	inc/stb.h	/^   STU__defaultparm, STU__seq,$/;"	e	enum:token_names
 STU__negate	inc/stb.h	/^   ST_shru = STUA_op_shru,  STU__negate = STUA_op_negate,$/;"	e	enum:token_names
 STU__seq	inc/stb.h	/^   STU__defaultparm, STU__seq,$/;"	e	enum:token_names
@@ -352,81 +356,81 @@ TARGET	Makefile	/^TARGET   = out$/;"	m
 TRUE	inc/stb.h	290;"	d
 T__none	inc/stb.h	/^   T__none=128,$/;"	e	enum:token_names
 True	inc/stb.h	240;"	d
-YCbCr_to_RGB_kernel	inc/stb_image.h	/^   void (*YCbCr_to_RGB_kernel)(stbi_uc *out, const stbi_uc *y, const stbi_uc *pcb, const stbi_uc *pcr, int count, int step);$/;"	m	struct:__anon58
+YCbCr_to_RGB_kernel	inc/stb_image.h	/^   void (*YCbCr_to_RGB_kernel)(stbi_uc *out, const stbi_uc *y, const stbi_uc *pcb, const stbi_uc *pcr, int count, int step);$/;"	m	struct:__anon8
 _CRT_NONSTDC_NO_DEPRECATE	inc/stb.h	219;"	d
 _CRT_NONSTDC_NO_DEPRECATE	inc/stb_image_write.h	156;"	d
 _CRT_NON_CONFORMING_SWPRINTFS	inc/stb.h	222;"	d
 _CRT_SECURE_NO_WARNINGS	inc/stb.h	216;"	d
 _CRT_SECURE_NO_WARNINGS	inc/stb_image_write.h	153;"	d
-a	inc/stb.h	/^   void *a;$/;"	m	struct:__anon14
-active	inc/stb.h	/^   stb_uint8 active; \/\/ is this in the active list$/;"	m	struct:__anon30
+a	inc/stb.h	/^   void *a;$/;"	m	struct:__anon33
+active	inc/stb.h	/^   stb_uint8 active; \/\/ is this in the active list$/;"	m	struct:__anon49
 add	inc/stb.h	/^   stb_mutex add, remove;$/;"	m	struct:stb__threadqueue
-addend	inc/stb.h	/^   stb_uint32  addend;$/;"	m	struct:__anon12
-all_a	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+addend	inc/stb.h	/^   stb_uint32  addend;$/;"	m	struct:__anon31
+all_a	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon16
 alloc	inc/stb.h	/^   int                alloc;$/;"	m	struct:stb__chunk
 allocations	inc/stb.h	/^   short              allocations; \/\/ # outstanding allocations for sizeclass$/;"	m	struct:stb__span
-any_offset	inc/stb.h	/^   int any_offset;$/;"	m	struct:__anon27
-app14_color_transform	inc/stb_image.h	/^   int            app14_color_transform; \/\/ Adobe APP14 tag$/;"	m	struct:__anon58
+any_offset	inc/stb.h	/^   int any_offset;$/;"	m	struct:__anon46
+app14_color_transform	inc/stb_image.h	/^   int            app14_color_transform; \/\/ Adobe APP14 tag$/;"	m	struct:__anon8
 array_size	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
-b	inc/stb.h	/^   unsigned short b;$/;"	m	struct:__anon13
-b	inc/stb.h	/^   void *b;$/;"	m	struct:__anon14
-b_mask	inc/stb.h	/^   stb_uint    b_mask;$/;"	m	struct:__anon12
+b	inc/stb.h	/^   unsigned short b;$/;"	m	struct:__anon32
+b	inc/stb.h	/^   void *b;$/;"	m	struct:__anon33
+b_mask	inc/stb.h	/^   stb_uint    b_mask;$/;"	m	struct:__anon31
 backpatch	inc/stb.h	/^   void (*backpatch)(struct stbfile *, unsigned int tell, void *block, unsigned int len);$/;"	m	struct:stbfile
-bgindex	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
-bits_per_channel	inc/stb_image.h	/^   int bits_per_channel;$/;"	m	struct:__anon55
-bpp	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon66
-buffer	inc/stb.h	/^   stb_uchar *buffer;$/;"	m	struct:__anon31
+bgindex	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon19
+bits_per_channel	inc/stb_image.h	/^   int bits_per_channel;$/;"	m	struct:__anon5
+bpp	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon16
+buffer	inc/stb.h	/^   stb_uchar *buffer;$/;"	m	struct:__anon50
 buffer	inc/stb.h	/^   unsigned char *buffer; \/\/ input\/output buffer$/;"	m	struct:stbfile
-buffer_start	inc/stb_image.h	/^   stbi_uc buffer_start[128];$/;"	m	struct:__anon53
-buffered_u8	inc/stb.h	/^   int buffered_u8;$/;"	m	struct:__anon33
-buflen	inc/stb_image.h	/^   int buflen;$/;"	m	struct:__anon53
+buffer_start	inc/stb_image.h	/^   stbi_uc buffer_start[128];$/;"	m	struct:__anon3
+buffered_u8	inc/stb.h	/^   int buffered_u8;$/;"	m	struct:__anon52
+buflen	inc/stb_image.h	/^   int buflen;$/;"	m	struct:__anon3
 calloc	inc/stb.h	451;"	d
 calloc	inc/stb.h	704;"	d
 calloc	inc/stb.h	714;"	d
-channel	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon67
-channel_order	inc/stb_image.h	/^   int channel_order;$/;"	m	struct:__anon55
+channel	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon17
+channel_order	inc/stb_image.h	/^   int channel_order;$/;"	m	struct:__anon5
 channels	inc/mn_cv_image.h	/^   int     channels;$/;"	m	struct:Image
 charset	inc/stb.h	/^   stb_uint32 *charset;$/;"	m	struct:stb_matcher
-chash	inc/stb.h	/^   stb_uchar **chash;$/;"	m	struct:__anon31
-child	inc/stb.h	/^   void *  child;$/;"	m	struct:__anon8
-children	inc/stb.h	/^   stb__memory_leaf *children[STB__NPTR_NODE_NUM];$/;"	m	struct:__anon16
-chunks	inc/stb.h	/^   stb__chunk *chunks;$/;"	m	struct:__anon8
+chash	inc/stb.h	/^   stb_uchar **chash;$/;"	m	struct:__anon50
+child	inc/stb.h	/^   void *  child;$/;"	m	struct:__anon27
+children	inc/stb.h	/^   stb__memory_leaf *children[STB__NPTR_NODE_NUM];$/;"	m	struct:__anon35
+chunks	inc/stb.h	/^   stb__chunk *chunks;$/;"	m	struct:__anon27
 close	inc/stb.h	/^   void (*close)(struct stbfile *);$/;"	m	struct:stbfile
-closure_data	inc/stb.h	/^      stua_obj closure_data; \/\/ partial-application data$/;"	m	union:stu__func::__anon47
+closure_data	inc/stb.h	/^      stua_obj closure_data; \/\/ partial-application data$/;"	m	union:stu__func::__anon66
 closure_source	inc/stb.h	/^   stua_obj closure_source;  \/\/ 0 - regular function; 4 - C function$/;"	m	struct:stu__func
-code	inc/stb.h	/^   short     *code;    \/\/ code being compiled$/;"	m	struct:__anon50
+code	inc/stb.h	/^   short     *code;    \/\/ code being compiled$/;"	m	struct:__anon69
 code	inc/stb.h	/^   short *code;$/;"	m	struct:stu__func
-code	inc/stb.h	/^   unsigned int code, range; \/\/ decode$/;"	m	struct:__anon33
-code	inc/stb_image.h	/^   stbi__uint16 code[256];$/;"	m	struct:__anon57
-code_bits	inc/stb_image.h	/^   int            code_bits;   \/\/ number of valid bits$/;"	m	struct:__anon58
-code_buffer	inc/stb_image.h	/^   stbi__uint32   code_buffer; \/\/ jpeg entropy-coded buffer$/;"	m	struct:__anon58
-code_buffer	inc/stb_image.h	/^   stbi__uint32 code_buffer;$/;"	m	struct:__anon62
-codes	inc/stb_image.h	/^   stbi__gif_lzw codes[4096];$/;"	m	struct:__anon69
-coeff	inc/stb_image.h	/^      short   *coeff;   \/\/ progressive only$/;"	m	struct:__anon58::__anon59
-coeff_h	inc/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon58::__anon59
-coeff_w	inc/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon58::__anon59
-color_table	inc/stb_image.h	/^   stbi_uc *color_table;$/;"	m	struct:__anon69
-context	inc/stb_image_write.h	/^   void *context;$/;"	m	struct:__anon1
-count	inc/stb.h	/^   int count, count_deletes;$/;"	m	struct:__anon27
-count	inc/stb.h	/^   int count;$/;"	m	struct:__anon26
-count	inc/stb.h	/^   unsigned short count;$/;"	m	struct:__anon13
-count_deletes	inc/stb.h	/^   int count, count_deletes;$/;"	m	struct:__anon27
-countdown	inc/stb.h	/^   int countdown;$/;"	m	struct:__anon35
-cumfreq	inc/stb.h	/^   unsigned short cumfreq;$/;"	m	struct:__anon34
-cur_x	inc/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon69
-cur_y	inc/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon69
-d	inc/stb.h	/^   void *d;$/;"	m	struct:__anon36
-d	inc/stb.h	/^   void *d;$/;"	m	struct:__anon37
-d	inc/stb.h	/^typedef struct { char d[4]; } stb__4;$/;"	m	struct:__anon3
-d	inc/stb.h	/^typedef struct { char d[8]; } stb__8;$/;"	m	struct:__anon4
+code	inc/stb.h	/^   unsigned int code, range; \/\/ decode$/;"	m	struct:__anon52
+code	inc/stb_image.h	/^   stbi__uint16 code[256];$/;"	m	struct:__anon7
+code_bits	inc/stb_image.h	/^   int            code_bits;   \/\/ number of valid bits$/;"	m	struct:__anon8
+code_buffer	inc/stb_image.h	/^   stbi__uint32   code_buffer; \/\/ jpeg entropy-coded buffer$/;"	m	struct:__anon8
+code_buffer	inc/stb_image.h	/^   stbi__uint32 code_buffer;$/;"	m	struct:__anon12
+codes	inc/stb_image.h	/^   stbi__gif_lzw codes[4096];$/;"	m	struct:__anon19
+coeff	inc/stb_image.h	/^      short   *coeff;   \/\/ progressive only$/;"	m	struct:__anon8::__anon9
+coeff_h	inc/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon8::__anon9
+coeff_w	inc/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon8::__anon9
+color_table	inc/stb_image.h	/^   stbi_uc *color_table;$/;"	m	struct:__anon19
+context	inc/stb_image_write.h	/^   void *context;$/;"	m	struct:__anon20
+count	inc/stb.h	/^   int count, count_deletes;$/;"	m	struct:__anon46
+count	inc/stb.h	/^   int count;$/;"	m	struct:__anon45
+count	inc/stb.h	/^   unsigned short count;$/;"	m	struct:__anon32
+count_deletes	inc/stb.h	/^   int count, count_deletes;$/;"	m	struct:__anon46
+countdown	inc/stb.h	/^   int countdown;$/;"	m	struct:__anon54
+cumfreq	inc/stb.h	/^   unsigned short cumfreq;$/;"	m	struct:__anon53
+cur_x	inc/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon19
+cur_y	inc/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon19
+d	inc/stb.h	/^   void *d;$/;"	m	struct:__anon55
+d	inc/stb.h	/^   void *d;$/;"	m	struct:__anon56
+d	inc/stb.h	/^typedef struct { char d[4]; } stb__4;$/;"	m	struct:__anon22
+d	inc/stb.h	/^typedef struct { char d[8]; } stb__8;$/;"	m	struct:__anon23
 data	inc/mn_cv_image.h	/^   float*  data;$/;"	m	struct:Image
 data	inc/stb.h	/^   char *data;$/;"	m	struct:stb__threadqueue
 data	inc/stb.h	/^   stb__cfg_item *data;$/;"	m	struct:stb_cfg_st
-data	inc/stb.h	/^   stb_arith_symstate_item data[1];$/;"	m	struct:__anon35
-data	inc/stb.h	/^   stua_obj  *data;    \/\/ constants being compiled$/;"	m	struct:__anon50
-data	inc/stb_image.h	/^      stbi_uc *data;$/;"	m	struct:__anon58::__anon59
+data	inc/stb.h	/^   stb_arith_symstate_item data[1];$/;"	m	struct:__anon54
+data	inc/stb.h	/^   stua_obj  *data;    \/\/ constants being compiled$/;"	m	struct:__anon69
+data	inc/stb_image.h	/^      stbi_uc *data;$/;"	m	struct:__anon8::__anon9
 data_left	inc/stb.h	/^   int                data_left;$/;"	m	struct:stb__chunk
-dc_pred	inc/stb_image.h	/^      int dc_pred;$/;"	m	struct:__anon58::__anon59
+dc_pred	inc/stb_image.h	/^      int dc_pred;$/;"	m	struct:__anon8::__anon9
 dct_bfly32o	inc/stb_image.h	2253;"	d
 dct_bfly32o	inc/stb_image.h	2387;"	d
 dct_bfly32o	inc/stb_image.h	2439;"	d
@@ -472,107 +476,107 @@ dct_wsub	inc/stb_image.h	2386;"	d
 dct_wsub	inc/stb_image.h	2434;"	d
 dct_wsub	inc/stb_image.h	2596;"	d
 deg2rad	inc/stb.h	295;"	d
-delay	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
-delta	inc/stb_image.h	/^   int    delta[17];   \/\/ old 'firstsymbol' - old 'firstcode'$/;"	m	struct:__anon57
-depth	inc/stb_image.h	/^   int depth;$/;"	m	struct:__anon64
-dequant	inc/stb_image.h	/^   stbi__uint16 dequant[4][64];$/;"	m	struct:__anon58
+delay	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon19
+delta	inc/stb_image.h	/^   int    delta[17];   \/\/ old 'firstsymbol' - old 'firstcode'$/;"	m	struct:__anon7
+depth	inc/stb_image.h	/^   int depth;$/;"	m	struct:__anon14
+dequant	inc/stb_image.h	/^   stbi__uint16 dequant[4][64];$/;"	m	struct:__anon8
 dfa	inc/stb.h	/^   stb_dfa    * dfa;$/;"	m	struct:stb_matcher
 dfa_mapping	inc/stb.h	/^   stb_uint32 * dfa_mapping;$/;"	m	struct:stb_matcher
 dfa_result	inc/stb.h	/^   stb_int16  * dfa_result;$/;"	m	struct:stb_matcher
 dfa_start	inc/stb.h	/^   stb_int16 dfa_start;$/;"	m	struct:stb_matcher
-dir	inc/stb.h	/^   int   dir;               \/\/ index into dirs[] array$/;"	m	struct:__anon21
-dirs	inc/stb.h	/^   stb_dirtree_dir  *dirs;$/;"	m	struct:__anon22
+dir	inc/stb.h	/^   int   dir;               \/\/ index into dirs[] array$/;"	m	struct:__anon40
+dirs	inc/stb.h	/^   stb_dirtree_dir  *dirs;$/;"	m	struct:__anon41
 does_lex	inc/stb.h	/^   int does_lex;$/;"	m	struct:stb_matcher
 dupes	inc/stb.h	/^   void ***dupes;$/;"	m	struct:stb_dupe
-dval	inc/stb.h	/^      double dval;$/;"	m	union:__anon41::__anon42
-eflags	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
-entries	inc/stb.h	/^   stb__Entry *entries;$/;"	m	struct:__anon43
-entries	inc/stb.h	/^   unsigned short *entries;$/;"	m	struct:__anon13
-eob_run	inc/stb_image.h	/^   int            eob_run;$/;"	m	struct:__anon58
-eof	inc/stb_image.h	/^   int      (*eof)   (void *user);                       \/\/ returns nonzero if we are at end of file\/data$/;"	m	struct:__anon52
-eps	inc/stb.h	/^   stb_uint16 *eps;  \/\/ list of epsilon closures$/;"	m	struct:__anon30
+dval	inc/stb.h	/^      double dval;$/;"	m	union:__anon60::__anon61
+eflags	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon19
+entries	inc/stb.h	/^   stb__Entry *entries;$/;"	m	struct:__anon62
+entries	inc/stb.h	/^   unsigned short *entries;$/;"	m	struct:__anon32
+eob_run	inc/stb_image.h	/^   int            eob_run;$/;"	m	struct:__anon8
+eof	inc/stb_image.h	/^   int      (*eof)   (void *user);                       \/\/ returns nonzero if we are at end of file\/data$/;"	m	struct:__anon2
+eps	inc/stb.h	/^   stb_uint16 *eps;  \/\/ list of epsilon closures$/;"	m	struct:__anon49
 eq	inc/stb.h	/^   stb_compare_func  eq;$/;"	m	struct:stb_dupe
-errors	inc/stb.h	/^   int   errors;$/;"	m	struct:__anon18
-expanded	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon64
+errors	inc/stb.h	/^   int   errors;$/;"	m	struct:__anon37
+expanded	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon14
 f	inc/stb.h	/^   FILE *f;  \/\/ file to fread\/fwrite$/;"	m	struct:stbfile
 f	inc/stb.h	/^   FILE *f; \/\/ write the data to this file on close$/;"	m	struct:stb_cfg_st
-f	inc/stb.h	/^   FILE *f;$/;"	m	struct:__anon39
-f	inc/stb.h	/^   stb_thread_func f;$/;"	m	struct:__anon36
-f	inc/stb.h	/^   stb_thread_func f;$/;"	m	struct:__anon37
-f	inc/stb.h	/^   } f;$/;"	m	struct:stu__func	typeref:union:stu__func::__anon47
-fast	inc/stb_image.h	/^   stbi__uint16 fast[1 << STBI__ZFAST_BITS];$/;"	m	struct:__anon61
-fast	inc/stb_image.h	/^   stbi_uc  fast[1 << FAST_BITS];$/;"	m	struct:__anon57
-fast_ac	inc/stb_image.h	/^   stbi__int16 fast_ac[4][1 << FAST_BITS];$/;"	m	struct:__anon58
-file	inc/stb.h	/^   char *file;$/;"	m	struct:__anon23
-file_data	inc/stb.h	/^   char **file_data;$/;"	m	struct:__anon43
-file_len	inc/stb.h	/^   int file_len;$/;"	m	struct:__anon43
-filename	inc/stb.h	/^   char *filename;$/;"	m	struct:__anon39
-filename	inc/stb.h	/^   char *filename;$/;"	m	struct:__anon43
+f	inc/stb.h	/^   FILE *f;$/;"	m	struct:__anon58
+f	inc/stb.h	/^   stb_thread_func f;$/;"	m	struct:__anon55
+f	inc/stb.h	/^   stb_thread_func f;$/;"	m	struct:__anon56
+f	inc/stb.h	/^   } f;$/;"	m	struct:stu__func	typeref:union:stu__func::__anon66
+fast	inc/stb_image.h	/^   stbi__uint16 fast[1 << STBI__ZFAST_BITS];$/;"	m	struct:__anon11
+fast	inc/stb_image.h	/^   stbi_uc  fast[1 << FAST_BITS];$/;"	m	struct:__anon7
+fast_ac	inc/stb_image.h	/^   stbi__int16 fast_ac[4][1 << FAST_BITS];$/;"	m	struct:__anon8
+file	inc/stb.h	/^   char *file;$/;"	m	struct:__anon42
+file_data	inc/stb.h	/^   char **file_data;$/;"	m	struct:__anon62
+file_len	inc/stb.h	/^   int file_len;$/;"	m	struct:__anon62
+filename	inc/stb.h	/^   char *filename;$/;"	m	struct:__anon58
+filename	inc/stb.h	/^   char *filename;$/;"	m	struct:__anon62
 files	inc/stb.h	/^   char **files;$/;"	m	struct:stb_dirtree2
-files	inc/stb.h	/^   stb_dirtree_file *files;$/;"	m	struct:__anon22
-filesize	inc/stb.h	/^   stb_int64 filesize;$/;"	m	struct:__anon38
-filetime	inc/stb.h	/^   time_t filetime;$/;"	m	struct:__anon38
+files	inc/stb.h	/^   stb_dirtree_file *files;$/;"	m	struct:__anon41
+filesize	inc/stb.h	/^   stb_int64 filesize;$/;"	m	struct:__anon57
+filetime	inc/stb.h	/^   time_t filetime;$/;"	m	struct:__anon57
 first	inc/stb.h	/^   stb__nptr *first; \/\/ address of first nptr pointing to this$/;"	m	struct:stb__st_nptr_target
-first	inc/stb_image.h	/^   stbi_uc first;$/;"	m	struct:__anon68
+first	inc/stb_image.h	/^   stbi_uc first;$/;"	m	struct:__anon18
 first_free	inc/stb.h	/^   void              *first_free;$/;"	m	struct:stb__span
 first_row_filter	inc/stb_image.h	/^static stbi_uc first_row_filter[5] =$/;"	v
-firstcode	inc/stb_image.h	/^   stbi__uint16 firstcode[16];$/;"	m	struct:__anon61
-firstsymbol	inc/stb_image.h	/^   stbi__uint16 firstsymbol[16];$/;"	m	struct:__anon61
-flag	inc/stb.h	/^   int      flag;$/;"	m	struct:__anon20
-flag	inc/stb.h	/^   int      flag;$/;"	m	struct:__anon21
-flag	inc/stb.h	/^   int *flag;$/;"	m	struct:__anon39
-flags	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
+firstcode	inc/stb_image.h	/^   stbi__uint16 firstcode[16];$/;"	m	struct:__anon11
+firstsymbol	inc/stb_image.h	/^   stbi__uint16 firstsymbol[16];$/;"	m	struct:__anon11
+flag	inc/stb.h	/^   int      flag;$/;"	m	struct:__anon39
+flag	inc/stb.h	/^   int      flag;$/;"	m	struct:__anon40
+flag	inc/stb.h	/^   int *flag;$/;"	m	struct:__anon58
+flags	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon19
 free	inc/stb.h	448;"	d
 free	inc/stb.h	702;"	d
 free	inc/stb.h	715;"	d
-fsize	inc/stb.h	/^   int fsize;$/;"	m	struct:__anon31
+fsize	inc/stb.h	/^   int fsize;$/;"	m	struct:__anon50
 fullpath	inc/stb.h	/^   char *fullpath;$/;"	m	struct:stb_dirtree2
-func	inc/stb.h	/^      stua_obj (*func)(stua_dict *context);$/;"	m	union:stu__func::__anon47
-func	inc/stb_image_write.h	/^   stbi_write_func *func;$/;"	m	struct:__anon1
+func	inc/stb.h	/^      stua_obj (*func)(stua_dict *context);$/;"	m	union:stu__func::__anon66
+func	inc/stb_image_write.h	/^   stbi_write_func *func;$/;"	m	struct:__anon20
 func_stack	inc/stb.h	/^static stu__comp_func *func_stack = NULL;$/;"	v
 getbyte	inc/stb.h	/^   int (*getbyte)(struct stbfile *);  \/\/ -1 on EOF$/;"	m	struct:stbfile
 getdata	inc/stb.h	/^   unsigned int (*getdata)(struct stbfile *, void *block, unsigned int len);$/;"	m	struct:stbfile
-goal	inc/stb.h	/^   stb_int16 goal;   \/\/ does reaching this win the prize?$/;"	m	struct:__anon30
-grow_threshhold	inc/stb.h	/^   int grow_threshhold;$/;"	m	struct:__anon27
+goal	inc/stb.h	/^   stb_int16 goal;   \/\/ does reaching this win the prize?$/;"	m	struct:__anon49
+grow_threshhold	inc/stb.h	/^   int grow_threshhold;$/;"	m	struct:__anon46
 growable	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
-guess	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon5
-h	inc/stb_image.h	/^      int h,v;$/;"	m	struct:__anon58::__anon59
-h	inc/stb_image.h	/^   int w,h;$/;"	m	struct:__anon69
-h2	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
-ha	inc/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon58::__anon59
+guess	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon24
+h	inc/stb_image.h	/^      int h,v;$/;"	m	struct:__anon8::__anon9
+h	inc/stb_image.h	/^   int w,h;$/;"	m	struct:__anon19
+h2	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon8::__anon9
+ha	inc/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon8::__anon9
 hash	inc/stb.h	/^   stb_hash_func     hash;$/;"	m	struct:stb_dupe
 hash_shift	inc/stb.h	/^   int hash_shift;$/;"	m	struct:stb_dupe
 hash_size	inc/stb.h	/^   int hash_size;$/;"	m	struct:stb_dupe
 hash_table	inc/stb.h	/^   void ***hash_table;$/;"	m	struct:stb_dupe
-hashmask	inc/stb.h	/^   stb_uint    hashmask;$/;"	m	struct:__anon31
-have_data	inc/stb.h	/^   int have_data;$/;"	m	struct:__anon38
-hd	inc/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon58::__anon59
+hashmask	inc/stb.h	/^   stb_uint    hashmask;$/;"	m	struct:__anon50
+have_data	inc/stb.h	/^   int have_data;$/;"	m	struct:__anon57
+hd	inc/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon8::__anon9
 head	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
 head_blockers	inc/stb.h	/^   int head_blockers;  \/\/ number of threads blocking--used to know whether to release(avail)$/;"	m	struct:stb__threadqueue
 height	inc/mn_cv_image.h	/^   int     height;$/;"	m	struct:Image
-hs	inc/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon60
-hsz	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon66
-huff_ac	inc/stb_image.h	/^   stbi__huffman huff_ac[4];$/;"	m	struct:__anon58
-huff_dc	inc/stb_image.h	/^   stbi__huffman huff_dc[4];$/;"	m	struct:__anon58
-i	inc/stb.h	/^   unsigned int i;$/;"	m	union:__anon2
-id	inc/stb_image.h	/^      int id;$/;"	m	struct:__anon58::__anon59
-idata	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon64
-idct_block_kernel	inc/stb_image.h	/^   void (*idct_block_kernel)(stbi_uc *out, int out_stride, short data[64]);$/;"	m	struct:__anon58
-img_buffer	inc/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon53
-img_buffer_end	inc/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon53
-img_buffer_original	inc/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon53
-img_buffer_original_end	inc/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon53
-img_comp	inc/stb_image.h	/^   } img_comp[4];$/;"	m	struct:__anon58	typeref:struct:__anon58::__anon59
-img_h_max	inc/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon58
-img_mcu_h	inc/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon58
-img_mcu_w	inc/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon58
-img_mcu_x	inc/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon58
-img_mcu_y	inc/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon58
-img_n	inc/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon53
-img_out_n	inc/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon53
-img_v_max	inc/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon58
-img_x	inc/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon53
-img_y	inc/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon53
+hs	inc/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon10
+hsz	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon16
+huff_ac	inc/stb_image.h	/^   stbi__huffman huff_ac[4];$/;"	m	struct:__anon8
+huff_dc	inc/stb_image.h	/^   stbi__huffman huff_dc[4];$/;"	m	struct:__anon8
+i	inc/stb.h	/^   unsigned int i;$/;"	m	union:__anon21
+id	inc/stb_image.h	/^      int id;$/;"	m	struct:__anon8::__anon9
+idata	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon14
+idct_block_kernel	inc/stb_image.h	/^   void (*idct_block_kernel)(stbi_uc *out, int out_stride, short data[64]);$/;"	m	struct:__anon8
+img_buffer	inc/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon3
+img_buffer_end	inc/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon3
+img_buffer_original	inc/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon3
+img_buffer_original_end	inc/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon3
+img_comp	inc/stb_image.h	/^   } img_comp[4];$/;"	m	struct:__anon8	typeref:struct:__anon8::__anon9
+img_h_max	inc/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon8
+img_mcu_h	inc/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon8
+img_mcu_w	inc/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon8
+img_mcu_x	inc/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon8
+img_mcu_y	inc/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon8
+img_n	inc/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon3
+img_out_n	inc/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon3
+img_v_max	inc/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon8
+img_x	inc/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon3
+img_y	inc/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon3
 indata	inc/stb.h	/^   unsigned char *indata, *inend; \/\/ input buffer$/;"	m	struct:stbfile
 inend	inc/stb.h	/^   unsigned char *indata, *inend; \/\/ input buffer$/;"	m	struct:stbfile
 ineq	inc/stb.h	/^   stb_compare_func  ineq;$/;"	m	struct:stb_dupe
@@ -580,199 +584,208 @@ int16	inc/stb.h	/^   typedef   signed short  int16;$/;"	t
 int32	inc/stb.h	/^   typedef   signed int    int32;$/;"	t
 int32	inc/stb.h	/^   typedef   signed long   int32;$/;"	t
 int8	inc/stb.h	/^   typedef   signed char   int8 ;$/;"	t
-io	inc/stb_image.h	/^   stbi_io_callbacks io;$/;"	m	struct:__anon53
-io_user_data	inc/stb_image.h	/^   void *io_user_data;$/;"	m	struct:__anon53
-is_dir	inc/stb.h	/^   int is_dir;$/;"	m	struct:__anon38
-is_valid	inc/stb.h	/^   int is_valid;$/;"	m	struct:__anon38
+io	inc/stb_image.h	/^   stbi_io_callbacks io;$/;"	m	struct:__anon3
+io_user_data	inc/stb_image.h	/^   void *io_user_data;$/;"	m	struct:__anon3
+is_dir	inc/stb.h	/^   int is_dir;$/;"	m	struct:__anon57
+is_valid	inc/stb.h	/^   int is_valid;$/;"	m	struct:__anon57
 isdotdirname	inc/stb.h	/^static int isdotdirname(char *name)$/;"	f
 item_size	inc/stb.h	/^   int item_size;$/;"	m	struct:stb__threadqueue
-ival	inc/stb.h	/^      int ival;$/;"	m	union:__anon41::__anon42
-jfif	inc/stb_image.h	/^   int            jfif;$/;"	m	struct:__anon58
-key	inc/stb.h	/^   char *key;$/;"	m	struct:__anon19
-large_bmap	inc/stb.h	/^   stb_uint16  *large_bmap;$/;"	m	struct:__anon12
-last_modified	inc/stb.h	/^   time_t   last_modified;$/;"	m	struct:__anon20
-last_modified	inc/stb.h	/^   time_t   last_modified;$/;"	m	struct:__anon21
+ival	inc/stb.h	/^      int ival;$/;"	m	union:__anon60::__anon61
+jfif	inc/stb_image.h	/^   int            jfif;$/;"	m	struct:__anon8
+key	inc/stb.h	/^   char *key;$/;"	m	struct:__anon38
+large_bmap	inc/stb.h	/^   stb_uint16  *large_bmap;$/;"	m	struct:__anon31
+last_modified	inc/stb.h	/^   time_t   last_modified;$/;"	m	struct:__anon39
+last_modified	inc/stb.h	/^   time_t   last_modified;$/;"	m	struct:__anon40
 len	inc/stb.h	/^   int                start, len;$/;"	m	struct:stb__span
-len	inc/stb.h	/^   int len, limit;$/;"	m	struct:__anon11
-len	inc/stb.h	/^   int len;$/;"	m	struct:__anon39
-len_output	inc/stb.h	/^   int *len_output;$/;"	m	struct:__anon39
-length	inc/stb_image.h	/^   stbi__uint32 length;$/;"	m	struct:__anon63
-length_id	inc/stb.h	/^   int length_id;$/;"	m	struct:__anon31
-lflags	inc/stb_image.h	/^   int lflags;$/;"	m	struct:__anon69
-limit	inc/stb.h	/^   int len, limit;$/;"	m	struct:__anon11
-line	inc/stb.h	/^   int  line;$/;"	m	struct:__anon23
-line	inc/stb.h	/^   int line;$/;"	m	struct:__anon41
-line0	inc/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon60
-line1	inc/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon60
-line_index	inc/stb.h	/^   unsigned short *line_index;$/;"	m	struct:__anon43
-line_size	inc/stb_image.h	/^   int line_size;$/;"	m	struct:__anon69
-linebuf	inc/stb_image.h	/^      stbi_uc *linebuf;$/;"	m	struct:__anon58::__anon59
+len	inc/stb.h	/^   int len, limit;$/;"	m	struct:__anon30
+len	inc/stb.h	/^   int len;$/;"	m	struct:__anon58
+len_output	inc/stb.h	/^   int *len_output;$/;"	m	struct:__anon58
+length	inc/stb_image.h	/^   stbi__uint32 length;$/;"	m	struct:__anon13
+length_id	inc/stb.h	/^   int length_id;$/;"	m	struct:__anon50
+lflags	inc/stb_image.h	/^   int lflags;$/;"	m	struct:__anon19
+limit	inc/stb.h	/^   int len, limit;$/;"	m	struct:__anon30
+line	inc/stb.h	/^   int  line;$/;"	m	struct:__anon42
+line	inc/stb.h	/^   int line;$/;"	m	struct:__anon60
+line0	inc/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon10
+line1	inc/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon10
+line_index	inc/stb.h	/^   unsigned short *line_index;$/;"	m	struct:__anon62
+line_size	inc/stb_image.h	/^   int line_size;$/;"	m	struct:__anon19
+linebuf	inc/stb_image.h	/^      stbi_uc *linebuf;$/;"	m	struct:__anon8::__anon9
 list	inc/stb.h	/^   unsigned short     list; \/\/ 1..256 free; 257..511 sizeclass; 0=large block$/;"	m	struct:stb__span
 load_jpeg_image	inc/stb_image.h	/^static stbi_uc *load_jpeg_image(stbi__jpeg *z, int *out_x, int *out_y, int *comp, int req_comp)$/;"	f
 loaded_file	inc/stb.h	/^   char *loaded_file;   \/\/ this needs to be freed$/;"	m	struct:stb_cfg_st
-locals	inc/stb.h	/^   stua_dict *locals;$/;"	m	struct:__anon50
-lpal	inc/stb_image.h	/^   stbi_uc lpal[256][4];$/;"	m	struct:__anon69
-ma	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+locals	inc/stb.h	/^   stua_dict *locals;$/;"	m	struct:__anon69
+lpal	inc/stb_image.h	/^   stbi_uc lpal[256][4];$/;"	m	struct:__anon19
+ma	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon16
 main	src/main.c	/^int main(void)$/;"	f
 make_string	inc/stb.h	/^static stua_obj make_string(char *z, int len)$/;"	f
 malloc	inc/stb.h	447;"	d
 malloc	inc/stb.h	700;"	d
 malloc	inc/stb.h	712;"	d
 malloc_base	inc/stb.h	/^static void * malloc_base(void *context, size_t size, stb__alloc_type t, int align)$/;"	f
-map	inc/stb.h	/^   unsigned short map;$/;"	m	struct:__anon13
-marker	inc/stb_image.h	/^   unsigned char  marker;      \/\/ marker seen while filling entropy buffer$/;"	m	struct:__anon58
-mask	inc/stb.h	/^   int size, mask;$/;"	m	struct:__anon27
-match	inc/stb.h	/^   stb_int16  match; \/\/ character\/set to match$/;"	m	struct:__anon29
+map	inc/stb.h	/^   unsigned short map;$/;"	m	struct:__anon32
+marker	inc/stb_image.h	/^   unsigned char  marker;      \/\/ marker seen while filling entropy buffer$/;"	m	struct:__anon8
+mask	inc/stb.h	/^   int size, mask;$/;"	m	struct:__anon46
+match	inc/stb.h	/^   stb_int16  match; \/\/ character\/set to match$/;"	m	struct:__anon48
 match_start	inc/stb.h	/^   int match_start;$/;"	m	struct:stb_matcher
 max	inc/stb.h	282;"	d
-max_x	inc/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon69
-max_y	inc/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon69
-maxcode	inc/stb_image.h	/^   int maxcode[17];$/;"	m	struct:__anon61
-maxcode	inc/stb_image.h	/^   unsigned int maxcode[18];$/;"	m	struct:__anon57
-maxval	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon5
-mb	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
-mg	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
+max_x	inc/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon19
+max_y	inc/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon19
+maxcode	inc/stb_image.h	/^   int maxcode[17];$/;"	m	struct:__anon11
+maxcode	inc/stb_image.h	/^   unsigned int maxcode[18];$/;"	m	struct:__anon7
+maxval	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon24
+mb	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon16
+mg	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon16
 min	inc/stb.h	281;"	d
-minval	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon5
-mn_cv_add_pixel	src/mn_cv_image.c	/^static void mn_cv_add_pixel(struct Image img, int x, int y, int c, float value)$/;"	f	file:
-mn_cv_free_image	src/mn_cv_image.c	/^void mn_cv_free_image(struct Image m)$/;"	f
-mn_cv_get_pixel	src/mn_cv_image.c	/^static float mn_cv_get_pixel(struct Image m, int x, int y, int c)$/;"	f	file:
-mn_cv_get_pixel_extend	src/mn_cv_image.c	/^static float mn_cv_get_pixel_extend(struct Image m, int x, int y, int c)$/;"	f	file:
-mn_cv_load_image	src/mn_cv_image.c	/^mn_cv_load_image(char* filename, int width, int height, int c)$/;"	f
-mn_cv_load_image_color	src/mn_cv_image.c	/^mn_cv_load_image_color(char* filename, int w, int h)$/;"	f
-mn_cv_load_image_stb	src/mn_cv_image.c	/^mn_cv_load_image_stb(char* filename, int channels_in) {$/;"	f
+minval	inc/stb.h	/^   int minval, maxval, guess;$/;"	m	struct:__anon24
+mn_cv_add_pixel	src/mn_cv_image.c	/^static void mn_cv_add_pixel(struct Image* img, int x, int y, int c, float value)$/;"	f	file:
+mn_cv_binarize	src/mn_cv_image.c	/^mn_cv_binarize(struct Image* img, float value)$/;"	f
+mn_cv_blue_channel	src/mn_cv_image.c	/^mn_cv_blue_channel(struct Image* img) {$/;"	f
+mn_cv_copy_image	src/mn_cv_image.c	/^mn_cv_copy_image(struct Image* img)$/;"	f
+mn_cv_free_image	src/mn_cv_image.c	/^void mn_cv_free_image(struct Image* img)$/;"	f
+mn_cv_get_image_channel	src/mn_cv_image.c	/^mn_cv_get_image_channel(struct Image* img, int channel) {$/;"	f
+mn_cv_get_pixel	src/mn_cv_image.c	/^static float mn_cv_get_pixel(struct Image* img, int x, int y, int c)$/;"	f	file:
+mn_cv_get_pixel_extend	src/mn_cv_image.c	/^static float mn_cv_get_pixel_extend(struct Image* img, int x, int y, int c)$/;"	f	file:
+mn_cv_grayscale_image	src/mn_cv_image.c	/^mn_cv_grayscale_image(struct Image* img) {$/;"	f
+mn_cv_green_channel	src/mn_cv_image.c	/^mn_cv_green_channel(struct Image* img) {$/;"	f
+mn_cv_load_image	src/mn_cv_image.c	/^mn_cv_load_image(const char* filename, int width, int height, int c)$/;"	f
+mn_cv_load_image_color	src/mn_cv_image.c	/^mn_cv_load_image_color(const char* filename, int w, int h)$/;"	f
+mn_cv_load_image_stb	src/mn_cv_image.c	/^mn_cv_load_image_stb(const char* filename, int channels_in) {$/;"	f
 mn_cv_make_empty_image	src/mn_cv_image.c	/^mn_cv_make_empty_image(int width, int height, int channels)$/;"	f
 mn_cv_make_image	src/mn_cv_image.c	/^mn_cv_make_image(int width, int height, int channels)$/;"	f
-mn_cv_mul_pixel	src/mn_cv_image.c	/^static void mn_cv_mul_pixel(struct Image img, int x, int y, int c, float value)$/;"	f	file:
+mn_cv_mul_pixel	src/mn_cv_image.c	/^static void mn_cv_mul_pixel(struct Image* img, int x, int y, int c, float value)$/;"	f	file:
+mn_cv_red_channel	src/mn_cv_image.c	/^mn_cv_red_channel(struct Image* img) {$/;"	f
+mn_cv_resize_image	src/mn_cv_image.c	/^mn_cv_resize_image(struct Image im, int width, int height)$/;"	f	file:
 mn_cv_save_image_png	src/mn_cv_image.c	/^void mn_cv_save_image_png(struct Image im, const char *name)$/;"	f
 mn_cv_set_pixel	src/mn_cv_image.c	/^static void mn_cv_set_pixel(struct Image* img, int x, int y, int c, float value)$/;"	f	file:
-mode	inc/stb.h	/^   int mode, step;$/;"	m	struct:__anon5
-mr	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon66
-multiplicand	inc/stb.h	/^   stb_uint    multiplicand;$/;"	m	struct:__anon12
+mn_cv_sum	src/mn_cv_image.c	/^mn_cv_sum(struct Image* img1, struct Image* img2) {$/;"	f
+mn_cv_threshold_image	src/mn_cv_image.c	/^mn_cv_threshold_image(struct Image* img, float thresh) {$/;"	f
+mode	inc/stb.h	/^   int mode, step;$/;"	m	struct:__anon24
+mr	inc/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon16
+multiplicand	inc/stb.h	/^   stb_uint    multiplicand;$/;"	m	struct:__anon31
 mutex	inc/stb.h	/^   stb_mutex mutex;   \/\/ mutex while tweaking state$/;"	m	struct:stb__sync
-name	inc/stb.h	/^   char *name;              \/\/ name relative to path$/;"	m	struct:__anon21
-name	inc/stb.h	/^   char *name;$/;"	m	struct:__anon18
+name	inc/stb.h	/^   char *name;              \/\/ name relative to path$/;"	m	struct:__anon40
+name	inc/stb.h	/^   char *name;$/;"	m	struct:__anon37
 next	inc/stb.h	/^   struct stb__chunk *next;$/;"	m	struct:stb__chunk	typeref:struct:stb__chunk::stb__chunk
 next	inc/stb.h	/^   struct stb__span  *next, *prev;$/;"	m	struct:stb__span	typeref:struct:stb__span::stb__span
 next	inc/stb.h	/^   struct stb__st_nptr *next;   \/\/ next pointer with same target$/;"	m	struct:stb__st_nptr	typeref:struct:stb__st_nptr::stb__st_nptr
-next	inc/stb.h	/^   void *  next;$/;"	m	struct:__anon7
-next	inc/stb.h	/^   void *  next;$/;"	m	struct:__anon8
+next	inc/stb.h	/^   void *  next;$/;"	m	struct:__anon26
+next	inc/stb.h	/^   void *  next;$/;"	m	struct:__anon27
 next_in_block	inc/stb.h	/^   struct stb__st_nptr *next_in_block;$/;"	m	struct:stb__st_nptr	typeref:struct:stb__st_nptr::stb__st_nptr
 next_in_block	inc/stb.h	/^   struct stb__st_nptr_target *next_in_block;$/;"	m	struct:stb__st_nptr_target	typeref:struct:stb__st_nptr_target::stb__st_nptr_target
-node	inc/stb.h	/^   stb_uint16 node;  \/\/ output node to go to$/;"	m	struct:__anon29
+node	inc/stb.h	/^   stb_uint16 node;  \/\/ output node to go to$/;"	m	struct:__anon48
 nodes	inc/stb.h	/^   stb_nfa_node *nodes;$/;"	m	struct:stb_matcher
-nomore	inc/stb_image.h	/^   int            nomore;      \/\/ flag if we saw a marker so must stop$/;"	m	struct:__anon58
-non_local_refs	inc/stb.h	/^   short     *non_local_refs;$/;"	m	struct:__anon50
+nomore	inc/stb_image.h	/^   int            nomore;      \/\/ flag if we saw a marker so must stop$/;"	m	struct:__anon8
+non_local_refs	inc/stb.h	/^   short     *non_local_refs;$/;"	m	struct:__anon69
 nonempty	inc/stb.h	/^   stb_semaphore nonempty, nonfull;$/;"	m	struct:stb__threadqueue
 nonfull	inc/stb.h	/^   stb_semaphore nonempty, nonfull;$/;"	m	struct:stb__threadqueue
-num_bits	inc/stb_image.h	/^   int num_bits;$/;"	m	struct:__anon62
-num_channels	inc/stb_image.h	/^   int num_channels;$/;"	m	struct:__anon55
+num_bits	inc/stb_image.h	/^   int num_bits;$/;"	m	struct:__anon12
+num_channels	inc/stb_image.h	/^   int num_channels;$/;"	m	struct:__anon5
 num_charset	inc/stb.h	/^   int num_charset;$/;"	m	struct:stb_matcher
-num_files	inc/stb.h	/^   int      num_files;$/;"	m	struct:__anon20
+num_files	inc/stb.h	/^   int      num_files;$/;"	m	struct:__anon39
 num_param	inc/stb.h	/^   int num_param;$/;"	m	struct:stu__func
 num_subdir	inc/stb.h	/^   int num_subdir;$/;"	m	struct:stb_dirtree2
-num_sym	inc/stb.h	/^   int num_sym;$/;"	m	struct:__anon35
+num_sym	inc/stb.h	/^   int num_sym;$/;"	m	struct:__anon54
 num_words_per_dfa	inc/stb.h	/^   int num_words_per_dfa;$/;"	m	struct:stb_matcher
 numthreads	inc/stb.h	/^   int numthreads;$/;"	m	struct:stb__workqueue
-offset	inc/stb.h	/^   int offset;$/;"	m	struct:__anon39
-offset	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon66
-old_out	inc/stb_image.h	/^   stbi_uc *out, *old_out;             \/\/ output buffer (always 4 components)$/;"	m	struct:__anon69
-order	inc/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon58
-out	inc/stb.h	/^   stb_nfa_edge *out;$/;"	m	struct:__anon30
-out	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon64
-out	inc/stb_image.h	/^   stbi_uc *out, *old_out;             \/\/ output buffer (always 4 components)$/;"	m	struct:__anon69
+offset	inc/stb.h	/^   int offset;$/;"	m	struct:__anon58
+offset	inc/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon16
+old_out	inc/stb_image.h	/^   stbi_uc *out, *old_out;             \/\/ output buffer (always 4 components)$/;"	m	struct:__anon19
+order	inc/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon8
+out	inc/stb.h	/^   stb_nfa_edge *out;$/;"	m	struct:__anon49
+out	inc/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon14
+out	inc/stb_image.h	/^   stbi_uc *out, *old_out;             \/\/ output buffer (always 4 components)$/;"	m	struct:__anon19
 outliterals	inc/stb.h	/^static void outliterals(stb_uchar *in, int numlit)$/;"	f
-output	inc/stb.h	/^   stb_uchar *output;$/;"	m	struct:__anon39
-output	inc/stb.h	/^   stbfile *output;$/;"	m	struct:__anon33
-p	inc/stb.h	/^   void * p;$/;"	m	union:__anon2
-p	inc/stb.h	/^   void *p;$/;"	m	struct:__anon23
-p	inc/stb.h	/^   void *p[1];$/;"	m	struct:__anon26
-p	inc/stb.h	/^   void *p[STB_BUCKET_SIZE];$/;"	m	struct:__anon25
-pal	inc/stb_image.h	/^   stbi_uc  pal[256][4];$/;"	m	struct:__anon69
+output	inc/stb.h	/^   stb_uchar *output;$/;"	m	struct:__anon58
+output	inc/stb.h	/^   stbfile *output;$/;"	m	struct:__anon52
+p	inc/stb.h	/^   void * p;$/;"	m	union:__anon21
+p	inc/stb.h	/^   void *p;$/;"	m	struct:__anon42
+p	inc/stb.h	/^   void *p[1];$/;"	m	struct:__anon45
+p	inc/stb.h	/^   void *p[STB_BUCKET_SIZE];$/;"	m	struct:__anon44
+pal	inc/stb_image.h	/^   stbi_uc  pal[256][4];$/;"	m	struct:__anon19
 param	inc/stb.h	/^   stua_obj *param;  \/\/ list of parameter strings$/;"	m	struct:stu__func
-parent	inc/stb.h	/^   stb__alloc *parent;$/;"	m	struct:__anon9
-parse	inc/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon69
-path	inc/stb.h	/^   char   * path;           \/\/ full path from passed-in root$/;"	m	struct:__anon20
-pending_ffs	inc/stb.h	/^   int pending_ffs;$/;"	m	struct:__anon33
-pending_literals	inc/stb.h	/^   int pending_literals; \/\/ bytes not-quite output but counted in start$/;"	m	struct:__anon31
-pointers	inc/stb.h	/^   stb__nptr *pointers;$/;"	m	struct:__anon15
+parent	inc/stb.h	/^   stb__alloc *parent;$/;"	m	struct:__anon28
+parse	inc/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon19
+path	inc/stb.h	/^   char   * path;           \/\/ full path from passed-in root$/;"	m	struct:__anon39
+pending_ffs	inc/stb.h	/^   int pending_ffs;$/;"	m	struct:__anon52
+pending_literals	inc/stb.h	/^   int pending_literals; \/\/ bytes not-quite output but counted in start$/;"	m	struct:__anon50
+pointers	inc/stb.h	/^   stb__nptr *pointers;$/;"	m	struct:__anon34
 population	inc/stb.h	/^   int population;$/;"	m	struct:stb_dupe
-pow2	inc/stb.h	/^   unsigned int pow2;$/;"	m	struct:__anon35
-prefix	inc/stb_image.h	/^   stbi__int16 prefix;$/;"	m	struct:__anon68
+pow2	inc/stb.h	/^   unsigned int pow2;$/;"	m	struct:__anon54
+prefix	inc/stb_image.h	/^   stbi__int16 prefix;$/;"	m	struct:__anon18
 prev	inc/stb.h	/^   struct stb__span  *next, *prev;$/;"	m	struct:stb__span	typeref:struct:stb__span::
 prev	inc/stb.h	/^   struct stb__st_nptr **prev;  \/\/ prev pointer with same target, address of 'next' field (or first)$/;"	m	struct:stb__st_nptr	typeref:struct:stb__st_nptr::stb__st_nptr
-prevn	inc/stb.h	/^   void ** prevn;$/;"	m	struct:__anon7
-prevn	inc/stb.h	/^   void ** prevn;$/;"	m	struct:__anon8
-progressive	inc/stb_image.h	/^   int            progressive;$/;"	m	struct:__anon58
-ptr	inc/stb.h	/^      void *ptr;$/;"	m	union:stbfile::__anon32
+prevn	inc/stb.h	/^   void ** prevn;$/;"	m	struct:__anon26
+prevn	inc/stb.h	/^   void ** prevn;$/;"	m	struct:__anon27
+progressive	inc/stb_image.h	/^   int            progressive;$/;"	m	struct:__anon8
+ptr	inc/stb.h	/^      void *ptr;$/;"	m	union:stbfile::__anon51
 ptr	inc/stb.h	/^   void *ptr;   \/\/ address of actual pointer$/;"	m	struct:stb__st_nptr
 ptr	inc/stb.h	/^   void *ptr;   \/\/ address of target$/;"	m	struct:stb__st_nptr_target
-ptr	inc/stb.h	/^   void *ptr;$/;"	m	struct:__anon46
+ptr	inc/stb.h	/^   void *ptr;$/;"	m	struct:__anon65
 putbyte	inc/stb.h	/^   int (*putbyte)(struct stbfile *, int byte);$/;"	m	struct:stbfile
 putdata	inc/stb.h	/^   unsigned int (*putdata)(struct stbfile *, void *block, unsigned int len);$/;"	m	struct:stbfile
 rad2deg	inc/stb.h	298;"	d
-range	inc/stb.h	/^   unsigned int code, range; \/\/ decode$/;"	m	struct:__anon33
-range_high	inc/stb.h	/^   unsigned int range_high;$/;"	m	struct:__anon33
-range_low	inc/stb.h	/^   unsigned int range_low;$/;"	m	struct:__anon33
-ratio	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
-raw_coeff	inc/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon58::__anon59
-raw_data	inc/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon58::__anon59
-read	inc/stb_image.h	/^   int      (*read)  (void *user,char *data,int size);   \/\/ fill 'data' with 'size' bytes.  return number of bytes actually read$/;"	m	struct:__anon52
-read_from_callbacks	inc/stb_image.h	/^   int read_from_callbacks;$/;"	m	struct:__anon53
+range	inc/stb.h	/^   unsigned int code, range; \/\/ decode$/;"	m	struct:__anon52
+range_high	inc/stb.h	/^   unsigned int range_high;$/;"	m	struct:__anon52
+range_low	inc/stb.h	/^   unsigned int range_low;$/;"	m	struct:__anon52
+ratio	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon19
+raw_coeff	inc/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon8::__anon9
+raw_data	inc/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon8::__anon9
+read	inc/stb_image.h	/^   int      (*read)  (void *user,char *data,int size);   \/\/ fill 'data' with 'size' bytes.  return number of bytes actually read$/;"	m	struct:__anon2
+read_from_callbacks	inc/stb_image.h	/^   int read_from_callbacks;$/;"	m	struct:__anon3
 readdir_raw	inc/stb.h	/^static char **readdir_raw(char *dir, int return_subdirs, char *mask)$/;"	f
 realloc	inc/stb.h	449;"	d
 realloc	inc/stb.h	701;"	d
 realloc	inc/stb.h	713;"	d
-regex	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	m	struct:__anon49
-rehash_threshhold	inc/stb.h	/^   int rehash_threshhold;$/;"	m	struct:__anon27
+regex	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	m	struct:__anon68
+rehash_threshhold	inc/stb.h	/^   int rehash_threshhold;$/;"	m	struct:__anon46
 release	inc/stb.h	/^   stb_semaphore release; \/\/ semaphore wake up waiting threads$/;"	m	struct:stb__sync
 relpath	inc/stb.h	/^   char *relpath;$/;"	m	struct:stb_dirtree2
 remove	inc/stb.h	/^   stb_mutex add, remove;$/;"	m	struct:stb__threadqueue
-resample	inc/stb_image.h	/^   resample_row_func resample;$/;"	m	struct:__anon60
+resample	inc/stb_image.h	/^   resample_row_func resample;$/;"	m	struct:__anon10
 resample_row_1	inc/stb_image.h	/^static stbi_uc *resample_row_1(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
 resample_row_func	inc/stb_image.h	/^typedef stbi_uc *(*resample_row_func)(stbi_uc *out, stbi_uc *in0, stbi_uc *in1,$/;"	t
-resample_row_hv_2_kernel	inc/stb_image.h	/^   stbi_uc *(*resample_row_hv_2_kernel)(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs);$/;"	m	struct:__anon58
-resize_image	src/mn_cv_image.c	/^resize_image(struct Image im, int width, int height)$/;"	f
-restart_interval	inc/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon58
-result	inc/stb.h	/^   stb_uchar **result;$/;"	m	struct:__anon39
-return_val	inc/stb.h	/^   volatile void **return_val;$/;"	m	struct:__anon36
-retval	inc/stb.h	/^   volatile void **retval;$/;"	m	struct:__anon37
-rgb	inc/stb_image.h	/^   int            rgb;$/;"	m	struct:__anon58
+resample_row_hv_2_kernel	inc/stb_image.h	/^   stbi_uc *(*resample_row_hv_2_kernel)(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs);$/;"	m	struct:__anon8
+restart_interval	inc/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon8
+result	inc/stb.h	/^   stb_uchar **result;$/;"	m	struct:__anon58
+return_val	inc/stb.h	/^   volatile void **return_val;$/;"	m	struct:__anon55
+retval	inc/stb.h	/^   volatile void **retval;$/;"	m	struct:__anon56
+rgb	inc/stb_image.h	/^   int            rgb;$/;"	m	struct:__anon8
 rm	Makefile	/^rm       = rm -f$/;"	m
-s	inc/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon58
-s	inc/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon64
-samples	inc/stb.h	/^   unsigned short samples;$/;"	m	struct:__anon34
-scan_n	inc/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon58
-sem	inc/stb.h	/^   stb_semaphore sem;$/;"	m	struct:__anon36
-shrink_threshhold	inc/stb.h	/^   int shrink_threshhold;$/;"	m	struct:__anon27
-signature	inc/stb.h	/^   unsigned int signature;$/;"	m	struct:__anon11
-size	inc/stb.h	/^   int  size;$/;"	m	struct:__anon23
-size	inc/stb.h	/^   int size, mask;$/;"	m	struct:__anon27
-size	inc/stb.h	/^   int size;           \/\/ physical size of buffer in bytes$/;"	m	struct:__anon31
-size	inc/stb.h	/^   stb_int64 size;      \/\/ size, max 4GB$/;"	m	struct:__anon21
+s	inc/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon14
+s	inc/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon8
+samples	inc/stb.h	/^   unsigned short samples;$/;"	m	struct:__anon53
+scan_n	inc/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon8
+sem	inc/stb.h	/^   stb_semaphore sem;$/;"	m	struct:__anon55
+shrink_threshhold	inc/stb.h	/^   int shrink_threshhold;$/;"	m	struct:__anon46
+signature	inc/stb.h	/^   unsigned int signature;$/;"	m	struct:__anon30
+size	inc/stb.h	/^   int  size;$/;"	m	struct:__anon42
+size	inc/stb.h	/^   int size, mask;$/;"	m	struct:__anon46
+size	inc/stb.h	/^   int size;           \/\/ physical size of buffer in bytes$/;"	m	struct:__anon50
+size	inc/stb.h	/^   stb_int64 size;      \/\/ size, max 4GB$/;"	m	struct:__anon40
 size	inc/stb.h	/^   unsigned int (*size)(struct stbfile *);$/;"	m	struct:stbfile
-size	inc/stb_image.h	/^   stbi_uc  size[257];$/;"	m	struct:__anon57
-size	inc/stb_image.h	/^   stbi_uc  size[288];$/;"	m	struct:__anon61
-size	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon67
+size	inc/stb_image.h	/^   stbi_uc  size[257];$/;"	m	struct:__anon7
+size	inc/stb_image.h	/^   stbi_uc  size[288];$/;"	m	struct:__anon11
+size	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon17
 size_log2	inc/stb.h	/^   int size_log2;$/;"	m	struct:stb_dupe
-skip	inc/stb_image.h	/^   void     (*skip)  (void *user,int n);                 \/\/ skip the next 'n' bytes, or 'unget' the last -n bytes if negative$/;"	m	struct:__anon52
-small_bmap	inc/stb.h	/^   stb_uint8   small_bmap[16];$/;"	m	struct:__anon12
+skip	inc/stb_image.h	/^   void     (*skip)  (void *user,int n);                 \/\/ skip the next 'n' bytes, or 'unget' the last -n bytes if negative$/;"	m	struct:__anon2
+small_bmap	inc/stb.h	/^   stb_uint8   small_bmap[16];$/;"	m	struct:__anon31
 sofar	inc/stb.h	/^   int sofar;   \/\/ total threads that hit it$/;"	m	struct:stb__sync
-spec_end	inc/stb_image.h	/^   int            spec_end;$/;"	m	struct:__anon58
-spec_start	inc/stb_image.h	/^   int            spec_start;$/;"	m	struct:__anon58
+spec_end	inc/stb_image.h	/^   int            spec_end;$/;"	m	struct:__anon8
+spec_start	inc/stb_image.h	/^   int            spec_start;$/;"	m	struct:__anon8
 start	inc/stb.h	/^   int                start, len;$/;"	m	struct:stb__span
-start	inc/stb.h	/^   int start;          \/\/ bytes of data already output$/;"	m	struct:__anon31
+start	inc/stb.h	/^   int start;          \/\/ bytes of data already output$/;"	m	struct:__anon50
 start	inc/stb.h	/^   stb_mutex start;   \/\/ mutex to prevent starting again before finishing previous$/;"	m	struct:stb__sync
 start_node	inc/stb.h	/^   stb_uint16 start_node;$/;"	m	struct:stb_matcher
-start_x	inc/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon69
-start_y	inc/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon69
-stat_out	inc/stb.h	/^   stb_bgstat *stat_out;$/;"	m	struct:__anon39
+start_x	inc/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon19
+start_y	inc/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon19
+stat_out	inc/stb.h	/^   stb_bgstat *stat_out;$/;"	m	struct:__anon58
 stb_	inc/stb.h	/^void stb_(char *s, ...)$/;"	f
 stb_	inc/stb.h	1216;"	d
-stb__4	inc/stb.h	/^typedef struct { char d[4]; } stb__4;$/;"	t	typeref:struct:__anon3
-stb__8	inc/stb.h	/^typedef struct { char d[8]; } stb__8;$/;"	t	typeref:struct:__anon4
-stb__Entry	inc/stb.h	/^} stb__Entry;$/;"	t	typeref:struct:__anon41
-stb__FileEntry	inc/stb.h	/^} stb__FileEntry;$/;"	t	typeref:struct:__anon43
+stb__4	inc/stb.h	/^typedef struct { char d[4]; } stb__4;$/;"	t	typeref:struct:__anon22
+stb__8	inc/stb.h	/^typedef struct { char d[8]; } stb__8;$/;"	t	typeref:struct:__anon23
+stb__Entry	inc/stb.h	/^} stb__Entry;$/;"	t	typeref:struct:__anon60
+stb__FileEntry	inc/stb.h	/^} stb__FileEntry;$/;"	t	typeref:struct:__anon62
 stb__abackpatch	inc/stb.h	/^static void stb__abackpatch(stbfile *f, unsigned int where, void *data, unsigned int len)$/;"	f
 stb__aclose	inc/stb.h	/^static void stb__aclose(stbfile *f)$/;"	f
 stb__add_alloc	inc/stb.h	/^static void stb__add_alloc(void *p, int sz, char *file, int line)$/;"	f
@@ -781,7 +794,7 @@ stb__add_epsilon	inc/stb.h	/^static void stb__add_epsilon(stb_matcher *matcher, 
 stb__add_if_inactive	inc/stb.h	/^static stb_uint16 * stb__add_if_inactive(stb_matcher *m, stb_uint16 *list, int n)$/;"	f
 stb__add_node	inc/stb.h	/^static int stb__add_node(stb_matcher *matcher)$/;"	f
 stb__add_section	inc/stb.h	/^void stb__add_section(char *buffer, char *data, int curlen, int newlen)$/;"	f
-stb__alloc	inc/stb.h	/^} stb__alloc;$/;"	t	typeref:struct:__anon8
+stb__alloc	inc/stb.h	/^} stb__alloc;$/;"	t	typeref:struct:__anon27
 stb__alloc_chunk	inc/stb.h	/^static void * stb__alloc_chunk(stb__alloc *src, int size, int align, int pre_align)$/;"	f
 stb__alloc_count	inc/stb.h	/^int stb__alloc_count;$/;"	v
 stb__alloc_global	inc/stb.h	/^static stb__alloc stb__alloc_global =$/;"	v
@@ -793,14 +806,14 @@ stb__alloc_pages	inc/stb.h	/^static stb__span *stb__alloc_pages(int num)$/;"	f
 stb__alloc_pages_raw	inc/stb.h	12334;"	d
 stb__alloc_size	inc/stb.h	/^static int stb__alloc_size, stb__alloc_limit, stb__alloc_mask;$/;"	v
 stb__alloc_span	inc/stb.h	/^static stb__span *stb__alloc_span(int pagecount)$/;"	f
-stb__alloc_type	inc/stb.h	/^} stb__alloc_type;$/;"	t	typeref:enum:__anon10
+stb__alloc_type	inc/stb.h	/^} stb__alloc_type;$/;"	t	typeref:enum:__anon29
 stb__allocations	inc/stb.h	/^stb_malloc_record *stb__allocations;$/;"	v
 stb__aputbyte	inc/stb.h	/^static int stb__aputbyte(stbfile *f, int ch)$/;"	f
 stb__aputdata	inc/stb.h	/^static unsigned int stb__aputdata(stbfile *f, void *data, unsigned int len)$/;"	f
 stb__arith_carry	inc/stb.h	/^static void stb__arith_carry(stb_arith *a)$/;"	f
 stb__arith_flush	inc/stb.h	/^static void stb__arith_flush(stb_arith *a)$/;"	f
 stb__arith_putbyte	inc/stb.h	/^static void stb__arith_putbyte(stb_arith *a, int byte)$/;"	f
-stb__arr	inc/stb.h	/^} stb__arr;$/;"	t	typeref:struct:__anon11
+stb__arr	inc/stb.h	/^} stb__arr;$/;"	t	typeref:struct:__anon30
 stb__arr_addlen	inc/stb.h	3154;"	d
 stb__arr_addlen	inc/stb.h	3158;"	d
 stb__arr_addlen_	inc/stb.h	/^void stb__arr_addlen_(void **p, int size, int addlen  STB__PARAMS)$/;"	f
@@ -835,7 +848,7 @@ stb__bst_parent	inc/stb.h	4322;"	d
 stb__btell	inc/stb.h	/^static unsigned int stb__btell(stbfile *s) { return s->indata - s->buffer; }$/;"	f
 stb__calloc	inc/stb.h	/^   static void *stb__calloc(size_t n, size_t sz, char *file, int line)$/;"	f
 stb__cfg_dir	inc/stb.h	/^static char stb__cfg_dir[512];$/;"	v
-stb__cfg_item	inc/stb.h	/^} stb__cfg_item;$/;"	t	typeref:struct:__anon19
+stb__cfg_item	inc/stb.h	/^} stb__cfg_item;$/;"	t	typeref:struct:__anon38
 stb__cfg_sig	inc/stb.h	/^static char *stb__cfg_sig = "sTbCoNfIg!\\0\\0";$/;"	v
 stb__charcmp	inc/stb.h	/^int stb__charcmp(const void *a, const void *b)$/;"	f
 stb__charcmpoffset	inc/stb.h	/^static int stb__intcmpoffset, stb__charcmpoffset, stb__strcmpoffset;$/;"	v
@@ -844,7 +857,7 @@ stb__check	inc/stb.h	460;"	d
 stb__check2	inc/stb.h	/^   static void stb__check2(void *p, int sz, char *file, int line)$/;"	f
 stb__chunk	inc/stb.h	/^typedef struct stb__chunk$/;"	s
 stb__chunk	inc/stb.h	/^} stb__chunk;$/;"	t	typeref:struct:stb__chunk
-stb__chunked	inc/stb.h	/^} stb__chunked;$/;"	t	typeref:struct:__anon9
+stb__chunked	inc/stb.h	/^} stb__chunked;$/;"	t	typeref:struct:__anon28
 stb__chunks	inc/stb.h	2508;"	d
 stb__class_base	inc/stb.h	/^static unsigned char stb__class_base[32];$/;"	v
 stb__class_shift	inc/stb.h	/^static unsigned char stb__class_shift[32];$/;"	v
@@ -868,7 +881,7 @@ stb__dirtree_load_db	inc/stb.h	/^static void stb__dirtree_load_db(char *filename
 stb__dirtree_save_db	inc/stb.h	/^static void stb__dirtree_save_db(char *filename, stb_dirtree *data, char *root)$/;"	f
 stb__dirtree_scandir	inc/stb.h	/^static void stb__dirtree_scandir(char *path, time_t last_time, stb_dirtree *active)$/;"	f
 stb__dirtree_update_db	inc/stb.h	/^static int stb__dirtree_update_db(stb_dirtree *db, stb_dirtree *active)$/;"	f
-stb__disk_command	inc/stb.h	/^} stb__disk_command;$/;"	t	typeref:struct:__anon39
+stb__disk_command	inc/stb.h	/^} stb__disk_command;$/;"	t	typeref:struct:__anon58
 stb__diskio	inc/stb.h	/^static stb_workqueue *stb__diskio;$/;"	v
 stb__diskio_mutex	inc/stb.h	/^static stb_mutex stb__diskio_mutex;$/;"	v
 stb__double_constant	inc/stb.h	/^double stb__double_constant(char *file, int line, double x)$/;"	f
@@ -883,7 +896,7 @@ stb__fclose2	inc/stb.h	/^static void stb__fclose2(stbfile *f)$/;"	f
 stb__fgetbyte	inc/stb.h	/^static int stb__fgetbyte(stbfile *f) { return fgetc(f->f); }$/;"	f
 stb__fgetdata	inc/stb.h	/^static unsigned int stb__fgetdata(stbfile *f, void *buffer, unsigned int len) { return fread(buffer,1,len,f->f); }$/;"	f
 stb__file	inc/stb.h	/^static char *stb__file;$/;"	v
-stb__file_data	inc/stb.h	/^} stb__file_data;$/;"	t	typeref:struct:__anon18
+stb__file_data	inc/stb.h	/^} stb__file_data;$/;"	t	typeref:struct:__anon37
 stb__files	inc/stb.h	/^static stb_ptrmap *stb__files;$/;"	v
 stb__find_qstring	inc/stb.h	/^static int stb__find_qstring(char *candidate, char *qstring, int qlen, int insensitive)$/;"	f
 stb__firstpage	inc/stb.h	/^static int stb__firstpage, stb__lastpage;$/;"	v
@@ -947,14 +960,14 @@ stb__malloc_wait	inc/stb.h	/^   static int stb__malloc_wait=(1 << 30), stb__mall
 stb__match	inc/stb.h	/^static void stb__match(stb_uchar *data, stb_uint length)$/;"	f
 stb__match_qstring	inc/stb.h	/^static int stb__match_qstring(char *candidate, char *qstring, int qlen, int insensitive)$/;"	f
 stb__matcher_dfa	inc/stb.h	/^static int stb__matcher_dfa(stb_matcher *m, char *str_c, int *len)$/;"	f
-stb__memory_leaf	inc/stb.h	/^} stb__memory_leaf;$/;"	t	typeref:struct:__anon15
-stb__memory_node	inc/stb.h	/^} stb__memory_node;$/;"	t	typeref:struct:__anon16
+stb__memory_leaf	inc/stb.h	/^} stb__memory_leaf;$/;"	t	typeref:struct:__anon34
+stb__memory_node	inc/stb.h	/^} stb__memory_node;$/;"	t	typeref:struct:__anon35
 stb__memtab_root	inc/stb.h	/^stb__memory_node *stb__memtab_root[STB__NPTR_ROOT_NUM];$/;"	v
 stb__mt_buffer	inc/stb.h	/^unsigned long stb__mt_buffer[STB__MT_LEN];$/;"	v
 stb__mt_index	inc/stb.h	/^int stb__mt_index = STB__MT_LEN*sizeof(unsigned long)+1;$/;"	v
 stb__nc	inc/stb.h	10448;"	d
 stb__nobackpatch	inc/stb.h	/^static void stb__nobackpatch(stbfile *f, unsigned int where, void *buffer, unsigned int len) { assert(0); }$/;"	f
-stb__nochildren	inc/stb.h	/^} stb__nochildren;$/;"	t	typeref:struct:__anon7
+stb__nochildren	inc/stb.h	/^} stb__nochildren;$/;"	t	typeref:struct:__anon26
 stb__nogetbyte	inc/stb.h	/^static int stb__nogetbyte(stbfile *f) { assert(0); return -1; }$/;"	f
 stb__nogetdata	inc/stb.h	/^static unsigned int stb__nogetdata(stbfile *f, void *buffer, unsigned int len) { assert(0); return 0; }$/;"	f
 stb__noputbyte	inc/stb.h	/^static int stb__noputbyte(stbfile *f, int ch) { assert(0); return 0; }$/;"	f
@@ -988,7 +1001,7 @@ stb__perfect_rand	inc/stb.h	/^static unsigned long stb__perfect_rand(void)$/;"	f
 stb__prevn	inc/stb.h	/^static void *** stb__prevn(void *p)$/;"	f
 stb__print	inc/stb.h	/^static void stb__print(char *s)$/;"	f
 stb__print_one	inc/stb.h	/^static void stb__print_one(void *handle, char *s, int len)$/;"	f
-stb__ptrpair	inc/stb.h	/^} stb__ptrpair;$/;"	t	typeref:struct:__anon14
+stb__ptrpair	inc/stb.h	/^} stb__ptrpair;$/;"	t	typeref:struct:__anon33
 stb__ptrpair_del	inc/stb.h	/^static stb__ptrpair stb__ptrpair_del   = { (void *) 2, (void *) 2 };$/;"	v
 stb__ptrpair_empty	inc/stb.h	/^static stb__ptrpair stb__ptrpair_empty = { (void *) 1, (void *) 1 };$/;"	v
 stb__qsort_strcmp	inc/stb.h	/^int stb__qsort_strcmp(const void *a, const void *b)$/;"	f
@@ -1013,7 +1026,7 @@ stb__showfile	inc/stb.h	/^static int stb__dircount, stb__dircount_mask, stb__sho
 stb__signature	inc/stb.h	/^static char stb__signature[12] = { 's', 'T', 'b', 'D', 'i', 'R', 't', 'R', 'e', 'E', '0', '2' };$/;"	v
 stb__size_for_class	inc/stb.h	/^static           int stb__size_for_class[STB__MAX_SIZE_CLASSES];$/;"	v
 stb__sizeclass	inc/stb.h	/^static int stb__sizeclass(size_t sz)$/;"	f
-stb__slot	inc/stb.h	/^} stb__slot;$/;"	t	typeref:struct:__anon13
+stb__slot	inc/stb.h	/^} stb__slot;$/;"	t	typeref:struct:__anon32
 stb__slot_compare	inc/stb.h	/^static int stb__slot_compare(const void *p, const void *q)$/;"	f
 stb__smemset	inc/stb.h	12606;"	d
 stb__smemset	inc/stb.h	12608;"	d
@@ -1052,7 +1065,7 @@ stb__testsize2_ptr	inc/stb.h	/^typedef char stb__testsize2_ptr[sizeof(char *) ==
 stb__testsize2_ptr	inc/stb.h	/^typedef char stb__testsize2_ptr[sizeof(char *) == 8];$/;"	t
 stb__testsize2_uinta	inc/stb.h	/^typedef char stb__testsize2_uinta[sizeof(stb_uinta)==sizeof(char*) ? 1 : -1];$/;"	t
 stb__testsize32	inc/stb.h	/^   typedef char stb__testsize32[sizeof(int32)==4];$/;"	t
-stb__thread	inc/stb.h	/^} stb__thread;$/;"	t	typeref:struct:__anon36
+stb__thread	inc/stb.h	/^} stb__thread;$/;"	t	typeref:struct:__anon55
 stb__thread_run	inc/stb.h	/^static void stb__thread_run(void *t)$/;"	f
 stb__thread_sleep	inc/stb.h	/^static void   stb__thread_sleep(int ms)          { Sleep(ms); }$/;"	f
 stb__thread_workloop	inc/stb.h	/^static void *stb__thread_workloop(void *p)$/;"	f
@@ -1079,7 +1092,7 @@ stb__windows	inc/stb.h	918;"	d
 stb__work_global	inc/stb.h	/^static stb_workqueue *stb__work_global;$/;"	v
 stb__work_maxitems	inc/stb.h	/^static int stb__work_maxitems = STB_THREADQUEUE_DYNAMIC;$/;"	v
 stb__work_raw	inc/stb.h	/^static int stb__work_raw(stb_workqueue *q, stb_thread_func f, void *d, volatile void **return_code, stb_sync rel)$/;"	f
-stb__workinfo	inc/stb.h	/^} stb__workinfo;$/;"	t	typeref:struct:__anon37
+stb__workinfo	inc/stb.h	/^} stb__workinfo;$/;"	t	typeref:struct:__anon56
 stb__workmutex	inc/stb.h	/^static stb_mutex stb__threadmutex, stb__workmutex;$/;"	v
 stb__workq_numthreads	inc/stb.h	/^static void stb__workq_numthreads(stb_workqueue *q, int n)$/;"	f
 stb__workqueue	inc/stb.h	/^struct stb__workqueue$/;"	s
@@ -1090,7 +1103,7 @@ stb_alloc_chunk_size	inc/stb.h	/^int stb_alloc_chunk_size  = 65536;$/;"	v
 stb_alloc_count_alloc	inc/stb.h	/^int stb_alloc_count_alloc = 0;$/;"	v
 stb_alloc_count_free	inc/stb.h	/^int stb_alloc_count_free  = 0;$/;"	v
 stb_append_to_file	inc/stb.h	/^void stb_append_to_file(char *filename, char *s, ...)$/;"	f
-stb_arith	inc/stb.h	/^} stb_arith;$/;"	t	typeref:struct:__anon33
+stb_arith	inc/stb.h	/^} stb_arith;$/;"	t	typeref:struct:__anon52
 stb_arith_decode_advance	inc/stb.h	/^void stb_arith_decode_advance(stb_arith *a, unsigned int totalfreq, unsigned int freq, unsigned int cumfreq)$/;"	f
 stb_arith_decode_advance_log2	inc/stb.h	/^void stb_arith_decode_advance_log2(stb_arith *a, unsigned int totalfreq2, unsigned int freq, unsigned int cumfreq)$/;"	f
 stb_arith_decode_byte	inc/stb.h	/^int  stb_arith_decode_byte(stb_arith *a)$/;"	f
@@ -1104,8 +1117,8 @@ stb_arith_encode_log2	inc/stb.h	/^void stb_arith_encode_log2(stb_arith *a, unsig
 stb_arith_init_encode	inc/stb.h	/^void stb_arith_init_encode(stb_arith *a, stbfile *out)$/;"	f
 stb_arith_state_create	inc/stb.h	/^stb_arith_symstate *stb_arith_state_create(int num_sym)$/;"	f
 stb_arith_state_rescale	inc/stb.h	/^static void stb_arith_state_rescale(stb_arith_symstate *s)$/;"	f
-stb_arith_symstate	inc/stb.h	/^} stb_arith_symstate;$/;"	t	typeref:struct:__anon35
-stb_arith_symstate_item	inc/stb.h	/^} stb_arith_symstate_item;$/;"	t	typeref:struct:__anon34
+stb_arith_symstate	inc/stb.h	/^} stb_arith_symstate;$/;"	t	typeref:struct:__anon54
+stb_arith_symstate_item	inc/stb.h	/^} stb_arith_symstate_item;$/;"	t	typeref:struct:__anon53
 stb_arr__addn	inc/stb.h	3091;"	d
 stb_arr__grow	inc/stb.h	3088;"	d
 stb_arr_add	inc/stb.h	3034;"	d
@@ -1153,7 +1166,7 @@ stb_bgio_read_to	inc/stb.h	/^int stb_bgio_read_to(char *filename, int offset, in
 stb_bgio_readf	inc/stb.h	/^int stb_bgio_readf(FILE *f, int offset, int len, stb_uchar **result, int *olen)$/;"	f
 stb_bgio_readf_to	inc/stb.h	/^int stb_bgio_readf_to(FILE *f, int offset, int len, stb_uchar *buffer, int *olen)$/;"	f
 stb_bgio_stat	inc/stb.h	/^STB_EXTERN int stb_bgio_stat    (char *filename, stb_bgstat *result)$/;"	f
-stb_bgstat	inc/stb.h	/^} stb_bgstat;$/;"	t	typeref:struct:__anon38
+stb_bgstat	inc/stb.h	/^} stb_bgstat;$/;"	t	typeref:struct:__anon57
 stb_big16	inc/stb.h	1415;"	d
 stb_big32	inc/stb.h	1413;"	d
 stb_bitcount	inc/stb.h	/^int stb_bitcount(unsigned int a)$/;"	f
@@ -1230,9 +1243,9 @@ stb_define_sort	inc/stb.h	8516;"	d
 stb_define_sort_static	inc/stb.h	8518;"	d
 stb_delete_directory_recursive	inc/stb.h	/^void stb_delete_directory_recursive(char *dir)$/;"	f
 stb_destroy_thread	inc/stb.h	/^void          stb_destroy_thread(stb_thread t)   { TerminateThread(t,0); }$/;"	f
-stb_dfa	inc/stb.h	/^} stb_dfa;$/;"	t	typeref:struct:__anon28
+stb_dfa	inc/stb.h	/^} stb_dfa;$/;"	t	typeref:struct:__anon47
 stb_dir_is_prefix	inc/stb.h	/^int stb_dir_is_prefix(char *dir, int dirlen, char *file)$/;"	f
-stb_dirtree	inc/stb.h	/^} stb_dirtree;$/;"	t	typeref:struct:__anon22
+stb_dirtree	inc/stb.h	/^} stb_dirtree;$/;"	t	typeref:struct:__anon41
 stb_dirtree2	inc/stb.h	/^struct stb_dirtree2$/;"	s
 stb_dirtree2	inc/stb.h	/^typedef struct stb_dirtree2 stb_dirtree2;$/;"	t	typeref:struct:stb_dirtree2
 stb_dirtree2_from_files	inc/stb.h	/^stb_dirtree2 *stb_dirtree2_from_files(char **filelist, int count)$/;"	f
@@ -1241,8 +1254,8 @@ stb_dirtree_db_add_dir	inc/stb.h	/^void stb_dirtree_db_add_dir(stb_dirtree *acti
 stb_dirtree_db_add_file	inc/stb.h	/^void stb_dirtree_db_add_file(stb_dirtree *active, char *name, int dir, stb_int64 size, time_t last)$/;"	f
 stb_dirtree_db_read	inc/stb.h	/^void stb_dirtree_db_read(stb_dirtree *target, char *filename, char *dir)$/;"	f
 stb_dirtree_db_write	inc/stb.h	/^void stb_dirtree_db_write(stb_dirtree *target, char *filename, char *dir)$/;"	f
-stb_dirtree_dir	inc/stb.h	/^} stb_dirtree_dir;$/;"	t	typeref:struct:__anon20
-stb_dirtree_file	inc/stb.h	/^} stb_dirtree_file;$/;"	t	typeref:struct:__anon21
+stb_dirtree_dir	inc/stb.h	/^} stb_dirtree_dir;$/;"	t	typeref:struct:__anon39
+stb_dirtree_file	inc/stb.h	/^} stb_dirtree_file;$/;"	t	typeref:struct:__anon40
 stb_dirtree_free	inc/stb.h	/^void stb_dirtree_free(stb_dirtree *d)$/;"	f
 stb_dirtree_get	inc/stb.h	/^stb_dirtree *stb_dirtree_get(char *dir)$/;"	f
 stb_dirtree_get_dir	inc/stb.h	/^stb_dirtree *stb_dirtree_get_dir(char *dir, char *cache_dir)$/;"	f
@@ -1326,9 +1339,9 @@ stb_intcmp	inc/stb.h	/^int (*stb_intcmp(int offset))(const void *, const void *)
 stb_is_pow2	inc/stb.h	/^int stb_is_pow2(unsigned int n)$/;"	f
 stb_is_prime	inc/stb.h	/^int stb_is_prime(unsigned int m)$/;"	f
 stb_ischar	inc/stb.h	/^int stb_ischar(char c, char *set)$/;"	f
-stb_keep_if_different	inc/stb.h	/^   stb_keep_if_different = 2,$/;"	e	enum:__anon17
-stb_keep_no	inc/stb.h	/^   stb_keep_no = 0,$/;"	e	enum:__anon17
-stb_keep_yes	inc/stb.h	/^   stb_keep_yes = 1,$/;"	e	enum:__anon17
+stb_keep_if_different	inc/stb.h	/^   stb_keep_if_different = 2,$/;"	e	enum:__anon36
+stb_keep_no	inc/stb.h	/^   stb_keep_no = 0,$/;"	e	enum:__anon36
+stb_keep_yes	inc/stb.h	/^   stb_keep_yes = 1,$/;"	e	enum:__anon36
 stb_lerp	inc/stb.h	1259;"	d
 stb_lex	inc/stb.h	/^int stb_lex(stb_matcher *m, char *str, int *len)$/;"	f
 stb_lex_item	inc/stb.h	/^int stb_lex_item(stb_matcher *matcher, char *regex, int result)$/;"	f
@@ -1346,7 +1359,7 @@ stb_log2_floor	inc/stb.h	/^int stb_log2_floor(unsigned int n)$/;"	f
 stb_log_fileline	inc/stb.h	/^void stb_log_fileline(int active)$/;"	f
 stb_log_name	inc/stb.h	/^void stb_log_name(char *s)$/;"	f
 stb_lowbit8	inc/stb.h	/^int stb_lowbit8(unsigned int n)$/;"	f
-stb_malloc	inc/stb.h	/^   int stb_malloc;$/;"	m	struct:__anon11
+stb_malloc	inc/stb.h	/^   int stb_malloc;$/;"	m	struct:__anon30
 stb_malloc	inc/stb.h	/^void *stb_malloc(void *context, size_t size)$/;"	f
 stb_malloc_check_counter	inc/stb.h	/^   void stb_malloc_check_counter(int init_delay, int rep_delay)$/;"	f
 stb_malloc_checkall	inc/stb.h	/^   void stb_malloc_checkall(void) { }$/;"	f
@@ -1355,7 +1368,7 @@ stb_malloc_global	inc/stb.h	/^void *stb_malloc_global(size_t size)$/;"	f
 stb_malloc_leaf	inc/stb.h	/^void *stb_malloc_leaf(void *context, size_t size)$/;"	f
 stb_malloc_nofree	inc/stb.h	/^void *stb_malloc_nofree(void *context, size_t size)$/;"	f
 stb_malloc_raw	inc/stb.h	/^void *stb_malloc_raw(void *context, size_t size)$/;"	f
-stb_malloc_record	inc/stb.h	/^} stb_malloc_record;$/;"	t	typeref:struct:__anon23
+stb_malloc_record	inc/stb.h	/^} stb_malloc_record;$/;"	t	typeref:struct:__anon42
 stb_malloc_string	inc/stb.h	/^char *stb_malloc_string(void *context, size_t size)$/;"	f
 stb_malloc_validate	inc/stb.h	/^void stb_malloc_validate(void *p, void *parent)$/;"	f
 stb_matcher	inc/stb.h	/^struct stb_matcher$/;"	s
@@ -1382,8 +1395,8 @@ stb_mutex_end	inc/stb.h	/^void stb_mutex_end(void *p)$/;"	f
 stb_mutex_new	inc/stb.h	/^stb_mutex stb_mutex_new(void)            { return stb_sem_new_extra(1,1); }$/;"	f
 stb_mutex_new	inc/stb.h	/^void *stb_mutex_new(void)$/;"	f
 stb_newell_normal	inc/stb.h	/^void stb_newell_normal(float *normal, int num_vert, float **vert, int normalize)$/;"	f
-stb_nfa_edge	inc/stb.h	/^} stb_nfa_edge;$/;"	t	typeref:struct:__anon29
-stb_nfa_node	inc/stb.h	/^} stb_nfa_node;$/;"	t	typeref:struct:__anon30
+stb_nfa_edge	inc/stb.h	/^} stb_nfa_edge;$/;"	t	typeref:struct:__anon48
+stb_nfa_node	inc/stb.h	/^} stb_nfa_node;$/;"	t	typeref:struct:__anon49
 stb_not_crap	inc/stb.h	/^static int stb_not_crap(int best, int dist)$/;"	f
 stb_nptr_didfree	inc/stb.h	/^void stb_nptr_didfree(void *address_being_freed, int len)$/;"	f
 stb_nptr_didset	inc/stb.h	/^void stb_nptr_didset(void *address_of_pointer)$/;"	f
@@ -1403,7 +1416,7 @@ stb_out3	inc/stb.h	/^static void stb_out3(stb_uint v) { stb_out(v >> 16); stb_ou
 stb_out4	inc/stb.h	/^static void stb_out4(stb_uint v) { stb_out(v >> 24); stb_out(v >> 16);$/;"	f
 stb_out_backpatch	inc/stb.h	/^static void stb_out_backpatch(size_t id, stb_uint value)$/;"	f
 stb_out_backpatch_id	inc/stb.h	/^static size_t stb_out_backpatch_id(void)$/;"	f
-stb_perfect	inc/stb.h	/^} stb_perfect;$/;"	t	typeref:struct:__anon12
+stb_perfect	inc/stb.h	/^} stb_perfect;$/;"	t	typeref:struct:__anon31
 stb_perfect_create	inc/stb.h	/^int stb_perfect_create(stb_perfect *p, unsigned int *v, int n)$/;"	f
 stb_perfect_destroy	inc/stb.h	/^void stb_perfect_destroy(stb_perfect *p)$/;"	f
 stb_perfect_hash	inc/stb.h	/^int stb_perfect_hash(stb_perfect *p, unsigned int x)$/;"	f
@@ -1419,9 +1432,9 @@ stb_probe_guess	inc/stb.h	/^static int stb_probe_guess(stb_search *s, int *resul
 stb_processor_count	inc/stb.h	/^int stb_processor_count(void)$/;"	f
 stb_ps	inc/stb.h	/^typedef struct stb_ps stb_ps;$/;"	t	typeref:struct:stb_ps
 stb_ps_add	inc/stb.h	/^stb_ps *  stb_ps_add   (stb_ps *ps, void *value)$/;"	f
-stb_ps_array	inc/stb.h	/^} stb_ps_array;$/;"	t	typeref:struct:__anon26
+stb_ps_array	inc/stb.h	/^} stb_ps_array;$/;"	t	typeref:struct:__anon45
 stb_ps_array_max	inc/stb.h	/^static int stb_ps_array_max = 13;$/;"	v
-stb_ps_bucket	inc/stb.h	/^} stb_ps_bucket;$/;"	t	typeref:struct:__anon25
+stb_ps_bucket	inc/stb.h	/^} stb_ps_bucket;$/;"	t	typeref:struct:__anon44
 stb_ps_copy	inc/stb.h	/^stb_ps *stb_ps_copy(stb_ps *ps)$/;"	f
 stb_ps_count	inc/stb.h	/^int stb_ps_count (stb_ps *ps)$/;"	f
 stb_ps_delete	inc/stb.h	/^void stb_ps_delete(stb_ps *ps)$/;"	f
@@ -1432,7 +1445,7 @@ stb_ps_fastlist	inc/stb.h	/^void ** stb_ps_fastlist(stb_ps *ps, int *count)$/;"	
 stb_ps_fastlist_valid	inc/stb.h	7542;"	d
 stb_ps_find	inc/stb.h	/^int stb_ps_find(stb_ps *ps, void *value)$/;"	f
 stb_ps_getlist	inc/stb.h	/^void ** stb_ps_getlist(stb_ps *ps, int *count)$/;"	f
-stb_ps_hash	inc/stb.h	/^} stb_ps_hash;$/;"	t	typeref:struct:__anon27
+stb_ps_hash	inc/stb.h	/^} stb_ps_hash;$/;"	t	typeref:struct:__anon46
 stb_ps_makehash	inc/stb.h	/^static stb_ps_hash *stb_ps_makehash(int size, int old_size, void **old_data)$/;"	f
 stb_ps_remove	inc/stb.h	/^stb_ps *stb_ps_remove(stb_ps *ps, void *value)$/;"	f
 stb_ps_remove_any	inc/stb.h	/^stb_ps *stb_ps_remove_any(stb_ps *ps, void **value)$/;"	f
@@ -1484,7 +1497,7 @@ stb_sdict_count	inc/stb.h	/^int stb_sdict_count(stb_sdict *a)$/;"	f
 stb_sdict_delete	inc/stb.h	/^void stb_sdict_delete(stb_sdict *d)$/;"	f
 stb_sdict_for	inc/stb.h	4244;"	d
 stb_sdict_new	inc/stb.h	/^stb_sdict * stb_sdict_new(int use_arena)$/;"	f
-stb_search	inc/stb.h	/^} stb_search;$/;"	t	typeref:struct:__anon5
+stb_search	inc/stb.h	/^} stb_search;$/;"	t	typeref:struct:__anon24
 stb_search_binary	inc/stb.h	/^int stb_search_binary(stb_search *s, int minv, int maxv, int find_smallest)$/;"	f
 stb_search_open	inc/stb.h	/^int stb_search_open(stb_search *s, int minv, int find_smallest)$/;"	f
 stb_sem_delete	inc/stb.h	/^void          stb_sem_delete(stb_semaphore s)    { if (s != NULL) CloseHandle(s); }$/;"	f
@@ -1586,7 +1599,7 @@ stb_uint64	inc/stb.h	/^  typedef unsigned long long stb_uint64;$/;"	t
 stb_uint8	inc/stb.h	/^typedef unsigned char stb_uint8;$/;"	t
 stb_uinta	inc/stb.h	/^typedef stb_uint32 stb_uinta;$/;"	t
 stb_uinta	inc/stb.h	/^typedef stb_uint64 stb_uinta;$/;"	t
-stb_uintptr	inc/stb.h	/^} stb_uintptr;$/;"	t	typeref:union:__anon2
+stb_uintptr	inc/stb.h	/^} stb_uintptr;$/;"	t	typeref:union:__anon21
 stb_unlerp	inc/stb.h	1260;"	d
 stb_vsnprintf	inc/stb.h	/^int stb_vsnprintf(char *s, size_t n, const char *fmt, va_list v)$/;"	f
 stb_wildfind	inc/stb.h	/^int stb_wildfind(char *expr, char *candidate)$/;"	f
@@ -1633,7 +1646,7 @@ stbi__bitcount	inc/stb_image.h	/^static int stbi__bitcount(unsigned int a)$/;"	f
 stbi__bitreverse16	inc/stb_image.h	/^stbi_inline static int stbi__bitreverse16(int n)$/;"	f
 stbi__blinn_8x8	inc/stb_image.h	/^static stbi_uc stbi__blinn_8x8(stbi_uc x, stbi_uc y)$/;"	f
 stbi__bmask	inc/stb_image.h	/^static stbi__uint32 stbi__bmask[17]={0,1,3,7,15,31,63,127,255,511,1023,2047,4095,8191,16383,32767,65535};$/;"	v
-stbi__bmp_data	inc/stb_image.h	/^} stbi__bmp_data;$/;"	t	typeref:struct:__anon66
+stbi__bmp_data	inc/stb_image.h	/^} stbi__bmp_data;$/;"	t	typeref:struct:__anon16
 stbi__bmp_info	inc/stb_image.h	/^static int stbi__bmp_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
 stbi__bmp_load	inc/stb_image.h	/^static void *stbi__bmp_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
 stbi__bmp_parse_header	inc/stb_image.h	/^static void *stbi__bmp_parse_header(stbi__context *s, stbi__bmp_data *info)$/;"	f
@@ -1649,7 +1662,7 @@ stbi__compute_transparency	inc/stb_image.h	/^static int stbi__compute_transparen
 stbi__compute_transparency16	inc/stb_image.h	/^static int stbi__compute_transparency16(stbi__png *z, stbi__uint16 tc[3], int out_n)$/;"	f
 stbi__compute_y	inc/stb_image.h	/^static stbi_uc stbi__compute_y(int r, int g, int b)$/;"	f
 stbi__compute_y_16	inc/stb_image.h	/^static stbi__uint16 stbi__compute_y_16(int r, int g, int b)$/;"	f
-stbi__context	inc/stb_image.h	/^} stbi__context;$/;"	t	typeref:struct:__anon53
+stbi__context	inc/stb_image.h	/^} stbi__context;$/;"	t	typeref:struct:__anon3
 stbi__convert_16_to_8	inc/stb_image.h	/^static stbi_uc *stbi__convert_16_to_8(stbi__uint16 *orig, int w, int h, int channels)$/;"	f
 stbi__convert_8_to_16	inc/stb_image.h	/^static stbi__uint16 *stbi__convert_8_to_16(stbi_uc *orig, int w, int h, int channels)$/;"	f
 stbi__convert_format	inc/stb_image.h	/^static unsigned char *stbi__convert_format(unsigned char *data, int img_n, int req_comp, unsigned int x, unsigned int y)$/;"	f
@@ -1694,13 +1707,13 @@ stbi__get8	inc/stb_image.h	/^stbi_inline static stbi_uc stbi__get8(stbi__context
 stbi__get_chunk_header	inc/stb_image.h	/^static stbi__pngchunk stbi__get_chunk_header(stbi__context *s)$/;"	f
 stbi__get_marker	inc/stb_image.h	/^static stbi_uc stbi__get_marker(stbi__jpeg *j)$/;"	f
 stbi__getn	inc/stb_image.h	/^static int stbi__getn(stbi__context *s, stbi_uc *buffer, int n)$/;"	f
-stbi__gif	inc/stb_image.h	/^} stbi__gif;$/;"	t	typeref:struct:__anon69
+stbi__gif	inc/stb_image.h	/^} stbi__gif;$/;"	t	typeref:struct:__anon19
 stbi__gif_header	inc/stb_image.h	/^static int stbi__gif_header(stbi__context *s, stbi__gif *g, int *comp, int is_info)$/;"	f
 stbi__gif_info	inc/stb_image.h	/^static int stbi__gif_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
 stbi__gif_info_raw	inc/stb_image.h	/^static int stbi__gif_info_raw(stbi__context *s, int *x, int *y, int *comp)$/;"	f
 stbi__gif_load	inc/stb_image.h	/^static void *stbi__gif_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
 stbi__gif_load_next	inc/stb_image.h	/^static stbi_uc *stbi__gif_load_next(stbi__context *s, stbi__gif *g, int *comp, int req_comp)$/;"	f
-stbi__gif_lzw	inc/stb_image.h	/^} stbi__gif_lzw;$/;"	t	typeref:struct:__anon68
+stbi__gif_lzw	inc/stb_image.h	/^} stbi__gif_lzw;$/;"	t	typeref:struct:__anon18
 stbi__gif_parse_colortable	inc/stb_image.h	/^static void stbi__gif_parse_colortable(stbi__context *s, stbi_uc pal[256][4], int num_entries, int transp)$/;"	f
 stbi__gif_test	inc/stb_image.h	/^static int stbi__gif_test(stbi__context *s)$/;"	f
 stbi__gif_test_raw	inc/stb_image.h	/^static int stbi__gif_test_raw(stbi__context *s)$/;"	f
@@ -1715,7 +1728,7 @@ stbi__hdr_test	inc/stb_image.h	/^static int stbi__hdr_test(stbi__context* s)$/;"
 stbi__hdr_test_core	inc/stb_image.h	/^static int stbi__hdr_test_core(stbi__context *s, const char *signature)$/;"	f
 stbi__hdr_to_ldr	inc/stb_image.h	/^static stbi_uc *stbi__hdr_to_ldr(float   *data, int x, int y, int comp)$/;"	f
 stbi__high_bit	inc/stb_image.h	/^static int stbi__high_bit(unsigned int z)$/;"	f
-stbi__huffman	inc/stb_image.h	/^} stbi__huffman;$/;"	t	typeref:struct:__anon57
+stbi__huffman	inc/stb_image.h	/^} stbi__huffman;$/;"	t	typeref:struct:__anon7
 stbi__idct_block	inc/stb_image.h	/^static void stbi__idct_block(stbi_uc *out, int out_stride, short data[64])$/;"	f
 stbi__idct_simd	inc/stb_image.h	/^static void stbi__idct_simd(stbi_uc *out, int out_stride, short data[64])$/;"	f
 stbi__info_main	inc/stb_image.h	/^static int stbi__info_main(stbi__context *s, int *x, int *y, int *comp)$/;"	f
@@ -1724,7 +1737,7 @@ stbi__int16	inc/stb_image.h	/^typedef int16_t  stbi__int16;$/;"	t
 stbi__int32	inc/stb_image.h	/^typedef   signed int   stbi__int32;$/;"	t
 stbi__int32	inc/stb_image.h	/^typedef int32_t  stbi__int32;$/;"	t
 stbi__jbias	inc/stb_image.h	/^static int const stbi__jbias[16] = {0,-1,-3,-7,-15,-31,-63,-127,-255,-511,-1023,-2047,-4095,-8191,-16383,-32767};$/;"	v
-stbi__jpeg	inc/stb_image.h	/^} stbi__jpeg;$/;"	t	typeref:struct:__anon58
+stbi__jpeg	inc/stb_image.h	/^} stbi__jpeg;$/;"	t	typeref:struct:__anon8
 stbi__jpeg_decode_block	inc/stb_image.h	/^static int stbi__jpeg_decode_block(stbi__jpeg *j, short data[64], stbi__huffman *hdc, stbi__huffman *hac, stbi__int16 *fac, int b, stbi__uint16 *dequant)$/;"	f
 stbi__jpeg_decode_block_prog_ac	inc/stb_image.h	/^static int stbi__jpeg_decode_block_prog_ac(stbi__jpeg *j, short data[64], stbi__huffman *hac, stbi__int16 *fac)$/;"	f
 stbi__jpeg_decode_block_prog_dc	inc/stb_image.h	/^static int stbi__jpeg_decode_block_prog_dc(stbi__jpeg *j, short data[64], stbi__huffman *hdc, int b)$/;"	f
@@ -1766,15 +1779,15 @@ stbi__pic_info	inc/stb_image.h	/^static int stbi__pic_info(stbi__context *s, int
 stbi__pic_is4	inc/stb_image.h	/^static int stbi__pic_is4(stbi__context *s,const char *str)$/;"	f
 stbi__pic_load	inc/stb_image.h	/^static void *stbi__pic_load(stbi__context *s,int *px,int *py,int *comp,int req_comp, stbi__result_info *ri)$/;"	f
 stbi__pic_load_core	inc/stb_image.h	/^static stbi_uc *stbi__pic_load_core(stbi__context *s,int width,int height,int *comp, stbi_uc *result)$/;"	f
-stbi__pic_packet	inc/stb_image.h	/^} stbi__pic_packet;$/;"	t	typeref:struct:__anon67
+stbi__pic_packet	inc/stb_image.h	/^} stbi__pic_packet;$/;"	t	typeref:struct:__anon17
 stbi__pic_test	inc/stb_image.h	/^static int stbi__pic_test(stbi__context *s)$/;"	f
 stbi__pic_test_core	inc/stb_image.h	/^static int stbi__pic_test_core(stbi__context *s)$/;"	f
-stbi__png	inc/stb_image.h	/^} stbi__png;$/;"	t	typeref:struct:__anon64
+stbi__png	inc/stb_image.h	/^} stbi__png;$/;"	t	typeref:struct:__anon14
 stbi__png_info	inc/stb_image.h	/^static int stbi__png_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
 stbi__png_info_raw	inc/stb_image.h	/^static int stbi__png_info_raw(stbi__png *p, int *x, int *y, int *comp)$/;"	f
 stbi__png_load	inc/stb_image.h	/^static void *stbi__png_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__result_info *ri)$/;"	f
 stbi__png_test	inc/stb_image.h	/^static int stbi__png_test(stbi__context *s)$/;"	f
-stbi__pngchunk	inc/stb_image.h	/^} stbi__pngchunk;$/;"	t	typeref:struct:__anon63
+stbi__pngchunk	inc/stb_image.h	/^} stbi__pngchunk;$/;"	t	typeref:struct:__anon13
 stbi__pnm_getinteger	inc/stb_image.h	/^static int      stbi__pnm_getinteger(stbi__context *s, char *c)$/;"	f
 stbi__pnm_info	inc/stb_image.h	/^static int      stbi__pnm_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f
 stbi__pnm_isdigit	inc/stb_image.h	/^static int      stbi__pnm_isdigit(char c)$/;"	f
@@ -1792,13 +1805,13 @@ stbi__psd_load	inc/stb_image.h	/^static void *stbi__psd_load(stbi__context *s, i
 stbi__psd_test	inc/stb_image.h	/^static int stbi__psd_test(stbi__context *s)$/;"	f
 stbi__readval	inc/stb_image.h	/^static stbi_uc *stbi__readval(stbi__context *s, int channel, stbi_uc *dest)$/;"	f
 stbi__refill_buffer	inc/stb_image.h	/^static void stbi__refill_buffer(stbi__context *s)$/;"	f
-stbi__resample	inc/stb_image.h	/^} stbi__resample;$/;"	t	typeref:struct:__anon60
+stbi__resample	inc/stb_image.h	/^} stbi__resample;$/;"	t	typeref:struct:__anon10
 stbi__resample_row_generic	inc/stb_image.h	/^static stbi_uc *stbi__resample_row_generic(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
 stbi__resample_row_h_2	inc/stb_image.h	/^static stbi_uc*  stbi__resample_row_h_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
 stbi__resample_row_hv_2	inc/stb_image.h	/^static stbi_uc *stbi__resample_row_hv_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
 stbi__resample_row_hv_2_simd	inc/stb_image.h	/^static stbi_uc *stbi__resample_row_hv_2_simd(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
 stbi__resample_row_v_2	inc/stb_image.h	/^static stbi_uc* stbi__resample_row_v_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f
-stbi__result_info	inc/stb_image.h	/^} stbi__result_info;$/;"	t	typeref:struct:__anon55
+stbi__result_info	inc/stb_image.h	/^} stbi__result_info;$/;"	t	typeref:struct:__anon5
 stbi__rewind	inc/stb_image.h	/^static void stbi__rewind(stbi__context *s)$/;"	f
 stbi__setup_jpeg	inc/stb_image.h	/^static void stbi__setup_jpeg(stbi__jpeg *j)$/;"	f
 stbi__shiftsigned	inc/stb_image.h	/^static int stbi__shiftsigned(int v, int shift, int bits)$/;"	f
@@ -1825,8 +1838,8 @@ stbi__uint32	inc/stb_image.h	/^typedef uint32_t stbi__uint32;$/;"	t
 stbi__uint32	inc/stb_image.h	/^typedef unsigned int   stbi__uint32;$/;"	t
 stbi__unpremultiply_on_load	inc/stb_image.h	/^static int stbi__unpremultiply_on_load = 0;$/;"	v
 stbi__vertically_flip_on_load	inc/stb_image.h	/^static int stbi__vertically_flip_on_load = 0;$/;"	v
-stbi__write_context	inc/stb_image_write.h	/^} stbi__write_context;$/;"	t	typeref:struct:__anon1
-stbi__zbuf	inc/stb_image.h	/^} stbi__zbuf;$/;"	t	typeref:struct:__anon62
+stbi__write_context	inc/stb_image_write.h	/^} stbi__write_context;$/;"	t	typeref:struct:__anon20
+stbi__zbuf	inc/stb_image.h	/^} stbi__zbuf;$/;"	t	typeref:struct:__anon12
 stbi__zbuild_huffman	inc/stb_image.h	/^static int stbi__zbuild_huffman(stbi__zhuffman *z, const stbi_uc *sizelist, int num)$/;"	f
 stbi__zdefault_distance	inc/stb_image.h	/^static const stbi_uc stbi__zdefault_distance[32] =$/;"	v
 stbi__zdefault_length	inc/stb_image.h	/^static const stbi_uc stbi__zdefault_length[288] =$/;"	v
@@ -1834,7 +1847,7 @@ stbi__zdist_base	inc/stb_image.h	/^static int stbi__zdist_base[32] = { 1,2,3,4,5
 stbi__zdist_extra	inc/stb_image.h	/^static int stbi__zdist_extra[32] =$/;"	v
 stbi__zexpand	inc/stb_image.h	/^static int stbi__zexpand(stbi__zbuf *z, char *zout, int n)  \/\/ need to make room for n bytes$/;"	f
 stbi__zget8	inc/stb_image.h	/^stbi_inline static stbi_uc stbi__zget8(stbi__zbuf *z)$/;"	f
-stbi__zhuffman	inc/stb_image.h	/^} stbi__zhuffman;$/;"	t	typeref:struct:__anon61
+stbi__zhuffman	inc/stb_image.h	/^} stbi__zhuffman;$/;"	t	typeref:struct:__anon11
 stbi__zhuffman_decode	inc/stb_image.h	/^stbi_inline static int stbi__zhuffman_decode(stbi__zbuf *a, stbi__zhuffman *z)$/;"	f
 stbi__zhuffman_decode_slowpath	inc/stb_image.h	/^static int stbi__zhuffman_decode_slowpath(stbi__zbuf *a, stbi__zhuffman *z)$/;"	f
 stbi__zlength_base	inc/stb_image.h	/^static int stbi__zlength_base[31] = {$/;"	v
@@ -1852,7 +1865,7 @@ stbi_info_from_memory	inc/stb_image.h	/^STBIDEF int stbi_info_from_memory(stbi_u
 stbi_inline	inc/stb_image.h	521;"	d
 stbi_inline	inc/stb_image.h	523;"	d
 stbi_inline	inc/stb_image.h	526;"	d
-stbi_io_callbacks	inc/stb_image.h	/^} stbi_io_callbacks;$/;"	t	typeref:struct:__anon52
+stbi_io_callbacks	inc/stb_image.h	/^} stbi_io_callbacks;$/;"	t	typeref:struct:__anon2
 stbi_is_hdr	inc/stb_image.h	/^STBIDEF int      stbi_is_hdr          (char const *filename)$/;"	f
 stbi_is_hdr_from_callbacks	inc/stb_image.h	/^STBIDEF int      stbi_is_hdr_from_callbacks(stbi_io_callbacks const *clbk, void *user)$/;"	f
 stbi_is_hdr_from_file	inc/stb_image.h	/^STBIDEF int      stbi_is_hdr_from_file(FILE *f)$/;"	f
@@ -1940,13 +1953,13 @@ stbiw__zlib_huffa	inc/stb_image_write.h	718;"	d
 stbiw__zlib_huffb	inc/stb_image_write.h	725;"	d
 stbiw_uint32	inc/stb_image_write.h	/^typedef unsigned int stbiw_uint32;$/;"	t
 stbprint	inc/stb.h	/^void stbprint(const char *fmt, ...)$/;"	f
-step	inc/stb.h	/^   int mode, step;$/;"	m	struct:__anon5
-step	inc/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon69
-store	inc/stb.h	/^      void *store;           \/\/ pointer to free that holds 'code'$/;"	m	union:stu__func::__anon47
+step	inc/stb.h	/^   int mode, step;$/;"	m	struct:__anon24
+step	inc/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon19
+store	inc/stb.h	/^      void *store;           \/\/ pointer to free that holds 'code'$/;"	m	union:stu__func::__anon66
 strdup	inc/stb.h	450;"	d
 strdup	inc/stb.h	703;"	d
 strdup	inc/stb.h	716;"	d
-string_pool	inc/stb.h	/^   void             * string_pool;   \/\/ used to free data en masse$/;"	m	struct:__anon22
+string_pool	inc/stb.h	/^   void             * string_pool;   \/\/ used to free data en masse$/;"	m	struct:__anon41
 stu__accept	inc/stb.h	/^static int stu__accept(int p)$/;"	f
 stu__assign	inc/stb.h	/^static int stu__assign(void)$/;"	f
 stu__box	inc/stb.h	/^typedef struct stu__box { STU__BOX; } stu__box;$/;"	s
@@ -1963,7 +1976,7 @@ stu__cdv	inc/stb.h	/^static int stu__cdv(stua_obj p)$/;"	f
 stu__checkt	inc/stb.h	13101;"	d
 stu__comp_err_line	inc/stb.h	/^static int stu__comp_err_line;$/;"	v
 stu__comp_err_str	inc/stb.h	/^static char stu__comp_err_str[1024];$/;"	v
-stu__comp_func	inc/stb.h	/^} stu__comp_func;$/;"	t	typeref:struct:__anon50
+stu__comp_func	inc/stb.h	/^} stu__comp_func;$/;"	t	typeref:struct:__anon69
 stu__comp_id	inc/stb.h	/^static int stu__comp_id(void)$/;"	f
 stu__compile_global_scope	inc/stb.h	/^static int stu__compile_global_scope(void)$/;"	f
 stu__compile_unary	inc/stb.h	/^static int stu__compile_unary(int z, int outparm, int require_inparm)$/;"	f
@@ -1986,7 +1999,7 @@ stu__float	inc/stb.h	13067;"	d
 stu__float_init	inc/stb.h	/^static void stu__float_init(void)$/;"	f
 stu__float_tag	inc/stb.h	13058;"	d
 stu__floatp	inc/stb.h	/^static stua_obj stu__floatp(float *f)$/;"	f
-stu__flow	inc/stb.h	/^} stu__flow;$/;"	v	typeref:enum:__anon48
+stu__flow	inc/stb.h	/^} stu__flow;$/;"	v	typeref:enum:__anon67
 stu__flow_val	inc/stb.h	/^static stua_obj stu__flow_val = stua_nil; \/\/ used for break & return$/;"	v
 stu__free_func	inc/stb.h	/^static void stu__free_func(stu__func *f)$/;"	f
 stu__func	inc/stb.h	/^typedef struct stu__func$/;"	s
@@ -2003,7 +2016,7 @@ stu__int	inc/stb.h	13066;"	d
 stu__int_tag	inc/stb.h	13057;"	d
 stu__isint	inc/stb.h	13064;"	d
 stu__lex_matcher	inc/stb.h	/^static stb_matcher *stu__lex_matcher;$/;"	v
-stu__lexemes	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	v	typeref:struct:__anon49
+stu__lexemes	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	v	typeref:struct:__anon68
 stu__makeint	inc/stb.h	13069;"	d
 stu__makeobj	inc/stb.h	/^static stua_obj stu__makeobj(int type, void *data, int size, int safe_to_gc)$/;"	f
 stu__makeptr	inc/stb.h	13089;"	d
@@ -2035,11 +2048,11 @@ stu__statements	inc/stb.h	/^static int stu__statements(int once, int stop_while)
 stu__strings	inc/stb.h	/^static stb_sdict *stu__strings;$/;"	v
 stu__tag	inc/stb.h	13062;"	d
 stu__tok	inc/stb.h	/^static int stu__tok;$/;"	v
-stu__tok	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	m	struct:__anon49
+stu__tok	inc/stb.h	/^static struct { int stu__tok; char *regex; } stu__lexemes[] =$/;"	m	struct:__anon68
 stu__tokval	inc/stb.h	/^static stua_obj stu__tokval;$/;"	v
 stu__true	inc/stb.h	/^stu__box stu__true  = { STU___boolean, 1, };$/;"	v
 stu__varinit	inc/stb.h	/^int stu__varinit(int z, int in_globals)$/;"	f
-stu__wrapper	inc/stb.h	/^} stu__wrapper;$/;"	t	typeref:struct:__anon46
+stu__wrapper	inc/stb.h	/^} stu__wrapper;$/;"	t	typeref:struct:__anon65
 stua_box	inc/stb.h	/^stua_obj stua_box(int type, void *data, int size)$/;"	f
 stua_dict	inc/stb.h	/^typedef stb_idict stua_dict;$/;"	t
 stua_error	inc/stb.h	/^stua_obj stua_error(char *z, ...)$/;"	f
@@ -2065,33 +2078,33 @@ stua_string	inc/stb.h	/^stua_obj stua_string(char *z)$/;"	f
 stua_true	inc/stb.h	13092;"	d
 stua_uninit	inc/stb.h	/^void stua_uninit(void)$/;"	f
 subdirs	inc/stb.h	/^   stb_dirtree2 **subdirs;$/;"	m	struct:stb_dirtree2
-succ_high	inc/stb_image.h	/^   int            succ_high;$/;"	m	struct:__anon58
-succ_low	inc/stb_image.h	/^   int            succ_low;$/;"	m	struct:__anon58
-suffix	inc/stb_image.h	/^   stbi_uc suffix;$/;"	m	struct:__anon68
+succ_high	inc/stb_image.h	/^   int            succ_high;$/;"	m	struct:__anon8
+succ_low	inc/stb_image.h	/^   int            succ_low;$/;"	m	struct:__anon8
+suffix	inc/stb_image.h	/^   stbi_uc suffix;$/;"	m	struct:__anon18
 sum	inc/test.h	/^int sum(int a, int b) {$/;"	f
-sval	inc/stb.h	/^      char *sval;$/;"	m	union:__anon41::__anon42
+sval	inc/stb.h	/^      char *sval;$/;"	m	union:__anon60::__anon61
 swap	inc/stb.h	303;"	d
-sync	inc/stb.h	/^   stb_sync sync;$/;"	m	struct:__anon37
-table	inc/stb.h	/^   stb_uint32 *table;$/;"	m	struct:__anon12
-table	inc/stb.h	/^   void *table[1];$/;"	m	struct:__anon27
-table_mask	inc/stb.h	/^   stb_uint table_mask;$/;"	m	struct:__anon12
+sync	inc/stb.h	/^   stb_sync sync;$/;"	m	struct:__anon56
+table	inc/stb.h	/^   stb_uint32 *table;$/;"	m	struct:__anon31
+table	inc/stb.h	/^   void *table[1];$/;"	m	struct:__anon46
+table_mask	inc/stb.h	/^   stb_uint table_mask;$/;"	m	struct:__anon31
 tail	inc/stb.h	/^   int head, tail, array_size, growable;$/;"	m	struct:stb__threadqueue
 tail_blockers	inc/stb.h	/^   int tail_blockers;$/;"	m	struct:stb__threadqueue
 target	inc/stb.h	/^   int target;  \/\/ target number of threads to hit it$/;"	m	struct:stb__sync
-targets	inc/stb.h	/^   stb__nptr_target *targets;$/;"	m	struct:__anon15
+targets	inc/stb.h	/^   stb__nptr_target *targets;$/;"	m	struct:__anon34
 tell	inc/stb.h	/^   unsigned int (*tell)(struct stbfile *);$/;"	m	struct:stbfile
-temp_name	inc/stb.h	/^   char *temp_name;$/;"	m	struct:__anon18
-timestamp	inc/stb.h	/^   time_t timestamp;$/;"	m	struct:__anon43
-todo	inc/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon58
+temp_name	inc/stb.h	/^   char *temp_name;$/;"	m	struct:__anon37
+timestamp	inc/stb.h	/^   time_t timestamp;$/;"	m	struct:__anon62
+todo	inc/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon8
 token_names	inc/stb.h	/^enum token_names$/;"	g
-total_bytes	inc/stb.h	/^   stb_uint total_bytes;$/;"	m	struct:__anon31
+total_bytes	inc/stb.h	/^   stb_uint total_bytes;$/;"	m	struct:__anon50
 tq	inc/stb.h	/^   stb_threadqueue *tq;$/;"	m	struct:stb__workqueue
-tq	inc/stb_image.h	/^      int tq;$/;"	m	struct:__anon58::__anon59
-transition	inc/stb.h	/^   stb_int16 transition[256];$/;"	m	struct:__anon28
-transparent	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon69
-type	inc/stb.h	/^   int type;$/;"	m	struct:__anon41
-type	inc/stb_image.h	/^   stbi__uint32 type;$/;"	m	struct:__anon63
-type	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon67
+tq	inc/stb_image.h	/^      int tq;$/;"	m	struct:__anon8::__anon9
+transition	inc/stb.h	/^   stb_int16 transition[256];$/;"	m	struct:__anon47
+transparent	inc/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags, delay;$/;"	m	struct:__anon19
+type	inc/stb.h	/^   int type;$/;"	m	struct:__anon60
+type	inc/stb_image.h	/^   stbi__uint32 type;$/;"	m	struct:__anon13
+type	inc/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon17
 uchar	inc/mn_cv_image.h	/^typedef unsigned char uchar;$/;"	t
 uchar	inc/stb.h	/^   typedef unsigned char  uchar ;$/;"	t
 uint	inc/stb.h	/^   typedef unsigned int   uint  ;$/;"	t
@@ -2101,32 +2114,32 @@ uint32	inc/stb.h	/^   typedef unsigned long  uint32;$/;"	t
 uint8	inc/stb.h	/^   typedef unsigned char  uint8 ;$/;"	t
 ulong	inc/stb.h	/^   typedef unsigned long  ulong ;$/;"	t
 ushort	inc/stb.h	/^   typedef unsigned short ushort;$/;"	t
-v	inc/stb_image.h	/^      int h,v;$/;"	m	struct:__anon58::__anon59
-valid	inc/stb.h	/^   int valid;          \/\/ amount of valid data in bytes$/;"	m	struct:__anon31
+v	inc/stb_image.h	/^      int h,v;$/;"	m	struct:__anon8::__anon9
+valid	inc/stb.h	/^   int valid;          \/\/ amount of valid data in bytes$/;"	m	struct:__anon50
 validate_uint32	inc/stb_image.h	/^typedef unsigned char validate_uint32[sizeof(stbi__uint32)==4 ? 1 : -1];$/;"	t
-value	inc/stb.h	/^   void *value;$/;"	m	struct:__anon19
-value	inc/stb_image.h	/^   stbi__uint16 value[288];$/;"	m	struct:__anon61
-value_len	inc/stb.h	/^   int value_len;$/;"	m	struct:__anon19
-values	inc/stb_image.h	/^   stbi_uc  values[256];$/;"	m	struct:__anon57
-various	inc/stb.h	/^      int various;$/;"	m	union:stbfile::__anon32
-vs	inc/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon60
-w	inc/stb_image.h	/^   int w,h;$/;"	m	struct:__anon69
-w2	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
-w_lores	inc/stb_image.h	/^   int w_lores; \/\/ horizontal pixels pre-expansion$/;"	m	struct:__anon60
+value	inc/stb.h	/^   void *value;$/;"	m	struct:__anon38
+value	inc/stb_image.h	/^   stbi__uint16 value[288];$/;"	m	struct:__anon11
+value_len	inc/stb.h	/^   int value_len;$/;"	m	struct:__anon38
+values	inc/stb_image.h	/^   stbi_uc  values[256];$/;"	m	struct:__anon7
+various	inc/stb.h	/^      int various;$/;"	m	union:stbfile::__anon51
+vs	inc/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon10
+w	inc/stb_image.h	/^   int w,h;$/;"	m	struct:__anon19
+w2	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon8::__anon9
+w_lores	inc/stb_image.h	/^   int w_lores; \/\/ horizontal pixels pre-expansion$/;"	m	struct:__anon10
 waiting	inc/stb.h	/^   int waiting; \/\/ total threads waiting$/;"	m	struct:stb__sync
 weight	inc/stb.h	/^   float weight;$/;"	m	struct:stb_dirtree2
 width	inc/mn_cv_image.h	/^   int     width;$/;"	m	struct:Image
-window	inc/stb.h	/^   int window;$/;"	m	struct:__anon31
-x	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
-xtb	inc/stb.h	/^} xtb;$/;"	v	typeref:struct:__anon31
-y	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon58::__anon59
-ypos	inc/stb_image.h	/^   int ypos;    \/\/ which pre-expansion row we're on$/;"	m	struct:__anon60
-ystep	inc/stb_image.h	/^   int ystep;   \/\/ how far through vertical expansion we are$/;"	m	struct:__anon60
-z_distance	inc/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon62
-z_expandable	inc/stb_image.h	/^   int   z_expandable;$/;"	m	struct:__anon62
-z_length	inc/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon62
-zbuffer	inc/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon62
-zbuffer_end	inc/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon62
-zout	inc/stb_image.h	/^   char *zout;$/;"	m	struct:__anon62
-zout_end	inc/stb_image.h	/^   char *zout_end;$/;"	m	struct:__anon62
-zout_start	inc/stb_image.h	/^   char *zout_start;$/;"	m	struct:__anon62
+window	inc/stb.h	/^   int window;$/;"	m	struct:__anon50
+x	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon8::__anon9
+xtb	inc/stb.h	/^} xtb;$/;"	v	typeref:struct:__anon50
+y	inc/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon8::__anon9
+ypos	inc/stb_image.h	/^   int ypos;    \/\/ which pre-expansion row we're on$/;"	m	struct:__anon10
+ystep	inc/stb_image.h	/^   int ystep;   \/\/ how far through vertical expansion we are$/;"	m	struct:__anon10
+z_distance	inc/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon12
+z_expandable	inc/stb_image.h	/^   int   z_expandable;$/;"	m	struct:__anon12
+z_length	inc/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon12
+zbuffer	inc/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon12
+zbuffer_end	inc/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon12
+zout	inc/stb_image.h	/^   char *zout;$/;"	m	struct:__anon12
+zout_end	inc/stb_image.h	/^   char *zout_end;$/;"	m	struct:__anon12
+zout_start	inc/stb_image.h	/^   char *zout_start;$/;"	m	struct:__anon12
