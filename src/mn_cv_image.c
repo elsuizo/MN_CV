@@ -270,8 +270,17 @@ mn_cv_sum(struct Image* img1, struct Image* img2) {
       fprintf(stderr, "Failed to sum the images");
    }
    struct Image result = mn_cv_make_image(img1->width, img2->height, img2->channels);
-   while (img1->data) {
-      *result.data = *(img1->data) + *(img2->data);
+   int i, j, k;
+   float pix1, pix2;
+   for(k = 0; k < result.channels; ++k) {
+      for(j = 0; j < result.height; ++j) {
+         for(i = 0; i < result.width; ++i) {
+            pix1 = mn_cv_get_pixel(img1, i, j, k);
+            pix2 = mn_cv_get_pixel(img2, i, j, k);
+            /* printf("p1 + p2 ---> %f\n", pix1 + pix2); */
+            mn_cv_set_pixel(&result, i, j, k, pix1 + pix2);
+         }
+      }
    }
 
    return result;

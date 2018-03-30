@@ -11,7 +11,7 @@ TARGET   = out
 CC       = clang
 # compiling flags here
 # CFLAGS   = -std=c89 -Wall -I.
-CFLAGS   = -std=c99 -Wall -I.
+CFLAGS   = -std=c99 -Wall -I. -g
 
 LINKER   = gcc -o
 # linking flags here

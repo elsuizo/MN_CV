@@ -27,7 +27,11 @@ You should have received a copy of the GNU General Public License
 int main(void)
 {
    /* path to test image */
-   char* path = "Images/DKF4tPVXkAAP8FY.jpg";
+   const char* path = "Images/DKF4tPVXkAAP8FY.jpg";
+   const char* path_red = "Images/red.png";
+   const char* path_green = "Images/green.png";
+   const char* path_blue = "Images/blue.png";
+
    struct Image img = mn_cv_load_image_color(path, 300, 300);
    mn_cv_save_image_png(img, "Images/flores3.png");
 
@@ -35,22 +39,12 @@ int main(void)
    struct Image img_gray = mn_cv_grayscale_image(&img);
    mn_cv_save_image_png(img_gray, "Images/flores3_gray.png");
 
-   /* binarize image */
-   struct Image img_bin = mn_cv_binarize(&img_gray, 0.3);
-   mn_cv_save_image_png(img_bin, "Images/flores3_bin.png");
+   struct Image img_red = mn_cv_load_image_color(path_red, 300, 300);
+   struct Image img_blue = mn_cv_load_image_color(path_blue, 300, 300);
+   struct Image img_green = mn_cv_load_image_color(path_green, 300, 300);
 
-   /* get the red channel */
-   struct Image img_red = mn_cv_red_channel(&img);
-   mn_cv_save_image_png(img_red, "Images/flores3_red_channel.png");
-
-   /* get the green channel */
-   struct Image img_green = mn_cv_green_channel(&img);
-   mn_cv_save_image_png(img_green, "Images/flores3_green_channel.png");
-
-   /* get the blue channel */
-   struct Image img_blue = mn_cv_blue_channel(&img);
-   mn_cv_save_image_png(img_blue, "Images/flores3_blue_channel.png");
-
+   struct Image img_sum = mn_cv_sum(&img_red, &img_blue);
+   mn_cv_save_image_png(img_sum, "Images/red_plus_blue.png");
    return(0);
 }
 
