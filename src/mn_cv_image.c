@@ -29,7 +29,7 @@ You should have received a copy of the GNU General Public License
 
 #include "../inc/mn_cv_image.h"
 /* #include "../inc/test.h" */
-
+#define EPSILON 0.0001f
 /*-------------------------------------------------------------------------
                         private functions
 -------------------------------------------------------------------------*/
@@ -46,14 +46,7 @@ You should have received a copy of the GNU General Public License
 static void mn_cv_set_pixel(struct Image* img, int x, int y, int c, float value)
 {
 
-   /* check the imputs */
-   /* TODO(elsuizo:2018-03-28):porque no hacer que la imagen tenga uint directamente */
-   if (x < 0 || y < 0 || c < 0 || x >= img->width || y >= img->height || c >= img->channels) {
-      /* TODO(elsuizo:2018-03-28):imprimir un error */
-      fprintf(stderr, "Failed to write image");
-      return;
-   }
-   assert(x < img->width && y < img->height && c < img->channels);
+   assert(x < img->width && y < img->height && c <= img->channels);
    img->data[c * img->height * img->width + y * img->width + x] = value;
 }
 
@@ -82,7 +75,7 @@ static void mn_cv_mul_pixel(struct Image* img, int x, int y, int c, float value)
 
 static float mn_cv_get_pixel(struct Image* img, int x, int y, int c)
 {
-   assert(x < img->width && y < img->height && c < img->channels);
+   assert( (c <= img->channels));
    return img->data[c * img->height * img->width + y * img->width + x];
 }
 
@@ -91,6 +84,7 @@ static float mn_cv_get_pixel_extend(struct Image* img, int x, int y, int c)
    if(x < 0 || x >= img->width || y < 0 || y >= img->height) {
       return 0;
    }
+
    /*
       if(x < 0) x = 0;
       if(x >= img.w) x = img.w-1;
@@ -212,6 +206,16 @@ mn_cv_load_image_stb(const char* filename, int channels_in) {
    return im;
 }
 
+struct Image
+mn_cv_get_image_layer(struct Image* img, int channel_selected)
+{
+    struct Image result = mn_cv_make_image(img->width, img->height, 1);
+    int i;
+    for(i = 0; i < img->height * img->width; ++i){
+        result.data[i] = img->data[i + channel_selected * img->height * img->width];
+    }
+    return result;
+}
 
 struct Image
 mn_cv_load_image_color(const char* filename, int w, int h)
@@ -258,12 +262,11 @@ void mn_cv_save_image_png(struct Image im, const char *name)
    }
 }
 
-/* TODO(elsuizo:2018-03-29):hacer una funcion que tome los dos casos de suma: color y grayscale  */
 struct Image
 mn_cv_sum(struct Image* img1, struct Image* img2) {
 
    /* test dimentions */
-   if (img1->width != img2->width && img1->height != img2->height) {
+   if (img1->width != img2->width && img1->height != img2->height && img1->channels != img2->channels) {
       fprintf(stderr, "Failed to sum images");
    }
    if (img1->channels != img2->channels) {
@@ -277,7 +280,7 @@ mn_cv_sum(struct Image* img1, struct Image* img2) {
          for(i = 0; i < result.width; ++i) {
             pix1 = mn_cv_get_pixel(img1, i, j, k);
             pix2 = mn_cv_get_pixel(img2, i, j, k);
-            /* printf("p1 + p2 ---> %f\n", pix1 + pix2); */
+
             mn_cv_set_pixel(&result, i, j, k, pix1 + pix2);
          }
       }
@@ -361,3 +364,32 @@ mn_cv_binarize(struct Image* img, float value)
     return result;
 }
 
+struct Image
+mn_cv_chromatics_coordinates(struct Image* img) {
+
+   struct Image result = mn_cv_make_empty_image(img->width, img->height, img->channels);
+
+   struct Image red   = mn_cv_red_channel(img);
+   struct Image green = mn_cv_green_channel(img);
+   struct Image blue  = mn_cv_blue_channel(img);
+   int i, j;
+   float red_pixel, green_pixel, blue_pixel, sum;
+   for(j = 0; j < result.height; j++) {
+      for(i = 0; i < result.width; i++) {
+            red_pixel   = mn_cv_get_pixel_extend(&red, i, j, 1);
+            green_pixel = mn_cv_get_pixel_extend(&green, i, j, 1);
+            blue_pixel  = mn_cv_get_pixel_extend(&blue, i, j, 1);
+
+            sum = red_pixel + green_pixel + blue_pixel;
+            mn_cv_set_pixel(&result, i, j, 1, red_pixel / sum);
+            mn_cv_set_pixel(&result, i, j, 2, green_pixel / sum);
+            mn_cv_set_pixel(&result, i, j, 3, blue_pixel / sum);
+         }
+      }
+
+   mn_cv_free_image(&red);
+   mn_cv_free_image(&green);
+   mn_cv_free_image(&blue);
+
+   return result;
+}

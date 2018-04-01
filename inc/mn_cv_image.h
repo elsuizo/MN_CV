@@ -90,4 +90,7 @@ mn_cv_green_channel(struct Image* img);
 struct Image
 mn_cv_blue_channel(struct Image* img);
 
+struct Image
+mn_cv_chromatics_coordinates(struct Image* img);
+
 #endif

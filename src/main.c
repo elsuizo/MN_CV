@@ -31,6 +31,7 @@ int main(void)
    const char* path_red = "Images/red.png";
    const char* path_green = "Images/green.png";
    const char* path_blue = "Images/blue.png";
+   const char* path_hands = "Images/manos3.png";
 
    struct Image img = mn_cv_load_image_color(path, 300, 300);
    mn_cv_save_image_png(img, "Images/flores3.png");
@@ -45,6 +46,11 @@ int main(void)
 
    struct Image img_sum = mn_cv_sum(&img_red, &img_blue);
    mn_cv_save_image_png(img_sum, "Images/red_plus_blue.png");
+
+   /* struct Image img_hands = mn_cv_load_image_color(path_hands, 296, 107); */
+   struct Image chromatics_hand = mn_cv_chromatics_coordinates(&img_gray);
+   mn_cv_save_image_png(img_sum, "Images/chromatics_hand.png");
+
    return(0);
 }
 
