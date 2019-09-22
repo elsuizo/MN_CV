@@ -33,7 +33,9 @@ You should have received a copy of the GNU General Public License
 /*-------------------------------------------------------------------------
                         private functions
 -------------------------------------------------------------------------*/
-
+int within_eps1(float a, float b) {
+    return a-EPS1<b && b<a+EPS1;
+}
 /**
  * @brief Set the value in the correspondiente (x, y) pixel in a image
  *
@@ -165,7 +167,7 @@ mn_cv_make_empty_image(int width, int height, int channels)
       .width = width,
       .height = height,
       .channels = channels,
-      .data = NULL,
+      .data = 0,
 
    };
    return result;
@@ -243,19 +245,19 @@ void mn_cv_free_image(struct Image* img)
    }
 }
 
-void mn_cv_save_image_png(struct Image im, const char *name)
+void mn_cv_save_image_png(struct Image* im, const char* name)
 {
    char buff[256];
    //sprintf(buff, "%s (%d)", name, windows);
    sprintf(buff, "%s", name);
-   uchar *data = calloc(im.width *im.height *im.channels, sizeof(uchar));
-   int i,k;
-   for(k = 0; k < im.channels; ++k){
-      for(i = 0; i < im.width * im.height; ++i){
-         data[i * im.channels + k] = (uchar) (255*im.data[i + k * im.width * im.height]);
+   uchar* data = calloc(im->width * im->height * im->channels, sizeof(uchar));
+   int i, k;
+   for(k = 0; k < im->channels; ++k){
+      for(i = 0; i < im->width * im->height; ++i){
+         data[i * im->channels + k] = (uchar)(255 * im->data[i + k * im->width * im->height]);
       }
    }
-   int success = stbi_write_png(buff, im.width, im.height, im.channels, data, im.width * im.channels);
+   int success = stbi_write_png(buff, im->width, im->height, im->channels, data, im->width * im->channels);
    free(data);
    if(!success) {
       fprintf(stderr, "Failed to write image %s\n", buff);
@@ -291,7 +293,7 @@ mn_cv_sum(struct Image* img1, struct Image* img2) {
 
 struct Image
 mn_cv_red_channel(struct Image* img) {
-   struct Image result = mn_cv_get_image_channel(img, 1);
+   struct Image result = mn_cv_get_image_channel(img, 0);
 
    return result;
 }
@@ -299,7 +301,7 @@ mn_cv_red_channel(struct Image* img) {
 struct Image
 mn_cv_blue_channel(struct Image* img) {
 
-   struct Image result = mn_cv_get_image_channel(img, 2);
+   struct Image result = mn_cv_get_image_channel(img, 1);
 
    return result;
 }
@@ -307,7 +309,7 @@ mn_cv_blue_channel(struct Image* img) {
 struct Image
 mn_cv_green_channel(struct Image* img) {
 
-   struct Image result = mn_cv_get_image_channel(img, 3);
+   struct Image result = mn_cv_get_image_channel(img, 2);
 
    return result;
 }
@@ -368,6 +370,7 @@ struct Image
 mn_cv_chromatics_coordinates(struct Image* img) {
 
    struct Image result = mn_cv_make_empty_image(img->width, img->height, img->channels);
+   /* struct Image result = mn_cv_copy_image(img); */
 
    struct Image red   = mn_cv_red_channel(img);
    struct Image green = mn_cv_green_channel(img);
@@ -376,20 +379,23 @@ mn_cv_chromatics_coordinates(struct Image* img) {
    float red_pixel, green_pixel, blue_pixel, sum;
    for(j = 0; j < result.height; j++) {
       for(i = 0; i < result.width; i++) {
-            red_pixel   = mn_cv_get_pixel_extend(&red, i, j, 1);
-            green_pixel = mn_cv_get_pixel_extend(&green, i, j, 1);
-            blue_pixel  = mn_cv_get_pixel_extend(&blue, i, j, 1);
-
+            red_pixel   = mn_cv_get_pixel(&red, i, j, 1);
+            green_pixel = mn_cv_get_pixel(&green, i, j, 1);
+            blue_pixel  = mn_cv_get_pixel(&blue, i, j, 1);
             sum = red_pixel + green_pixel + blue_pixel;
-            mn_cv_set_pixel(&result, i, j, 1, red_pixel / sum);
-            mn_cv_set_pixel(&result, i, j, 2, green_pixel / sum);
-            mn_cv_set_pixel(&result, i, j, 3, blue_pixel / sum);
+            /* printf("sum: %f\n", sum); */
+            if (!within_eps1(sum, 0.0f)) {
+               printf("en el iiifo\n");
+               mn_cv_set_pixel(&result, i, j, 1, red_pixel / sum);
+               mn_cv_set_pixel(&result, i, j, 2, green_pixel / sum);
+               mn_cv_set_pixel(&result, i, j, 3, blue_pixel / sum);
+            }
          }
       }
 
-   mn_cv_free_image(&red);
-   mn_cv_free_image(&green);
-   mn_cv_free_image(&blue);
+   /* mn_cv_free_image(&red); */
+   /* mn_cv_free_image(&green); */
+   /* mn_cv_free_image(&blue); */
 
    return result;
 }

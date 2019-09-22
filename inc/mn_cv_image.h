@@ -27,6 +27,8 @@ You should have received a copy of the GNU General Public License
 
 #include <stdio.h>
 #include <stdlib.h>
+
+#define EPS1 .00000001
 /*-------------------------------------------------------------------------
                               datatypes
 -------------------------------------------------------------------------*/
@@ -67,7 +69,7 @@ mn_cv_sum(struct Image* img1, struct Image* img2);
 
 void mn_cv_free_image(struct Image* m);
 
-void mn_cv_save_image_png(struct Image im, const char* name);
+void mn_cv_save_image_png(struct Image* im, const char* name);
 
 struct Image
 mn_cv_grayscale_image(struct Image* img);

@@ -27,31 +27,32 @@ You should have received a copy of the GNU General Public License
 int main(void)
 {
    /* path to test image */
-   const char* path = "Images/DKF4tPVXkAAP8FY.jpg";
-   const char* path_red = "Images/red.png";
-   const char* path_green = "Images/green.png";
-   const char* path_blue = "Images/blue.png";
-   const char* path_hands = "Images/manos3.png";
+   /* const char* path = "Images/DKF4tPVXkAAP8FY.jpg"; */
+   /* const char* path_red = "Images/red.png"; */
+   /* const char* path_green = "Images/green.png"; */
+   /* const char* path_blue = "Images/blue.png"; */
+   const char* path_hands = "Images/manos1.png";
 
-   struct Image img = mn_cv_load_image_color(path, 300, 300);
-   mn_cv_save_image_png(img, "Images/flores3.png");
+   /* struct Image img_red = mn_cv_load_image_color(path_red, 300, 300); */
+   /* struct Image img_blue = mn_cv_load_image_color(path_blue, 300, 300); */
+   /* struct Image img_green = mn_cv_load_image_color(path_green, 300, 300); */
 
-   /* image to grayscale */
-   struct Image img_gray = mn_cv_grayscale_image(&img);
-   mn_cv_save_image_png(img_gray, "Images/flores3_gray.png");
+   /* struct Image img_sum1 = mn_cv_sum(&img_red, &img_blue); */
+   /* struct Image img_sum2 = mn_cv_sum(&img_red, &img_green); */
+   /* struct Image img_sum3 = mn_cv_sum(&img_blue, &img_green); */
+   /* mn_cv_save_image_png(&img_sum1, "Images/red_plus_blue.png"); */
+   /* mn_cv_save_image_png(&img_sum2, "Images/red_plus_green.png"); */
+   /* mn_cv_save_image_png(&img_sum3, "Images/blue_plus_green.png"); */
 
-   struct Image img_red = mn_cv_load_image_color(path_red, 300, 300);
-   struct Image img_blue = mn_cv_load_image_color(path_blue, 300, 300);
-   struct Image img_green = mn_cv_load_image_color(path_green, 300, 300);
-
-   struct Image img_sum = mn_cv_sum(&img_red, &img_blue);
-   mn_cv_save_image_png(img_sum, "Images/red_plus_blue.png");
-
-   /* struct Image img_hands = mn_cv_load_image_color(path_hands, 296, 107); */
-   struct Image chromatics_hand = mn_cv_chromatics_coordinates(&img_gray);
-   mn_cv_save_image_png(img_sum, "Images/chromatics_hand.png");
+   struct Image img_hands = mn_cv_load_image_color(path_hands, 296, 107);
+   /* struct Image red_channel = mn_cv_red_channel(&img_hands); */
+   /* struct Image blue_channel = mn_cv_blue_channel(&img_hands); */
+   /* struct Image green_channel = mn_cv_green_channel(&img_hands); */
+   struct Image chromatics_hand = mn_cv_chromatics_coordinates(&img_hands);
+   /* mn_cv_save_image_png(&red_channel, "Images/pepe1.png"); */
+   /* mn_cv_save_image_png(&green_channel, "Images/pepe2.png"); */
+   /* mn_cv_save_image_png(&blue_channel, "Images/pepe3.png"); */
+   /* mn_cv_save_image_png(&img_hands, "Images/chromatics_hand.png"); */
 
    return(0);
 }
-
-
