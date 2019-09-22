@@ -52,7 +52,7 @@ int main(void)
    /* mn_cv_save_image_png(&red_channel, "Images/pepe1.png"); */
    /* mn_cv_save_image_png(&green_channel, "Images/pepe2.png"); */
    /* mn_cv_save_image_png(&blue_channel, "Images/pepe3.png"); */
-   mn_cv_save_image_png(&img_hands, "Images/chromatics_hand.png");
+   mn_cv_save_image_png(&chromatics_hand, "Images/chromatics_hand1.png");
 
    return(0);
 }
