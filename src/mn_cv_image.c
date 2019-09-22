@@ -161,13 +161,12 @@ mn_cv_get_image_channel(struct Image* img, int channel_selected) {
                      Public implementations
 -------------------------------------------------------------------------*/
 struct Image
-mn_cv_make_empty_image(int width, int height, int channels)
-{
+mn_cv_make_empty_image(int width, int height, int channels) {
    struct Image result = {
       .width = width,
       .height = height,
       .channels = channels,
-      .data = 0,
+      .data = NULL,
 
    };
    return result;
@@ -369,33 +368,25 @@ mn_cv_binarize(struct Image* img, float value)
 struct Image
 mn_cv_chromatics_coordinates(struct Image* img) {
 
-   /* struct Image result = mn_cv_make_empty_image(img->width, img->height, img->channels); */
    struct Image result = mn_cv_copy_image(img);
 
-   /* struct Image red   = mn_cv_red_channel(img); */
-   /* struct Image green = mn_cv_green_channel(img); */
-   /* struct Image blue  = mn_cv_blue_channel(img); */
-   int i, j;
+   int rows, cols;
    float red_pixel, green_pixel, blue_pixel, sum;
-   for(j = 0; j < result.height; j++) {
-      for(i = 0; i < result.width; i++) {
-            red_pixel   = mn_cv_get_pixel(img, i, j, 0);
-            green_pixel = mn_cv_get_pixel(img, i, j, 1);
-            blue_pixel  = mn_cv_get_pixel(img, i, j, 2);
+   for(cols = 0; cols < result.height; cols++) {
+      for(rows = 0; rows < result.width; rows++) {
+            red_pixel   = mn_cv_get_pixel(img, rows, cols, 0);
+            green_pixel = mn_cv_get_pixel(img, rows, cols, 1);
+            blue_pixel  = mn_cv_get_pixel(img, rows, cols, 2);
             sum = red_pixel + green_pixel + blue_pixel;
             /* printf("sum: %f\n", sum); */
             if (!within_eps1(sum, 0.0f)) {
-               printf("red_pixel/sum: %f\n", red_pixel/sum);
-               mn_cv_set_pixel(&result, i, j, 0, (red_pixel / sum));
-               mn_cv_set_pixel(&result, i, j, 1, (green_pixel / sum));
-               mn_cv_set_pixel(&result, i, j, 2, (blue_pixel / sum));
+               /* printf("red_pixel/sum: %f\n", red_pixel/sum); */
+               mn_cv_set_pixel(&result, rows, cols, 0, (red_pixel / sum));
+               mn_cv_set_pixel(&result, rows, cols, 1, (green_pixel / sum));
+               mn_cv_set_pixel(&result, rows, cols, 2, (blue_pixel / sum));
             }
          }
       }
-
-   /* mn_cv_free_image(&red); */
-   /* mn_cv_free_image(&green); */
-   /* mn_cv_free_image(&blue); */
 
    return result;
 }
