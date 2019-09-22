@@ -31,7 +31,7 @@ int main(void)
    /* const char* path_red = "Images/red.png"; */
    /* const char* path_green = "Images/green.png"; */
    /* const char* path_blue = "Images/blue.png"; */
-   const char* path_hands = "Images/manos3.png";
+   const char* path_hands = "Images/manos1.png";
 
    /* struct Image img_red = mn_cv_load_image_color(path_red, 300, 300); */
    /* struct Image img_blue = mn_cv_load_image_color(path_blue, 300, 300); */
