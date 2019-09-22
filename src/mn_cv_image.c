@@ -369,23 +369,23 @@ mn_cv_binarize(struct Image* img, float value)
 struct Image
 mn_cv_chromatics_coordinates(struct Image* img) {
 
-   struct Image result = mn_cv_make_empty_image(img->width, img->height, img->channels);
-   /* struct Image result = mn_cv_copy_image(img); */
+   /* struct Image result = mn_cv_make_empty_image(img->width, img->height, img->channels); */
+   struct Image result = mn_cv_copy_image(img);
 
-   struct Image red   = mn_cv_red_channel(img);
-   struct Image green = mn_cv_green_channel(img);
-   struct Image blue  = mn_cv_blue_channel(img);
+   /* struct Image red   = mn_cv_red_channel(img); */
+   /* struct Image green = mn_cv_green_channel(img); */
+   /* struct Image blue  = mn_cv_blue_channel(img); */
    int i, j;
    float red_pixel, green_pixel, blue_pixel, sum;
    for(j = 0; j < result.height; j++) {
       for(i = 0; i < result.width; i++) {
-            red_pixel   = mn_cv_get_pixel(&red, i, j, 1);
-            green_pixel = mn_cv_get_pixel(&green, i, j, 1);
-            blue_pixel  = mn_cv_get_pixel(&blue, i, j, 1);
+            red_pixel   = mn_cv_get_pixel(img, i, j, 0);
+            green_pixel = mn_cv_get_pixel(img, i, j, 1);
+            blue_pixel  = mn_cv_get_pixel(img, i, j, 2);
             sum = red_pixel + green_pixel + blue_pixel;
-            /* printf("sum: %f\n", sum); */
+            printf("sum: %f\n", sum);
             if (!within_eps1(sum, 0.0f)) {
-               printf("en el iiifo\n");
+               /* printf("en el iiifo\n"); */
                mn_cv_set_pixel(&result, i, j, 1, red_pixel / sum);
                mn_cv_set_pixel(&result, i, j, 2, green_pixel / sum);
                mn_cv_set_pixel(&result, i, j, 3, blue_pixel / sum);
